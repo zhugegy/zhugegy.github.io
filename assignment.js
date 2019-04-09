@@ -369,7 +369,7 @@ function display_cart_content_num()
 window.onload = function()
 {
 	// initialize the full book list via json reading and parsing
-	var gjson = getJSON('https://api.myjson.com/bins/182vtq') ;
+	var gjson = getJSON('data.json') ;
 	g_lBooks = JSON.parse(gjson);
 
 	// initialize the array that stores the cart book number
