@@ -9,6 +9,7 @@
 </head>
 
 <body>
+  
   <!-- <form method="get" action=""> -->
   <div id="searchBox"> 
      <p>
@@ -32,6 +33,17 @@
         <input type="button" name="resetCart" id="resetCartButton" value = "Reset the cart" class = "floatToRight">
         <input type="button" name="addToCart" id="addToCartButton" value = "Add to cart" class = "floatToRight">
      </p>
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+     <script src="jquery.ripples.js"></script>
+     <script>
+     $('div').ripples({
+               resolution: 512,
+               dropRadius: 20, //px
+               perturbance: 0.04,
+           });
+     </script>
+     
   </div>
 
   <div id="listBox">
