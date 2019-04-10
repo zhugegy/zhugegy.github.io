@@ -1,5 +1,5 @@
 var g_lBooks;  //full book list
-var g_lnBookNum = [];  /* same size as g_lBooks, storing integers, 
+var g_lnBookNum = [];  /* same size as g_lBooks, storing integers,
 						  assisting the cart book number functionality */
 var g_nCurrentDisplayedBookNum = 0;  //counts the number of displayed books in the table
 
@@ -24,8 +24,8 @@ function display_books(lToBeDisplayed, bIsSelected)
 
 	// display the books in the list
 	for (var i = lToBeDisplayed.length - 1; i >= 0; i--)
-	/* reason of revesed order of iteration: 
-	   due to the filter order in list_books() (first filter category, then filter key words), 
+	/* reason of revesed order of iteration:
+	   due to the filter order in list_books() (first filter category, then filter key words),
 	   we want to display the items of the most relevance (within the same category,
 	   but unfortunately does not contain the search key words) as top as possible.
 	*/
@@ -36,18 +36,18 @@ function display_books(lToBeDisplayed, bIsSelected)
 		if (bIsSelected)
 		{
 			row.bgColor = "yellow";
-		} 
-		
-		// diffreniate the checkbox-es with different id (using this book's title), but 
+		}
+
+		// diffreniate the checkbox-es with different id (using this book's title), but
 		// within a same class for later referrence.
 		var cellCheckBox = row.insertCell(0);
 		cellCheckBox.innerHTML = "<input type=\"checkbox\" id=\"" +
 		lToBeDisplayed[i].title +
 		"\" class = \"cartChoice\">";
-		
+
 		var cellImg = row.insertCell(1);
-		strTmpImg = "<img src=\"" + 
-		lToBeDisplayed[i].img + 
+		strTmpImg = "<img src=\"" +
+		lToBeDisplayed[i].img +
 		"\"alt=\"Book Image\" width=\"80\" height=\"100\"/>";
 		cellImg.innerHTML = strTmpImg;
 
@@ -101,7 +101,7 @@ function list_books(searchWord, filterWord)
 		return
 	}
 
-	// begin to form two lists: one list contains the books that match user's search criteria, 
+	// begin to form two lists: one list contains the books that match user's search criteria,
 	//                          the other list contains the rest books
 	var lBooksMatch = [];
 	var lBooksNotMatch = []
@@ -121,16 +121,16 @@ function list_books(searchWord, filterWord)
 			if (g_lBooks[i].category.localeCompare(filterWord) == 0)
 			{
 				lBooksMatch_Filter.push(g_lBooks[i]);
-			}	
+			}
 			else
 			{
 				lBooksNotMatch.push(g_lBooks[i]);
 			}
-		}		
+		}
 	}
 
 
-	// question: 
+	// question:
 	// "The Search and Filter functions should work together and combine the result of each other."
 	// -----------
 	// COMBINE (a OR b) the two filters or AGGREGATE (a AND b) the idential results
@@ -152,14 +152,14 @@ function list_books(searchWord, filterWord)
 		else
 		{
 			lBooksNotMatch.push(lBooksMatch_Filter[i]);
-		}	
+		}
 	}
 
 	// First, display the selected books on the topmost rows.
 	display_books(lBooksMatch, true)
 
 	// Then, display the rest books.
-	display_books(lBooksNotMatch, false)	
+	display_books(lBooksNotMatch, false)
 }
 
 // IMPLEMENTATION: COMBINE (search_key_word OR category)
@@ -177,7 +177,7 @@ function __list_books_v2(searchWord, filterWord)
 		return
 	}
 
-	// begin to form two lists: one list contains the books that match user's search criteria, 
+	// begin to form two lists: one list contains the books that match user's search criteria,
 	//                          the other list contains the rest books
 	var lBooksMatch = [];
 	var lBooksNotMatch = []
@@ -195,16 +195,16 @@ function __list_books_v2(searchWord, filterWord)
 			if (g_lBooks[i].category.localeCompare(filterWord) == 0)
 			{
 				lBooksMatch.push(g_lBooks[i]);
-			}	
+			}
 			else
 			{
 				lBooksNotMatch.push(g_lBooks[i]);
 			}
-		}		
+		}
 	}
 
 
-	// question: 
+	// question:
 	// "The Search and Filter functions should work together and combine the result of each other."
 	// -----------
 	// COMBINE (a OR b) the two filters or AGGREGATE (a AND b) the idential results
@@ -228,14 +228,14 @@ function __list_books_v2(searchWord, filterWord)
 		else
 		{
 			lBooksEventuallyNotMatch.push(lBooksNotMatch[i]);
-		}	
+		}
 	}
 
 	// First, display the selected books on the topmost rows.
 	display_books(lBooksMatch, true)
 
 	// Then, display the rest books.
-	display_books(lBooksEventuallyNotMatch, false)	
+	display_books(lBooksEventuallyNotMatch, false)
 }
 
 function user_inits_search()
@@ -272,25 +272,25 @@ function user_inits_add_to_cart()
 
 	if (nBookNumCounter == 1)
 	{
-		alert("Successfully added " + nBookNumCounter.toString(10) + " book to your cart.");	
+		alert("Successfully added " + nBookNumCounter.toString(10) + " book to your cart.");
 	}
 	else if (nBookNumCounter != 0)
 	{
-		alert("Successfully added " + nBookNumCounter.toString(10) + " books to your cart.");	
+		alert("Successfully added " + nBookNumCounter.toString(10) + " books to your cart.");
 	}
 	else
 	{
-		alert("No book is selected!");	
+		alert("No book is selected!");
 	}
 
 	display_cart_content_num();
-	
+
 }
 
 function user_inits_reset_the_cart()
 {
 	var r = confirm("Reset the cart?");
-	if (r == true) 
+	if (r == true)
 	{
   		for (var i = 0; i < g_lBooks.length; i++)
 		{
@@ -298,9 +298,9 @@ function user_inits_reset_the_cart()
 		}
 
 		display_cart_content_num();
-		
+
 		display_cart();
-	}		
+	}
 }
 
 function user_inits_cart()
@@ -369,7 +369,8 @@ function display_cart_content_num()
 window.onload = function()
 {
 	// initialize the full book list via json reading and parsing
-	var gjson = getJSON('data.json') ;
+	var gjson = getJSON('https://api.myjson.com/bins/182vtq') ;
+	//var gjson = getJSON('data.json') ;
 	g_lBooks = JSON.parse(gjson);
 
 	// initialize the array that stores the cart book number

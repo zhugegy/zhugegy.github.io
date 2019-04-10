@@ -8,13 +8,34 @@ body {
    font-size: 80%;
 }
 
-div#searchBox, div#listBox {
+div#searchBox {
+   margin: 0.25em auto;
+   
+   background-image: url('images/banner.png');
+   background-color: #cccccc;
+   background-size: 100% 100%;
+
+
+   background-repeat: no-repeat;
+	background-position: center center;
+
+
+	height: 240px;
+
+   padding: 1em;
+   border: 1pt solid #95BEF0;
+   width: 80%;
+}
+
+div#listBox {
    margin: 0.25em auto;
    background-color: #EBF4FB;
    padding: 1em;
    border: 1pt solid #95BEF0;
    width: 80%;
 }
+
+
 div#searchBox { margin-top: 1em; }
 div#listBox { 
    margin-top: 1em; 
