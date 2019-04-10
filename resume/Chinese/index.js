@@ -46,7 +46,7 @@ function display_books(lToBeDisplayed, bIsSelected)
 		"\" class = \"cartChoice\">";
 
 		var cellImg = row.insertCell(1);
-		strTmpImg = "<img src=\"" +
+		strTmpImg = "<img src=\"../" +
 		lToBeDisplayed[i].img +
 		"\"alt=\"Book Image\" width=\"80\" height=\"100\"/>";
 		cellImg.innerHTML = strTmpImg;
