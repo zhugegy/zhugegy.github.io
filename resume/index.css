@@ -33,7 +33,9 @@ div#listBox {
 }
 
 
-div#searchBox { margin-top: 1em; }
+div#searchBox { 
+   margin-top: 1em; 
+}
 div#listBox { 
    margin-top: 1em; 
    background-color: #FAFCFF;
