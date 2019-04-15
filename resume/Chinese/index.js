@@ -48,7 +48,7 @@ function display_books(lToBeDisplayed, bIsSelected)
 		var cellImg = row.insertCell(1);
 		strTmpImg = "<img src=\"../" +
 		lToBeDisplayed[i].img +
-		"\"alt=\"Book Image\" width=\"80\" height=\"100\"/>";
+		"\"alt=\"Book Image\" max-width=\"100%\" height=\"100\"/>";
 		cellImg.innerHTML = strTmpImg;
 
 		var cellTitle = row.insertCell(2);
