@@ -11,7 +11,7 @@ body {
 
 div#searchBox {
    margin: 0.25em auto;
-   
+
    background-image: url('https://zhugegy.github.io/resume/images/banner.png');
    background-color: #cccccc;
    background-size: 100% 100%;
@@ -33,29 +33,31 @@ div#listBox {
 }
 
 
-div#searchBox { 
-   margin-top: 1em; 
+div#searchBox {
+   margin-top: 1em;
 }
-div#listBox { 
-   margin-top: 1em; 
+div#listBox {
+   margin-top: 1em;
    background-color: #FAFCFF;
    }
 
 table {
-   border: collapse; 
+   border: collapse;
    border-spacing: 0;
-   
+
+   width: 80%;
+
 }
 
 table tbody td{
-   border-top: 1pt solid #95BEF0;   
+   border-top: 1pt solid #95BEF0;
    line-height: 1.5em;
    vertical-align: middle;
    padding: 0.5em 0.75em;
 }
 table thead th {
    text-align: left;
-   padding: 0.25em 0.75em; 
+   padding: 0.25em 0.75em;
 }
 table thead {
    background-color: #EBF4FB ;
@@ -63,12 +65,12 @@ table thead {
 
 table tbody td:first-child  {
    text-align: center;
-   padding: 0.5em 0em;   
+   padding: 0.5em 0em;
 }
 
 caption {
    background-color: #95BEF0;
-      padding: 0.5em 0.5em; 
+      padding: 0.5em 0.5em;
       font-weight: bold;
       font-size: 1.2em;
 }
