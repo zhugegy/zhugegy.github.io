@@ -19,17 +19,17 @@ div#searchBox {
    background-position: center center;
    height: 240px;
 
-   padding: 1em;
-   border: 1pt solid #95BEF0;
-   width: 80%;
+   //padding: 1em;
+   //border: 1pt solid #95BEF0;
+   width: 90%;
 }
 
 div#listBox {
    margin: 0.25em auto;
    background-color: #EBF4FB;
-   padding: 1em;
-   border: 1pt solid #95BEF0;
-   width: 80%;
+   //padding: 1em;
+   //border: 1pt solid #95BEF0;
+   width: 90%;
 }
 
 
