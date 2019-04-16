@@ -9,8 +9,8 @@ body {
 }
 
 
-div#searchBox {
-   margin: 0.25em auto;
+div#menuBox {
+   margin: 0em auto;
 
    background-image: url('https://zhugegy.github.io/resume/images/banner.png');
    background-color: #cccccc;
@@ -25,9 +25,9 @@ div#searchBox {
 }
 
 div#listBox {
-   margin: 0.25em auto;
+   margin: 0em auto;
    //padding: 1em;
-   //border: 1pt solid #95BEF0;
+   border-top: 0.5pt solid #020b17d9;
    width: 90%;
 
    background-image: url("images/content_background.png");
@@ -38,7 +38,7 @@ div#listBox {
 }
 
 
-div#searchBox {
+div#menuBox {
    margin-top: 1em;
 }
 div#listBox {

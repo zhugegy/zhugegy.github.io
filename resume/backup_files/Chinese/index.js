@@ -356,7 +356,14 @@ function getJSON(url) {
 
 function display_cart_content_num()
 {
-	
+	var nCounter = 0;
+	for (var i = 0; i < g_lnBookNum.length; i++)
+	{
+		nCounter += g_lnBookNum[i];
+	}
+
+	var num = document.getElementById("displayCartNum");
+	num.innerHTML = "(" + nCounter.toString(10) + ")";
 }
 
 window.onload = function()
@@ -364,7 +371,6 @@ window.onload = function()
 	// initialize the full book list via json reading and parsing
 	var gjson = getJSON('https://api.myjson.com/bins/182vtq') ;
 	//var gjson = getJSON('data.json') ;
-	
 	g_lBooks = JSON.parse(gjson);
 
 	// initialize the array that stores the cart book number
@@ -382,16 +388,16 @@ window.onload = function()
 
 
 	// set both "search" and "Filter" button to the same handler function
-	//document.getElementById("searchTitleButton").onclick = user_inits_search;
-	//document.getElementById("filterCategoryButton").onclick = user_inits_search;
+	document.getElementById("searchTitleButton").onclick = user_inits_search;
+	document.getElementById("filterCategoryButton").onclick = user_inits_search;
 
 	// set event function for "Add to cart" button
-	//document.getElementById("addToCartButton").onclick = user_inits_add_to_cart;
+	document.getElementById("addToCartButton").onclick = user_inits_add_to_cart;
 
 	// set event function for "Reset the cart" button
-	//document.getElementById("resetCartButton").onclick = user_inits_reset_the_cart;
+	document.getElementById("resetCartButton").onclick = user_inits_reset_the_cart;
 
 	// set event function for "Cart" button
-	//document.getElementById("displayCartButton").onclick = user_inits_cart;
+	document.getElementById("displayCartButton").onclick = user_inits_cart;
 
 }
