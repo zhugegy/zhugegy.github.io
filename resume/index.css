@@ -26,10 +26,15 @@ div#searchBox {
 
 div#listBox {
    margin: 0.25em auto;
-   background-color: #EBF4FB;
    //padding: 1em;
    //border: 1pt solid #95BEF0;
    width: 90%;
+
+   background-image: url("images/main_background.png");
+   background-size: 100% 100%;
+   background-repeat: repeat-y;
+   background-position: center center;
+   
 }
 
 
@@ -50,7 +55,7 @@ table {
 }
 
 table tbody td{
-   border-top: 1pt solid #95BEF0;
+   //border-top: 1pt solid #95BEF0;
    line-height: 1.5em;
    vertical-align: middle;
    padding: 0.5em 0.75em;
@@ -61,7 +66,7 @@ table thead th {
    padding: 0.25em 0.75em;
 }
 table thead {
-   background-color: #EBF4FB ;
+   //background-color: #EBF4FB ;
 }
 
 table tbody td:first-child  {
@@ -70,7 +75,7 @@ table tbody td:first-child  {
 }
 
 caption {
-   background-color: #95BEF0;
+   //background-color: #95BEF0;
       padding: 0.5em 0.5em;
       font-weight: bold;
       font-size: 1.2em;
