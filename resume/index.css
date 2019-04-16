@@ -30,7 +30,7 @@ div#listBox {
    //border: 1pt solid #95BEF0;
    width: 90%;
 
-   background-image: url("images/main_background.png");
+   background-image: url("images/content_background.png");
    background-size: 100% 100%;
    background-repeat: repeat-y;
    background-position: center center;
