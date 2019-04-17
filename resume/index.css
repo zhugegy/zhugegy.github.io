@@ -15,7 +15,7 @@ div#menuBox {
    background-position: center center;
 
    height: 240px;
-   width: 90%;
+   width: 85%;
 }
 
 div#contentBox {
@@ -27,7 +27,7 @@ div#contentBox {
    background-repeat: repeat-y;
    background-position: center center;
 
-   width: 90%;
+   width: 85%;
 }
 
 ul#menuItemsList {

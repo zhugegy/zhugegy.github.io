@@ -1,5 +1,5 @@
-var cons_strURLBase = "https://zhugegy.github.io/";
-var cons_strURLCur = "resume/";
+//var cons_strURLBase = "http://localhost:8000/";
+//var cons_strURLCur = "resume/";
 
 var g_curLang = "cn";
 
@@ -24,9 +24,7 @@ function getJSON(url) {
 
 function menuItems_listener()
 {
-	strId = this.id;
-	strTmpFileName = strId.slice("menu_item_".length) + "_tab_" + g_curLang;
-	$("#contentBox").load(cons_strURLBase + cons_strURLCur + "tabs/" + strTmpFileName);
+	alert(this.id);
 }
 
 function display_menu_items()
@@ -49,7 +47,7 @@ function display_menu_items()
 		menuItemsList.innerHTML += strTmpLink;
 	}
 
-	//$("#contentBox").load("https://zhugegy.github.io/resume/template_test.html");
+	$("#contentBox").load("https://zhugegy.github.io/resume/template_test.html");
 	//$("#testp").html("hello");
 	//$("#contentBox").load(cons_strURLBase + cons_strURLCur + "template_test.html");
 
