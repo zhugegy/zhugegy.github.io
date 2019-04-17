@@ -46,6 +46,8 @@ function display_menu_items()
 		menuItemsList.innerHTML += strTmpLink;
 	}
 
+	$("#contentBox").load("./template_test.html")
+
 
 }
 
