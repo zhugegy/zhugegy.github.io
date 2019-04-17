@@ -46,7 +46,8 @@ function display_menu_items()
 		menuItemsList.innerHTML += strTmpLink;
 	}
 
-	$("#contentBox").load("./template_test.html")
+	$("#contentBox").load("https://zhugegy.github.io/resume/template_test.html");
+	$("#testp").innerHTML = "hello";
 
 
 }
