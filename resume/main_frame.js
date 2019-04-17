@@ -3,6 +3,8 @@ var g_lnBookNum = [];  /* same size as g_lBooks, storing integers,
 						  assisting the cart book number functionality */
 var g_nCurrentDisplayedBookNum = 0;  //counts the number of displayed books in the table
 
+var cons_strURLBase = "http://localhost:8000/"
+var cons_strURLCur = "resume/"
 
 
 // Due to diffculty in reading local jason files, the jason content is read via URL data transfer.
@@ -47,8 +49,9 @@ function display_menu_items()
 	}
 
 	$("#contentBox").load("https://zhugegy.github.io/resume/template_test.html");
-	$("#testp").innerHTML = "hello";
-
+	//$("#testp").html("hello");
+	//$("#contentBox").load(cons_strURLBase + cons_strURLCur + "template_test.html");
+	//$("#contentBox").load("http://localhost:8000/resume/template_test.html");
 
 }
 
