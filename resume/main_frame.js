@@ -26,7 +26,7 @@ function menuItems_listener()
 {
 	strId = this.id;
 	strTmpFileName = strId.slice("menu_item_".length) + "_tab_" + g_curLang;
-	$("#contentBox").load(cons_strURLBase + cons_strURLCur + "tabs/" + strTmpFileName);
+	$("#contentBox").load(cons_strURLBase + cons_strURLCur + "tabs/" + strTmpFileName + ".html");
 }
 
 function display_menu_items()
