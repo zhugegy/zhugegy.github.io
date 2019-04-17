@@ -1,50 +1,58 @@
 /* general text formatting */
 
-h1, h2, h3, nav, footer {
- font-family: Georgia, Cambria, "Times New Roman", serif;
-}
 body {
    font-family: "Lucida Sans", Verdana, Arial, sans-serif;
    font-size: 1vw;
 }
 
-
 div#menuBox {
    margin: 0em auto;
+   margin-top: 1em;
 
    background-image: url('https://zhugegy.github.io/resume/images/banner.png');
-   background-color: #cccccc;
    background-size: 100% 100%;
    background-repeat: no-repeat;
    background-position: center center;
-   height: 240px;
 
-   //padding: 1em;
-   //border: 1pt solid #95BEF0;
+   height: 240px;
    width: 90%;
 }
 
 div#listBox {
    margin: 0em auto;
-   //padding: 1em;
    border-top: 0.5pt solid #020b17d9;
-   width: 90%;
 
    background-image: url("images/content_background.png");
    background-size: 100% 100%;
    background-repeat: repeat-y;
    background-position: center center;
-   
+
+   width: 90%;
 }
 
+ul#menuItemsList {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 
-div#menuBox {
-   margin-top: 1em;
+  position: absolute;
+  bottom: 0;
+  left: 8vw
 }
-div#listBox {
-   /*margin-top: 1em;*/
-   background-color: #FAFCFF;
-   }
+
+li.menuItem {
+  float: left;
+  padding-left:36px;
+}
+
+li.menuItem a {
+  padding: 0;
+}
+
+li.menuItem a img{
+  height:3vw;
+}
 
 table {
    border: collapse;
@@ -79,8 +87,4 @@ caption {
       padding: 0.5em 0.5em;
       font-weight: bold;
       font-size: 1.2em;
-}
-
-.floatToRight {
-      float: right;
 }
