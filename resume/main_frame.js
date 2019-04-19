@@ -22,10 +22,34 @@ function getJSON(url) {
 
 function fill_page_with_data(strDataName)
 {
+	var strLang = $('html')[0].lang;
+	var strContentPropertyName = 'content_' + strLang;
+
 	// get the data entries
-	//var jsonDataEntries = getJSON('https://api.myjson.com/bins/zw1k4');
-	var jsonDataEntries = getJSON('../data/table_contents/' + strDataName + ".json");
+	var jsonDataEntries = getJSON('https://api.myjson.com/bins/zw1k4');
+	
+	//lDataEntries = JSON.parse('../data/table_contents/' + strDataName + ".json");
 	lDataEntries = JSON.parse(jsonDataEntries);
+
+	for (var i = 0; i < lDataEntries.length; i++)
+	{
+		if(lDataEntries[i].hasOwnProperty(strContentPropertyName))
+		{
+			strContentTmp = lDataEntries[i].format.join("");
+			
+			var j = 0;
+			while (strContentTmp.indexOf('$') > -1)
+			{
+			  strToReplace = lDataEntries[i][strContentPropertyName][j];
+			  strContentTmp = strContentTmp.replace('$', strToReplace);
+			  j++;
+			}
+
+			var strTargetDivName = lDataEntries[i]["field"] + "_tobefilled";
+			document.getElementById(strTargetDivName).innerHTML += strContentTmp;
+		}
+	}
+
 }
 
 function info_table_loaded_inner_callback(strMenuItemName, response)
@@ -67,7 +91,8 @@ function display_menu_items()
 
 	// get the menu items
 	var jsonMenuItems = getJSON('https://api.myjson.com/bins/1f9ax4') ;
-	//var json = jsonMenuItems('menu_items.json') ;
+	
+	//lMenuItems = JSON.parse('../data/menu_items.json");
 	lMenuItems = JSON.parse(jsonMenuItems);
 
 	var menuItemsList = document.getElementById("menuItemsList");
