@@ -1,8 +1,6 @@
 var cons_strURLBase = "https://zhugegy.github.io/";
 var cons_strURLCur = "resume/";
 
-var g_curLang = "cn";
-
 // Due to diffculty in reading local jason files, the jason content is read via URL data transfer.
 // source: https://stackoverflow.com/questions/19440589/parsing-json-data-from-a-url
 function getJSON(url) {
@@ -22,14 +20,31 @@ function getJSON(url) {
         return resp ;
     }
 
+function fill_page_with_data(strDataName)
+{
+	// get the data entries
+	//var jsonDataEntries = getJSON('https://api.myjson.com/bins/zw1k4');
+	var jsonDataEntries = getJSON('../data/table_contents/' + strDataName + ".json");
+	lDataEntries = JSON.parse(jsonDataEntries);
+}
+
+function info_table_loaded_inner_callback(strMenuItemName, response)
+{
+	// Fill the table 
+	fill_page_with_data(strMenuItemName);
+}
+
 function menuItems_listener()
 {
-	g_curLang = $('html')[0].lang;
-
 	strId = this.id;
 	strTmpItemName = strId.slice("menu_item_".length);
 
-	$("#tabContentBox").load(cons_strURLBase + cons_strURLCur + "sub_sections/info_table.html", 
+
+	$("#infoTableBox").load(cons_strURLBase + cons_strURLCur + "sub_sections/info_table.html", 
+	function (response) {
+    info_table_loaded_inner_callback(strTmpItemName, response);
+	});
+	/*$("#infoTableBox").load(cons_strURLBase + cons_strURLCur + "sub_sections/info_table.html", 
 	function(responseTxt, statusTxt, xhr){
     if(statusTxt == "success")
     {
@@ -41,15 +56,14 @@ function menuItems_listener()
       
     if(statusTxt == "error")
       alert("Error: " + xhr.status + ": " + xhr.statusText);
-  });
+  	});*/
 	//$("#tabContentBox").load("../tabs/" + strTmpFileName + ".html");
 	//$("#tabContentBox").load("http://localhost:8000/resume/" + "tabs/" + strTmpFileName + ".html");
-	//$("#table_heading_tobefilled").innerHTML = "hi";
 }
 
 function display_menu_items()
 {
-	g_curLang = $('html')[0].lang;
+	var strLang = $('html')[0].lang;
 
 	// get the menu items
 	var jsonMenuItems = getJSON('https://api.myjson.com/bins/1f9ax4') ;
@@ -63,7 +77,7 @@ function display_menu_items()
 		//<li class="menuItem"><a href="#home">Home</a></li>
 		//<img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;border:0;">
 		strTmpLink = "<li class=\"menuItem\" id=\"" + lMenuItems[i].id + "\"><a href=\"#" + lMenuItems[i].name + "\">" + 
-		"<img src=\"../images/menu/" + lMenuItems[i].name + "_" + g_curLang + "." + lMenuItems[i].image_format + "\" alt=\"" + lMenuItems[i].name + "\"></a></li>";
+		"<img src=\"../images/menu/" + lMenuItems[i].name + "_" + strLang + "." + lMenuItems[i].image_format + "\" alt=\"" + lMenuItems[i].name + "\"></a></li>";
 
 		menuItemsList.innerHTML += strTmpLink;
 	}
@@ -79,7 +93,5 @@ function display_menu_items()
 
 window.onload = function()
 {
-	g_curLang = $('html')[0].lang;
-
 	display_menu_items()
 }
