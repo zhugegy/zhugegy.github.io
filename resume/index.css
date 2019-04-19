@@ -45,6 +45,12 @@ li.menuItem {
   float: left;
   padding-left:1vw;
   padding-right:1vw;
+  
+  /* Another approach: control the width of the li*/
+  //display:inline;
+  
+  //display: inline-block;
+  //width  : 100px;
 }
 
 li.menuItem:hover 

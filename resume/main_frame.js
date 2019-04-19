@@ -49,10 +49,6 @@ function display_menu_items()
 		menuItemsList.innerHTML += strTmpLink;
 	}
 
-	//$("#contentBox").load("https://zhugegy.github.io/resume/template_test.html");
-	//$("#testp").html("hello");
-	//$("#contentBox").load(cons_strURLBase + cons_strURLCur + "template_test.html");
-
 	// register the menu items to their corresponding tab model
 	var menuItems = document.getElementsByClassName("menuItem");
 	for (var i = 0; i < menuItems.length; i++)
@@ -65,22 +61,4 @@ function display_menu_items()
 window.onload = function()
 {
 	display_menu_items()
-	
-
-	// display the full book list (no filter restriction is set)
-
-
-	// set both "search" and "Filter" button to the same handler function
-	//document.getElementById("searchTitleButton").onclick = user_inits_search;
-	//document.getElementById("filterCategoryButton").onclick = user_inits_search;
-
-	// set event function for "Add to cart" button
-	//document.getElementById("addToCartButton").onclick = user_inits_add_to_cart;
-
-	// set event function for "Reset the cart" button
-	//document.getElementById("resetCartButton").onclick = user_inits_reset_the_cart;
-
-	// set event function for "Cart" button
-	//document.getElementById("displayCartButton").onclick = user_inits_cart;
-
 }
