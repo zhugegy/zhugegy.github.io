@@ -1,7 +1,7 @@
 var cons_strURLBase = "https://zhugegy.github.io/";
 var cons_strURLCur = "resume/";
 
-var g_curLang = "en";
+
 
 // Due to diffculty in reading local jason files, the jason content is read via URL data transfer.
 // source: https://stackoverflow.com/questions/19440589/parsing-json-data-from-a-url
@@ -27,6 +27,7 @@ function menuItems_listener()
 	strId = this.id;
 	strTmpFileName = strId.slice("menu_item_".length) + "_tab_" + g_curLang;
 	$("#tabContentBox").load(cons_strURLBase + cons_strURLCur + "tabs/" + strTmpFileName + ".html");
+	//$("#tabContentBox").load("../tabs/" + strTmpFileName + ".html");
 }
 
 function display_menu_items()
