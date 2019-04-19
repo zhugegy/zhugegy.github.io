@@ -60,6 +60,7 @@ function display_menu_items()
 
 window.onload = function()
 {
-	g_curLang = document.getElementById("menuItemsList").lang;
+	g_curLang = $('html')[0].lang;
+
 	display_menu_items()
 }
