@@ -1,8 +1,6 @@
 //var cons_strURLBase = "http://localhost:8000/";
 //var cons_strURLCur = "resume/";
 
-var g_curLang = "en";
-
 // Due to diffculty in reading local jason files, the jason content is read via URL data transfer.
 // source: https://stackoverflow.com/questions/19440589/parsing-json-data-from-a-url
 function getJSON(url) {
@@ -64,6 +62,6 @@ window.onload = function()
 {
 	g_curLang = $('html')[0].lang;
 	//var cur = document.title;
-	var divTable = document.getElementById("table_content_tobefilled");
-	divTable.innerHTML += "<tr><td>mytest</td><td>load it</td></tr>";
+	var divTable = document.getElementById("table_heading_tobefilled");
+	divTable.innerHTML += "load it!!!";
 }
