@@ -64,4 +64,6 @@ window.onload = function()
 {
 	g_curLang = $('html')[0].lang;
 	//var cur = document.title;
+	var divTable = document.getElementById("table_content_tobefilled");
+	divTable.innerHTML += "<tr><td>mytest</td><td>load it</td></tr>";
 }
