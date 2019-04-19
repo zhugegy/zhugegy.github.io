@@ -18,7 +18,7 @@ div#menuBox {
    width: 85%;
 }
 
-div#contentBox {
+div#tabContentBox {
    margin: 0em auto;
    border-top: 0.5pt solid #020b17d9;
 
@@ -46,11 +46,12 @@ li.menuItem {
   padding-left:1vw;
   padding-right:1vw;
   
-  /* Another approach: control the width of the li*/
+  /* Another approach: control the width of the li
   //display:inline;
-  
+ 
   //display: inline-block;
   //width  : 100px;
+  */
 }
 
 li.menuItem:hover 
@@ -65,41 +66,28 @@ li.menuItem a img{
   height:3vw;
 }
 
-table {
-   border: collapse;
-   border-spacing: 0;
-   border: 1px solid black;
-
-   width: 100%;
-
+.tabContentHeading {
+  font-size: 2.5vw;
+  text-align:center;
 }
 
-table tbody td{
-   //border-top: 1pt solid #95BEF0;
-   line-height: 1.5em;
-   vertical-align: middle;
-   padding: 0.5em 0.75em;
+
+table.tabContentTable, th, td{
+  margin-left: 18vw;
+  
+  width: 65vw;
+  font-size: 1.2vw;
+
+  border-collapse: collapse;
+  border-bottom: 1px solid #ddd;
+   
+  //border: 1px solid black;
 }
 
-table thead th {
-   text-align: left;
-   padding: 0.25em 0.75em;
-}
-table thead {
-   //background-color: #EBF4FB ;
+td.tabContentTable_lineTitle{
+  width: 15vw;
 }
 
-table tbody td:first-child  {
-   text-align: center;
-   padding: 0.5em 0em;
-}
-
-caption {
-   //background-color: #95BEF0;
-      padding: 0.5em 0.5em;
-      font-weight: bold;
-      font-size: 1.2em;
-}
 
 #customers {
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;

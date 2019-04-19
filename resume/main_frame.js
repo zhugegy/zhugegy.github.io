@@ -26,7 +26,7 @@ function menuItems_listener()
 {
 	strId = this.id;
 	strTmpFileName = strId.slice("menu_item_".length) + "_tab_" + g_curLang;
-	$("#contentBox").load(cons_strURLBase + cons_strURLCur + "tabs/" + strTmpFileName + ".html");
+	$("#tabContentBox").load(cons_strURLBase + cons_strURLCur + "tabs/" + strTmpFileName + ".html");
 }
 
 function display_menu_items()
@@ -40,11 +40,10 @@ function display_menu_items()
 
 	for (var i = 0; i < lMenuItems.length; i++)
 	{
-		strTmpLink = "<li class=\"menuItem\" id=\"" + lMenuItems[i].id + "\"><a href=\"#" + lMenuItems[i].name + "\">" + 
-		"<img src=\"../images/menu/" + lMenuItems[i].name + "_" + g_curLang + "." + lMenuItems[i].image_format + "\" alt=\"" + lMenuItems[i].name + "\"></a></li>";
-
 		//<li class="menuItem"><a href="#home">Home</a></li>
 		//<img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;border:0;">
+		strTmpLink = "<li class=\"menuItem\" id=\"" + lMenuItems[i].id + "\"><a href=\"#" + lMenuItems[i].name + "\">" + 
+		"<img src=\"../images/menu/" + lMenuItems[i].name + "_" + g_curLang + "." + lMenuItems[i].image_format + "\" alt=\"" + lMenuItems[i].name + "\"></a></li>";
 
 		menuItemsList.innerHTML += strTmpLink;
 	}

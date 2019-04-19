@@ -1,7 +1,7 @@
 //var cons_strURLBase = "http://localhost:8000/";
 //var cons_strURLCur = "resume/";
 
-var g_curLang = "cn";
+var g_curLang = "en";
 
 // Due to diffculty in reading local jason files, the jason content is read via URL data transfer.
 // source: https://stackoverflow.com/questions/19440589/parsing-json-data-from-a-url
@@ -62,23 +62,6 @@ function display_menu_items()
 
 window.onload = function()
 {
-	display_menu_items()
-	
-
-	// display the full book list (no filter restriction is set)
-
-
-	// set both "search" and "Filter" button to the same handler function
-	//document.getElementById("searchTitleButton").onclick = user_inits_search;
-	//document.getElementById("filterCategoryButton").onclick = user_inits_search;
-
-	// set event function for "Add to cart" button
-	//document.getElementById("addToCartButton").onclick = user_inits_add_to_cart;
-
-	// set event function for "Reset the cart" button
-	//document.getElementById("resetCartButton").onclick = user_inits_reset_the_cart;
-
-	// set event function for "Cart" button
-	//document.getElementById("displayCartButton").onclick = user_inits_cart;
-
+	g_curLang = $('html')[0].lang;
+	//var cur = document.title;
 }
