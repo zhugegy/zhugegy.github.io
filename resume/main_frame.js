@@ -25,12 +25,26 @@ function getJSON(url) {
 function menuItems_listener()
 {
 	g_curLang = $('html')[0].lang;
-	
+
 	strId = this.id;
-	strTmpFileName = strId.slice("menu_item_".length) + "_tab_" + g_curLang;
-	$("#tabContentBox").load(cons_strURLBase + cons_strURLCur + "tabs/" + strTmpFileName + ".html");
+	strTmpItemName = strId.slice("menu_item_".length);
+
+	$("#tabContentBox").load(cons_strURLBase + cons_strURLCur + "sub_sections/info_table.html", 
+	function(responseTxt, statusTxt, xhr){
+    if(statusTxt == "success")
+    {
+    	//alert("External content loaded successfully!");
+    	//$("#table_heading_tobefilled").innerHTML = "hi";
+    	var tmp = document.getElementById("table_heading_tobefilled");
+    	tmp.innerHTML = "hi";
+    }
+      
+    if(statusTxt == "error")
+      alert("Error: " + xhr.status + ": " + xhr.statusText);
+  });
 	//$("#tabContentBox").load("../tabs/" + strTmpFileName + ".html");
 	//$("#tabContentBox").load("http://localhost:8000/resume/" + "tabs/" + strTmpFileName + ".html");
+	//$("#table_heading_tobefilled").innerHTML = "hi";
 }
 
 function display_menu_items()
