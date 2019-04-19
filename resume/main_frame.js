@@ -1,7 +1,7 @@
 var cons_strURLBase = "https://zhugegy.github.io/";
 var cons_strURLCur = "resume/";
 
-var g_curLang = "cn";
+var g_curLang = "en";
 
 // Due to diffculty in reading local jason files, the jason content is read via URL data transfer.
 // source: https://stackoverflow.com/questions/19440589/parsing-json-data-from-a-url
@@ -60,5 +60,6 @@ function display_menu_items()
 
 window.onload = function()
 {
+	g_curLang = document.getElementById("menuItemsList").lang;
 	display_menu_items()
 }
