@@ -20,7 +20,7 @@ div#menuBox {
 
 div#infoTableBox {
    margin: 0em auto;
-   border-top: 0.5pt solid #020b17d9;
+   border-top: 1.8pt solid #a7a7a6;
 
    background-image: url("images/content_background.png");
    background-size: 100% 100%;
@@ -55,7 +55,7 @@ li.menuItem {
 }
 
 li.menuItem:hover 
-{background-color: #9f9f9ea8;}
+{background-color: #a7a7a6;}
 
 li.menuItem a {
   display: block;
@@ -73,43 +73,20 @@ li.menuItem a img{
 
 
 table.tabContentTable, th, td{
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
   margin-left: 18vw;
   
-  width: 65vw;
+  width: 47vw;
   font-size: 1.2vw;
+  padding: 0.6vw;
 
   border-collapse: collapse;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #a7a7a687;
    
   //border: 1px solid black;
 }
 
 td.tabContentTable_lineTitle{
   width: 15vw;
-}
-
-
-#customers {
-  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-}
-
-
-
-#customers td, #customers th {
-  border: 1px solid #ddd;
-  padding: 8px;
-}
-
-#customers tr:nth-child(even){background-color: #f2f2f2;}
-
-#customers tr:hover {background-color: #ddd;}
-
-#customers th {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: left;
-  background-color: #4CAF50;
-  color: white;
+  font-weight: bold;
 }
