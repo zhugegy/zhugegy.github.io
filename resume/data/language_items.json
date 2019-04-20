@@ -1,0 +1,17 @@
+[
+    {
+        "id":"language_item_Simplified_Chinese",
+        "link":"../Simplified-Chinese",
+        "content":"Simplified Chinese"
+    },
+    {
+        "id":"language_item_Traditional_Chinese",
+        "link":"../Traditional-Chinese",
+        "content":"Traditional Chinese"
+    },
+    {
+        "id":"language_item_English",
+        "link":"../English",
+        "content":"English"
+    }
+]

@@ -30,6 +30,40 @@ div#infoTableBox {
    width: 85%;
 }
 
+#switchLanguageDropDownMenu {
+ float:right;
+ margin-right:0.6vw; 
+ margin-top: 0.2vw; 
+}
+
+#switchLanguageDropDownMenuIcon {
+  width:2.2vw;
+}
+
+.switchLanguageDropDownContent {
+  display: none;
+  position: absolute;
+  right: 0;
+  min-width: 11.8vw;
+  font-size: 1vw;
+  box-shadow: 0.4vw 1vw 1vw 0vw rgb(193, 195, 195);
+  /* z-index: 1; */
+}
+
+.switchLanguageDropDownContent a {
+  color: #684635;
+  padding: 0.2vw 1vw;
+  text-decoration: none;
+  text-align: right;
+  display: block;
+}
+
+.switchLanguageDropDownContent a:hover {background-color: #f5f7f7;}
+
+#switchLanguageDropDownMenu:hover .switchLanguageDropDownContent {display: block;}
+/* #switchLanguageDropDownMenu:hover #switchLanguageDropDownMenuIcon {background-color: #a7a7a6;} */
+
+
 ul#menuItemsList {
   list-style-type: none;
   margin: 0;

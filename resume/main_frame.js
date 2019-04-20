@@ -26,9 +26,9 @@ function fill_page_with_data(strDataName)
 	var strContentPropertyName = 'content_' + strLang;
 
 	// get the data entries
-	var jsonDataEntries = getJSON('https://api.myjson.com/bins/zw1k4');
-	
 	//lDataEntries = JSON.parse('../data/table_contents/' + strDataName + ".json");
+
+	var jsonDataEntries = getJSON('https://api.myjson.com/bins/zw1k4');
 	lDataEntries = JSON.parse(jsonDataEntries);
 
 	for (var i = 0; i < lDataEntries.length; i++)
@@ -65,8 +65,9 @@ function menuItems_listener()
 
 
 	$("#infoTableBox").load(cons_strURLBase + cons_strURLCur + "sub_sections/info_table.html", 
-	function (response) {
-    info_table_loaded_inner_callback(strTmpItemName, response);
+	function (response) 
+	{
+    	info_table_loaded_inner_callback(strTmpItemName, response);
 	});
 	/*$("#infoTableBox").load(cons_strURLBase + cons_strURLCur + "sub_sections/info_table.html", 
 	function(responseTxt, statusTxt, xhr){
@@ -90,9 +91,8 @@ function display_menu_items()
 	var strLang = $('html')[0].lang;
 
 	// get the menu items
-	var jsonMenuItems = getJSON('https://api.myjson.com/bins/1f9ax4') ;
-	
 	//lMenuItems = JSON.parse('../data/menu_items.json");
+	var jsonMenuItems = getJSON('https://api.myjson.com/bins/1f9ax4') ;
 	lMenuItems = JSON.parse(jsonMenuItems);
 
 	var menuItemsList = document.getElementById("menuItemsList");
@@ -116,7 +116,25 @@ function display_menu_items()
 
 }
 
+function set_switch_language_drop_down_menu()
+{
+	// get the language items
+	//lMenuItems = JSON.parse('../data/language_items.json");
+	
+	var jsonLanguageItems = getJSON('https://api.myjson.com/bins/w7ev8');
+	lLanguageItems = JSON.parse(jsonLanguageItems);
+
+	var divLanguageArea = document.getElementsByClassName("switchLanguageDropDownContent")[0];
+
+	for (var i = 0; i < lLanguageItems.length; i++)
+	{
+		divLanguageArea.innerHTML += "<a href = \"" + lLanguageItems[i]["link"] + "\">" + lLanguageItems[i]["content"] + "</a>";
+	}
+}
+
+
 window.onload = function()
 {
 	display_menu_items()
+	set_switch_language_drop_down_menu()
 }
