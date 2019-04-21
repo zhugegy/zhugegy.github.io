@@ -86,19 +86,10 @@ function menuItems_listener()
 	//$("#tabContentBox").load("http://localhost:8000/resume/" + "tabs/" + strTmpFileName + ".html");
 }
 
-function display_menu_items()
+function action_after_get_menu_data(jsonData)
 {
+	var lMenuItems = jsonData;
 	var strLang = $('html')[0].lang;
-
-	// get the menu items
-	//lMenuItems = lMenuItems = JSON.parse(jsonMenuItems);'../data/menu_items.json');
-	$.getJSON('../data/menu_items.json', function(data) {      
-	//var tmp = JSON.parse(data);
-    alert(data[0]['name']);
-	});
-	//var jsonMenuItems = getJSON('https://api.myjson.com/bins/1f9ax4') ;
-	var lMenuItems = JSON.parse(jsonMenuItems);
-
 	var menuItemsList = document.getElementById("menuItemsList");
 
 	for (var i = 0; i < lMenuItems.length; i++)
@@ -118,6 +109,22 @@ function display_menu_items()
 		menuItems[i].onclick = menuItems_listener;
 	}
 
+	alert('done');
+
+}
+
+function display_menu_items()
+{
+	//remote approach
+	$.getJSON('../data/menu_items.json', function(data) {      
+		action_after_get_menu_data(data);
+	});
+	
+	//local approach (only for fast debug propose)
+
+	//var jsonMenuItems = getJSON('https://api.myjson.com/bins/1f9ax4') ;
+	//var data = JSON.parse(jsonMenuItems);
+	//action_after_get_menu_data(data);
 }
 
 function set_switch_language_drop_down_menu()
