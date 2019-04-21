@@ -136,13 +136,14 @@ function load_body_content()
 	//	  alert(text)
 	//	};
 	//reader.readAsText('../data/HTMLBodyArea.txt');
-
+	alter('1');
 	var fs = require('fs');
- 
+ 	alter('2');
 	fs.readFile('../data/HTMLBodyArea.txt', 'utf8', function(err, data) 
 		{  
 		if (err)
 		{	
+			alter('3');
 			throw err;
 		} 
 		alter(data);
