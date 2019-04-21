@@ -91,12 +91,13 @@ function display_menu_items()
 	var strLang = $('html')[0].lang;
 
 	// get the menu items
-	//lMenuItems = JSON.parse('../data/menu_items.json');
-	$.getJSON('../data/menu_items.json', function(data) {         
-    alert(data);
+	//lMenuItems = lMenuItems = JSON.parse(jsonMenuItems);'../data/menu_items.json');
+	$.getJSON('../data/menu_items.json', function(data) {      
+	var tmp = JSON.parse(data);
+    alert(tmp[0]);
 	});
 	//var jsonMenuItems = getJSON('https://api.myjson.com/bins/1f9ax4') ;
-	//lMenuItems = JSON.parse(jsonMenuItems);
+	var lMenuItems = JSON.parse(jsonMenuItems);
 
 	var menuItemsList = document.getElementById("menuItemsList");
 
