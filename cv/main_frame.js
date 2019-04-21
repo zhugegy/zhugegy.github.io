@@ -91,7 +91,10 @@ function display_menu_items()
 	var strLang = $('html')[0].lang;
 
 	// get the menu items
-	lMenuItems = JSON.parse('../data/menu_items.json');
+	//lMenuItems = JSON.parse('../data/menu_items.json');
+	$.getJSON('../data/menu_items.json', function(data) {         
+    alert(data);
+	});
 	//var jsonMenuItems = getJSON('https://api.myjson.com/bins/1f9ax4') ;
 	//lMenuItems = JSON.parse(jsonMenuItems);
 
@@ -119,7 +122,7 @@ function display_menu_items()
 function set_switch_language_drop_down_menu()
 {
 	// get the language items
-	lMenuItems = JSON.parse('../data/language_items.json');
+	lLanguageItems = JSON.parse('../data/language_items.json');
 	
 	//var jsonLanguageItems = getJSON('https://api.myjson.com/bins/w7ev8');
 	//lLanguageItems = JSON.parse(jsonLanguageItems);
