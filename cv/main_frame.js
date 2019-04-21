@@ -1,7 +1,7 @@
 var cons_strURLBase = "https://zhugegy.github.io/";
 var cons_strURLCur = "cv/";
 
-var cons_isDebug = false;
+var cons_isDebug = true;
 
 // Due to diffculty in reading local jason files, the jason content is read via URL data transfer.
 // source: https://stackoverflow.com/questions/19440589/parsing-json-data-from-a-url
@@ -128,9 +128,36 @@ function action_with_table_content_data(jsonData)
 	}
 }
 
+function load_body_content()
+{
+	//var reader = new FileReader();
+	//reader.onload = function(){
+	//	  var text = reader.result;
+	//	  alert(text)
+	//	};
+	//reader.readAsText('../data/HTMLBodyArea.txt');
+
+	var fs = require('fs');
+ 
+	fs.readFile('../data/HTMLBodyArea.txt', 'utf8', function(err, data) 
+		{  
+		if (err)
+		{	
+			throw err;
+		} 
+		alter(data);
+		});
+
+	var bodyArea = document.getElementsByTagName('body')[0];
+
+}
+
 // entry point
 window.onload = function()
 {
+	load_body_content()
+
+
 	//display menu
 	if (cons_isDebug)
 	{
