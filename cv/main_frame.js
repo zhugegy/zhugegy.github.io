@@ -26,10 +26,10 @@ function fill_page_with_data(strDataName)
 	var strContentPropertyName = 'content_' + strLang;
 
 	// get the data entries
-	//lDataEntries = JSON.parse('../data/table_contents/' + strDataName + ".json");
+	lDataEntries = JSON.parse('../data/table_contents/' + strDataName + '.json');
 
-	var jsonDataEntries = getJSON('https://api.myjson.com/bins/zw1k4');
-	lDataEntries = JSON.parse(jsonDataEntries);
+	//var jsonDataEntries = getJSON('https://api.myjson.com/bins/zw1k4');
+	//lDataEntries = JSON.parse(jsonDataEntries);
 
 	for (var i = 0; i < lDataEntries.length; i++)
 	{
@@ -91,9 +91,9 @@ function display_menu_items()
 	var strLang = $('html')[0].lang;
 
 	// get the menu items
-	//lMenuItems = JSON.parse('../data/menu_items.json");
-	var jsonMenuItems = getJSON('https://api.myjson.com/bins/1f9ax4') ;
-	lMenuItems = JSON.parse(jsonMenuItems);
+	lMenuItems = JSON.parse('../data/menu_items.json');
+	//var jsonMenuItems = getJSON('https://api.myjson.com/bins/1f9ax4') ;
+	//lMenuItems = JSON.parse(jsonMenuItems);
 
 	var menuItemsList = document.getElementById("menuItemsList");
 
@@ -119,10 +119,10 @@ function display_menu_items()
 function set_switch_language_drop_down_menu()
 {
 	// get the language items
-	//lMenuItems = JSON.parse('../data/language_items.json");
+	lMenuItems = JSON.parse('../data/language_items.json');
 	
-	var jsonLanguageItems = getJSON('https://api.myjson.com/bins/w7ev8');
-	lLanguageItems = JSON.parse(jsonLanguageItems);
+	//var jsonLanguageItems = getJSON('https://api.myjson.com/bins/w7ev8');
+	//lLanguageItems = JSON.parse(jsonLanguageItems);
 
 	var divLanguageArea = document.getElementsByClassName("switchLanguageDropDownContent")[0];
 

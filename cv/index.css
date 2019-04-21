@@ -9,7 +9,7 @@ div#menuBox {
    margin: 0em auto;
    margin-top: 1em;
 
-   background-image: url('https://zhugegy.github.io/resume/images/banner.png');
+   background-image: url('https://zhugegy.github.io/cv/images/banner.png');
    background-size: 100% 100%;
    background-repeat: no-repeat;
    background-position: center center;
@@ -42,7 +42,7 @@ div#infoTableBox {
 
     border:none;
     background-color: Transparent;
-    background-image: url('https://zhugegy.github.io/resume/images/switch_language.png');
+    background-image: url('https://zhugegy.github.io/cv/images/switch_language.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center center;
@@ -71,7 +71,7 @@ div#infoTableBox {
 #switchLanguageDropDownMenu:hover .switchLanguageDropDownContent {display: block;}
 
 #switchLanguageDropDownMenu:hover #switchLanguageDropDownMenuIcon {
-  background-image: url('https://zhugegy.github.io/resume/images/switch_language_hover.png');
+  background-image: url('https://zhugegy.github.io/cv/images/switch_language_hover.png');
   }
 
 
