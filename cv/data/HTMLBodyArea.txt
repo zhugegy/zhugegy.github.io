@@ -1,7 +1,8 @@
 <div id="menuBox">
   <div id="switchLanguageDropDownMenu">
-  <button id="switchLanguageDropDownMenuIcon" type="button"></button>
-  <div class="switchLanguageDropDownContent"></div>
+      <button id="switchLanguageDropDownMenuIcon" type="button"></button>
+      <div class="switchLanguageDropDownContent">
+      </div>
   </div>
 
    <ul id="menuItemsList"></ul>
