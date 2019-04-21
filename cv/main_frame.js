@@ -173,5 +173,6 @@ function load_body_content()
 // entry point
 window.onload = function()
 {
-	load_body_content()
+	//load_body_content()
+	action_after_body_is_loaded();
 }
