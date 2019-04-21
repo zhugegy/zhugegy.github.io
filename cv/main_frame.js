@@ -93,8 +93,8 @@ function display_menu_items()
 	// get the menu items
 	//lMenuItems = lMenuItems = JSON.parse(jsonMenuItems);'../data/menu_items.json');
 	$.getJSON('../data/menu_items.json', function(data) {      
-	var tmp = JSON.parse(data);
-    alert(tmp[0]);
+	//var tmp = JSON.parse(data);
+    alert(data[0]['name']);
 	});
 	//var jsonMenuItems = getJSON('https://api.myjson.com/bins/1f9ax4') ;
 	var lMenuItems = JSON.parse(jsonMenuItems);
