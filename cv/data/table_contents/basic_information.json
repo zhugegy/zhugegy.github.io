@@ -29,8 +29,8 @@
           "</tr>"
                   ],
         "layout": ["birthday:", "birthday"],
-        "content_zh-Hans":["出生年月", "1991年6月"],
+        "content_zh-Hans":["出生年", "1991年"],
         "content_zh-Hant":["null", "null"],
-        "content_en":["Time of Birth", "June 1991"]
+        "content_en":["Year of Birth", "1991"]
     }
 ]

@@ -1,5 +1,5 @@
 var cons_strURLBase = "https://zhugegy.github.io/";
-var cons_strURLCur = "resume/";
+var cons_strURLCur = "cv/";
 
 // Due to diffculty in reading local jason files, the jason content is read via URL data transfer.
 // source: https://stackoverflow.com/questions/19440589/parsing-json-data-from-a-url
