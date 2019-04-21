@@ -37,7 +37,15 @@ div#infoTableBox {
 }
 
 #switchLanguageDropDownMenuIcon {
-  width:2.2vw;
+    height: 2.2vw;  
+    width: 2.2vw;
+
+    border:none;
+    background-color: Transparent;
+    background-image: url('https://zhugegy.github.io/resume/images/switch_language.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 .switchLanguageDropDownContent {
@@ -61,7 +69,10 @@ div#infoTableBox {
 .switchLanguageDropDownContent a:hover {background-color: #f5f7f7;}
 
 #switchLanguageDropDownMenu:hover .switchLanguageDropDownContent {display: block;}
-/* #switchLanguageDropDownMenu:hover #switchLanguageDropDownMenuIcon {background-color: #a7a7a6;} */
+
+#switchLanguageDropDownMenu:hover #switchLanguageDropDownMenuIcon {
+  background-image: url('https://zhugegy.github.io/resume/images/switch_language_hover.png');
+  }
 
 
 ul#menuItemsList {
