@@ -130,25 +130,23 @@ function action_with_table_content_data(jsonData)
 
 function load_body_content()
 {
-	//var reader = new FileReader();
-	//reader.onload = function(){
-	//	  var text = reader.result;
-	//	  alert(text)
-	//	};
-	//reader.readAsText('../data/HTMLBodyArea.txt');
-	alert('1');
-	var fs = require('fs');
- 	alert('2');
-	fs.readFile('../data/HTMLBodyArea.txt', 'utf8', function(err, data) 
-		{  
-		if (err)
-		{	
-			alert('3');
-			throw err;
-		} 
-		alert(data);
-		});
+	var request = new XMLHttpRequest();
+	request.open('GET', '../data/HTMLBodyArea.txt', true);
+	request.responseType = 'blob';
+	request.onload = function() {
+		alert('01');
+		var reader = new FileReader();
+		reader.readAsText(request.response);
+		reader.onload =  function(e){
+			alert(e.target.result);
+		};
+	};
+	alert('0');
+	request.send();
 
+
+	alert('1');
+	
 	var bodyArea = document.getElementsByTagName('body')[0];
 
 }
@@ -156,7 +154,7 @@ function load_body_content()
 // entry point
 window.onload = function()
 {
-	
+
 	load_body_content()
 
 
