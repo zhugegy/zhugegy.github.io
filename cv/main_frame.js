@@ -136,17 +136,17 @@ function load_body_content()
 	//	  alert(text)
 	//	};
 	//reader.readAsText('../data/HTMLBodyArea.txt');
-	alter('1');
+	alert('1');
 	var fs = require('fs');
- 	alter('2');
+ 	alert('2');
 	fs.readFile('../data/HTMLBodyArea.txt', 'utf8', function(err, data) 
 		{  
 		if (err)
 		{	
-			alter('3');
+			alert('3');
 			throw err;
 		} 
-		alter(data);
+		alert(data);
 		});
 
 	var bodyArea = document.getElementsByTagName('body')[0];
@@ -156,6 +156,7 @@ function load_body_content()
 // entry point
 window.onload = function()
 {
+	
 	load_body_content()
 
 
