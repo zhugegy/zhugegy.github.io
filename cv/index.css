@@ -14,6 +14,8 @@ div#menuBox {
    background-repeat: no-repeat;
    background-position: center center;
 
+   position: relative;
+
    height: 18vw;
    width: 85%;
 }
@@ -88,7 +90,7 @@ ul#menuItemsList {
 
   position: absolute;
   bottom: 0;
-  left: 8vw
+  left: 8vw;
 }
 
 li.menuItem {

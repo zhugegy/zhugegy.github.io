@@ -1,7 +1,7 @@
 var cons_strURLBase = "https://zhugegy.github.io/";
 var cons_strURLCur = "cv/";
 
-var cons_isDebug = true;
+var cons_isDebug = false;
 
 // Due to diffculty in reading local jason files, the jason content is read via URL data transfer.
 // source: https://stackoverflow.com/questions/19440589/parsing-json-data-from-a-url
@@ -128,7 +128,7 @@ function action_with_table_content_data(jsonData)
 	}
 }
 
-function action_after_body_is_loaded()
+function load_body_content()
 {
 	//display menu
 	if (cons_isDebug)
@@ -150,12 +150,16 @@ function action_after_body_is_loaded()
 	{
 		fetch_data_and_render('../data/language_items.json', action_with_language_switch_data);	
 	}	
+
+	// add ripples effect
+    $('#menuBox').ripples({esolution: 512, dropRadius: 20, perturbance: 0.04});
+
 }
 
-function load_body_content()
+function load_body_backbone_structure()
 {
 	var request = new XMLHttpRequest();
-	request.open('GET', '../data/HTMLBodyArea.txt', true);
+	request.open('GET', '../HTMLBodyBackbone/HTMLBodyBackbone.txt', true);
 	request.responseType = 'blob';
 	request.onload = function() {
 		var reader = new FileReader();
@@ -163,7 +167,8 @@ function load_body_content()
 		reader.onload =  function(e){
 			var bodyArea = document.getElementsByTagName('body')[0];
 			bodyArea.innerHTML = e.target.result;
-			action_after_body_is_loaded();
+			
+			load_body_content();
 		};
 	};
 	request.send();
@@ -173,6 +178,6 @@ function load_body_content()
 // entry point
 window.onload = function()
 {
-	//load_body_content()
-	action_after_body_is_loaded();
+	load_body_backbone_structure()
+	//load_body_content();
 }
