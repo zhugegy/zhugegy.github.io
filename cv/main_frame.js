@@ -167,7 +167,7 @@ function load_body_backbone_structure()
 		reader.onload =  function(e){
 			var bodyArea = document.getElementsByTagName('body')[0];
 			bodyArea.innerHTML = e.target.result;
-			
+
 			load_body_content();
 		};
 	};
@@ -178,6 +178,8 @@ function load_body_backbone_structure()
 // entry point
 window.onload = function()
 {
-	load_body_backbone_structure()
-	//load_body_content();
+	load_body_backbone_structure();
+
+	// only for debug propose, when body backbone is embeded statically in HTML file rather than loaded dynamically.
+	//load_body_content()
 }
