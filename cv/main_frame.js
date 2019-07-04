@@ -2,6 +2,7 @@ var cons_strURLBase = "https://zhugegy.github.io/";
 var cons_strURLCur = "cv/";
 
 var cons_isDebug = false;
+//var cons_isDebug = true;
 
 // Due to diffculty in reading local jason files, the jason content is read via URL data transfer.
 // source: https://stackoverflow.com/questions/19440589/parsing-json-data-from-a-url
@@ -42,7 +43,7 @@ function info_table_loaded_inner_callback(strMenuItemName, response)
 {
 	// (optional) do something with the response (a html file with just an empty table)
 
-	// Fill in the table 
+	// Fill in the table
 	if (cons_isDebug)
 	{
 		__fetch_data_and_render('https://api.myjson.com/bins/zw1k4', action_with_table_content_data);
@@ -50,7 +51,7 @@ function info_table_loaded_inner_callback(strMenuItemName, response)
 	else
 	{
 		fetch_data_and_render('../data/table_contents/' + strMenuItemName + '.json', action_with_table_content_data);
-	}	
+	}
 }
 
 function menuItems_listener()
@@ -58,10 +59,10 @@ function menuItems_listener()
 	strId = this.id;
 	strTmpItemName = strId.slice("menu_item_".length);
 
-	// Load the content of the infoTableBox section. 
+	// Load the content of the infoTableBox section.
 	// Content is initially empty, which will be filled in the callback function with the proper data according to strTmpItemName.
-	$("#infoTableBox").load(cons_strURLBase + cons_strURLCur + "sub_sections/info_table.html", 
-							function (response) 
+	$("#infoTableBox").load(cons_strURLBase + cons_strURLCur + "sub_sections/info_table.html",
+							function (response)
 							{
 								info_table_loaded_inner_callback(strTmpItemName, response);
 							} );
@@ -77,7 +78,7 @@ function action_with_menu_data(jsonData)
 	{
 		//<li class="menuItem"><a href="#home">Home</a></li>
 		//<img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;border:0;">
-		strTmpLink = "<li class=\"menuItem\" id=\"" + lMenuItems[i].id + "\"><a href=\"#" + lMenuItems[i].name + "\">" + 
+		strTmpLink = "<li class=\"menuItem\" id=\"" + lMenuItems[i].id + "\"><a href=\"#" + lMenuItems[i].name + "\">" +
 		"<img src=\"../images/menu/" + lMenuItems[i].name + "_" + strLang + "." + lMenuItems[i].image_format + "\" alt=\"" + lMenuItems[i].name + "\"></a></li>";
 
 		menuItemsList.innerHTML += strTmpLink;
@@ -113,7 +114,7 @@ function action_with_table_content_data(jsonData)
 		if(lDataEntries[i].hasOwnProperty(strContentPropertyName))
 		{
 			strContentTmp = lDataEntries[i].format.join("");
-			
+
 			var j = 0;
 			while (strContentTmp.indexOf('$') > -1)
 			{
@@ -133,23 +134,23 @@ function load_body_content()
 	//display menu
 	if (cons_isDebug)
 	{
-		__fetch_data_and_render('https://api.myjson.com/bins/1f9ax4', action_with_menu_data);	
+		__fetch_data_and_render('https://api.myjson.com/bins/1f9ax4', action_with_menu_data);
 	}
 	else
 	{
-		fetch_data_and_render('../data/menu_items.json', action_with_menu_data);	
-	}	
-	
-	
-	//display language switch 
+		fetch_data_and_render('../data/menu_items.json', action_with_menu_data);
+	}
+
+
+	//display language switch
 	if (cons_isDebug)
 	{
-		__fetch_data_and_render('https://api.myjson.com/bins/w7ev8', action_with_language_switch_data);	
+		__fetch_data_and_render('https://api.myjson.com/bins/w7ev8', action_with_language_switch_data);
 	}
 	else
 	{
-		fetch_data_and_render('../data/language_items.json', action_with_language_switch_data);	
-	}	
+		fetch_data_and_render('../data/language_items.json', action_with_language_switch_data);
+	}
 
 	// add ripples effect
     $('#menuBox').ripples({esolution: 512, dropRadius: 20, perturbance: 0.04});
@@ -172,7 +173,7 @@ function load_body_backbone_structure()
 		};
 	};
 	request.send();
-	
+
 }
 
 // entry point
