@@ -46,7 +46,7 @@ function info_table_loaded_inner_callback(strMenuItemName, response)
 	// Fill in the table
 	if (cons_isDebug)
 	{
-		__fetch_data_and_render('https://api.myjson.com/bins/zw1k4', action_with_table_content_data);
+		__fetch_data_and_render('https://api.myjson.com/bins/12tz0v', action_with_table_content_data);
 	}
 	else
 	{
@@ -127,6 +127,23 @@ function action_with_table_content_data(jsonData)
 			document.getElementById(strTargetDivName).innerHTML += strContentTmp;
 		}
 	}
+
+	$(".clickabletr").click(function ()
+		{
+			var strHiddenID = "#" + this.id + "Hidden";
+			var strShownID = "#" + this.id + "Shown";
+			if ($(strHiddenID).is(":hidden"))
+			{
+		    //$(strHiddenID).slideDown("slow");
+				$(strHiddenID).show();
+				$(strShownID).hide();
+  		}
+			else
+			{
+				$(strShownID).show();
+		    $(strHiddenID).hide();
+  		}
+		});
 }
 
 function load_body_content()
@@ -145,7 +162,7 @@ function load_body_content()
 	//display language switch
 	if (cons_isDebug)
 	{
-		__fetch_data_and_render('https://api.myjson.com/bins/w7ev8', action_with_language_switch_data);
+		__fetch_data_and_render('https://api.myjson.com/bins/18ee2j', action_with_language_switch_data);
 	}
 	else
 	{

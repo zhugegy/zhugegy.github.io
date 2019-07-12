@@ -2,12 +2,12 @@
     {
         "id":"language_item_Simplified_Chinese",
         "link":"../Simplified-Chinese",
-        "content":"Simplified Chinese"
+        "content":"简体中文"
     },
     {
         "id":"language_item_Traditional_Chinese",
         "link":"../Traditional-Chinese",
-        "content":"Traditional Chinese"
+        "content":"繁體中文"
     },
     {
         "id":"language_item_English",

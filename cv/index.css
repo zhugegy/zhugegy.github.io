@@ -1,7 +1,7 @@
 /* general text formatting */
 
 body {
-   font-family: "Lucida Sans", Verdana, Arial, sans-serif;
+   font-family: Calibri, Avenir, Constantia, sans-serif, "Trebuchet MS", Helvetica, Arial, STFangsong;
    font-size: 1vw;
 }
 
@@ -34,8 +34,8 @@ div#infoTableBox {
 
 #switchLanguageDropDownMenu {
  float:right;
- margin-right:0.6vw; 
- margin-top: 0.2vw; 
+ margin-right:0.6vw;
+ margin-top: 0.2vw;
 }
 
 #switchLanguageDropDownMenuIcon {
@@ -97,16 +97,16 @@ li.menuItem {
   float: left;
   padding-left:1vw;
   padding-right:1vw;
-  
+
   /* Another approach: control the width of the li
   //display:inline;
- 
+
   //display: inline-block;
   //width  : 100px;
   */
 }
 
-li.menuItem:hover 
+li.menuItem:hover
 {background-color: #a7a7a6;}
 
 li.menuItem a {
@@ -119,26 +119,109 @@ li.menuItem a img{
 }
 
 .tabContentHeading {
-  font-size: 2.5vw;
+  font-size: 1.8vw;
   margin-left: 18vw;
 }
 
 
 table.tabContentTable, th, td{
-  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
   margin-left: 18vw;
-  
+
   width: 47vw;
-  font-size: 1.2vw;
-  padding: 0.6vw;
+  font-size: 1vw;
+  padding: 0.2vw;
 
   border-collapse: collapse;
-  border-bottom: 1px solid #a7a7a687;
-   
+  border-bottom: 1px solid rgb(167, 167, 167);
+
+  border-bottom: 1px solid rgba(167, 167, 167, .15);
+  -webkit-background-clip: padding-box; /* for Safari */
+  background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+
   //border: 1px solid black;
 }
 
 td.tabContentTable_lineTitle{
   width: 15vw;
   font-weight: bold;
+}
+
+tr.hiddentr {
+    display: none;
+  }
+
+.hiddenspan {
+  display: none;
+}
+
+tr td img {
+    width: 10px;
+  }
+
+#WeChatQRImage {
+  width: 20vw;
+}
+
+td.intensiveInfo {
+  font-size: 0.8vw;
+}
+
+.tableHeadingNotes {
+  font-size: 1vw;
+  font-weight: normal;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    //border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    //background-color: #555555;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltipimg
+{
+    width:23vw;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .tooltip .tooltiptext {
+        margin-left: 5px;
+    }
+
+    .tooltip .tooltiptext::after {
+        margin-left: 5px;
+    }
 }
