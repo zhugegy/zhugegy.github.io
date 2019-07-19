@@ -5,11 +5,14 @@ body {
    font-size: 1vw;
 }
 
+body:lang(zh-Hant) 	{font-family:STFangsong, Calibri, Avenir, Constantia, sans-serif, "Trebuchet MS", Helvetica, Arial;}
+body:lang(zh-Hans) 	{font-family:STFangsong, Calibri, Avenir, Constantia, sans-serif, "Trebuchet MS", Helvetica, Arial;}
+
 div#menuBox {
    margin: 0em auto;
    margin-top: 1em;
 
-   background-image: url('https://zhugegy.github.io/cv/images/banner.png');
+   background-image: url("images/banner.jpg");
    background-size: 100% 100%;
    background-repeat: no-repeat;
    background-position: center center;
@@ -24,7 +27,7 @@ div#infoTableBox {
    margin: 0em auto;
    border-top: 1.8pt solid #a7a7a6;
 
-   background-image: url("images/content_background.png");
+   background-image: url("images/content_background.jpg");
    background-size: 100% 100%;
    background-repeat: repeat-y;
    background-position: center center;
@@ -146,6 +149,12 @@ td.tabContentTable_lineTitle{
   font-weight: bold;
 }
 
+td.tabContentTable_lineTitleBigger{
+  width: 15vw;
+  font-weight: bold;
+  font-size: 1.8vw;
+}
+
 tr.hiddentr {
     display: none;
   }
@@ -213,6 +222,25 @@ td.intensiveInfo {
 .tooltip:hover .tooltiptext {
     visibility: visible;
     opacity: 1;
+}
+
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: initial;
+    padding-left: 0.3vw;
+    padding-right: 0.3vw;
+    margin-right: 0.4vw;
+}
+
+a.button:lang(zh-Hant) 	{padding:0.2vw;}
+a.button:lang(zh-Hans) 	{padding:0.2vw;}
+
+a.button:hover {
+    opacity: 0.65;
 }
 
 @media only screen and (max-width: 768px) {

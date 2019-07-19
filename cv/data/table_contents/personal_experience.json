@@ -1,0 +1,365 @@
+[
+    {
+        "notes":""
+    },
+    {
+        "field":"table_content",
+        "format": [
+          "<tr>",
+          "<td class=\"tabContentTable_lineTitleBigger\" colspan=\"2\">$</td>",
+          "</tr>"
+                  ],
+        "layout-for-human-read": ["Education Section"],
+        "content_zh-Hans":["<br>教育经历"],
+        "content_zh-Hant":["null"],
+        "content_en":["<br>Education"]
+    },
+    {
+        "field":"table_content",
+        "format": [
+          "<tr>",
+          "<td class=\"tabContentTable_lineTitle\">$</td><td>$</td>",
+          "</tr>"
+                  ],
+        "layout-for-human-read": ["time line", "Education experience"],
+        "content_zh-Hans":["2018年3月 - 现在", "<b>IT和IT管理硕士，悉尼大学，澳大利亚</b>"],
+        "content_zh-Hant":["null", "null"],
+        "content_en":["Mar 2018 - now", "<b>MSc student of IT and IT Management, University of Sydney, Australia</b>"]
+    },
+    {
+        "field":"table_content",
+        "format": [
+          "<tr>",
+          "<td class=\"tabContentTable_lineTitle\">$</td><td>$</td>",
+          "</tr>"
+                  ],
+        "layout-for-human-read": ["void", "Education experience continued"],
+        "content_zh-Hans":["", "<small>预期2019年12月毕业。</small>"],
+        "content_zh-Hant":["", "null"],
+        "content_en":["", "<small>Diploma expected in Dec 2019.</small>"]
+    },
+    {
+        "field":"table_content",
+        "format": [
+          "<tr>",
+          "<td class=\"tabContentTable_lineTitle\">$</td><td>$</td>",
+          "</tr>"
+                  ],
+        "layout-for-human-read": ["void", "Education experience continued"],
+        "content_zh-Hans":["", "<small>在“Java程序设计”和“Web程序设计”两门课程中获得优秀(High Distinction, HD)。</small>"],
+        "content_zh-Hant":["", "null"],
+        "content_en":["", "<small>High Distinction (HD) in Software Development in Java and Web Application Development.</small>"]
+    },
+    {
+        "field":"table_content",
+        "format": [
+          "<tr>",
+          "<td class=\"tabContentTable_lineTitle\">$</td><td><a href=\"$\" class=\"button\" target=\"_blank\">$</a></td>",
+          "</tr>"
+                  ],
+        "layout-for-human-read": ["void", "Education experience continued"],
+        "content_zh-Hans":["", "https://sydney.edu.au/courses/courses/pc/master-of-information-technology-and-master-of-information-technology-management.html", "<small>教学内容链接</small>"],
+        "content_zh-Hant":["", "null"],
+        "content_en":["", "https://sydney.edu.au/courses/courses/pc/master-of-information-technology-and-master-of-information-technology-management.html", "<small>Programme Link</small>"]
+    },
+    {
+        "field":"table_content",
+        "format": [
+          "<tr>",
+          "<td class=\"tabContentTable_lineTitle\">$</td><td>$</td>",
+          "</tr>"
+                  ],
+        "layout-for-human-read": ["time line", "Education experience"],
+        "content_zh-Hans":["2013年9月 - 2016年6月", "<b>网络安全硕士，塔林理工大学，爱沙尼亚</b>"],
+        "content_zh-Hant":["null", "null"],
+        "content_en":["Sep 2013 - Jun 2016", "<b>MSc student of Cyber Security, Tallinn University of Technology, Estonia</b>"]
+    },
+    {
+        "field":"table_content",
+        "format": [
+          "<tr>",
+          "<td class=\"tabContentTable_lineTitle\">$</td><td>$</td>",
+          "</tr>"
+                  ],
+        "layout-for-human-read": ["void", "Education experience continued"],
+        "content_zh-Hans":["", "<small>免学费，并额外收到学校的3000欧元奖学金。</small>"],
+        "content_zh-Hant":["", "null"],
+        "content_en":["", "<small>Tuition fee free. Granted 3,000 Euro scholarship by university.</small>"]
+    },
+    {
+        "field":"table_content",
+        "format": [
+          "<tr>",
+          "<td class=\"tabContentTable_lineTitle\">$</td><td>$</td>",
+          "</tr>"
+                  ],
+        "layout-for-human-read": ["void", "Education experience continued"],
+        "content_zh-Hans":["", "<small>荣誉毕业(绩点 4.77/5; 完成了122学分，共24门课程)。</small>"],
+        "content_zh-Hant":["", "null"],
+        "content_en":["", "<small>Graduated with cum laude (GPA 4.77/5; 122 credits, 24 courses completed).</small>"]
+    },
+    {
+        "field":"table_content",
+        "format": [
+          "<tr>",
+          "<td class=\"tabContentTable_lineTitle\">$</td><td>$<a href=\"$\" target=\"_blank\">$</a> <a href=\"$\" target=\"_blank\">$</a></td>",
+          "</tr>"
+                  ],
+        "layout-for-human-read": ["void", "Education experience continued"],
+        "content_zh-Hans":["", "<small>在2017年IEEE第3次云端大数据安全会议发表论文。</small>", "https://ieeexplore.ieee.org/document/7980352", "<small>IEEE收录</small>", "http://ristov.github.io/publications/ids17-logclusterc-web.pdf", "<small>内容(pdf)</small>"],
+        "content_zh-Hant":["", "null"],
+        "content_en":["", "<small>Published paper at the 2017 IEEE International Conference on Big Data Security on Cloud. </small>", "https://ieeexplore.ieee.org/document/7980352", "<small>IEEE Entry</small>", "http://ristov.github.io/publications/ids17-logclusterc-web.pdf", "<small>Paper Content (pdf)</small>"]
+    },
+    {
+        "field":"table_content",
+        "format": [
+          "<div id=\"$\" class=\"modal\">",
+          "<span class=\"close cursor\" onclick=\"closeModal('$')\">&times;</span>",
+          "<div class=\"modal-content\">",
+          "<div class=\"modalSlides\"><div class=\"numbertext\">$</div><img src=\"$\" class=\"$\"></div>",
+          "<div class=\"modalSlides\"><div class=\"numbertext\">$</div><img src=\"$\" class=\"$\"></div>",
+          "<div class=\"modalSlides\"><div class=\"numbertext\">$</div><img src=\"$\" class=\"$\"></div>",
+          "<div class=\"modalSlides\"><div class=\"numbertext\">$</div><img src=\"$\" class=\"$\"></div>",
+          "<div class=\"modalSlides\"><div class=\"numbertext\">$</div><img src=\"$\" class=\"$\"></div>",
+          "<div class=\"modalSlides\"><div class=\"numbertext\">$</div><img src=\"$\" class=\"$\"></div>",
+          "<div class=\"modalSlides\"><div class=\"numbertext\">$</div><img src=\"$\" class=\"$\"></div>",
+          "<div class=\"modalSlides\"><div class=\"numbertext\">$</div><img src=\"$\" class=\"$\"></div>",
+          "<a class=\"prevSlide\" onclick=\"plusSlides(-1);return false;\">&#10094;</a>",
+          "<a class=\"nextSlide\" onclick=\"plusSlides(1);return false;\">&#10095;</a>",
+          "<div class=\"caption-containerModal\"><p id=\"captionModal$\"></p></div>",
+          "<div class=\"thumbnailContainerModal\">",
+          "<div class=\"columnThumbnail\"><img class=\"demoThumbnail\" src=\"$\" onclick=\"currentSlide(1);\" data-caption=\"$\"></div>",
+          "<div class=\"columnThumbnail\"><img class=\"demoThumbnail\" src=\"$\" onclick=\"currentSlide(2);\" data-caption=\"$\"></div>",
+          "<div class=\"columnThumbnail\"><img class=\"demoThumbnail\" src=\"$\" onclick=\"currentSlide(3);\" data-caption=\"$\"></div>",
+          "<div class=\"columnThumbnail\"><img class=\"demoThumbnail\" src=\"$\" onclick=\"currentSlide(4);\" data-caption=\"$\"></div>",
+          "<div class=\"columnThumbnail\"><img class=\"demoThumbnail\" src=\"$\" onclick=\"currentSlide(5);\" data-caption=\"$\"></div>",
+          "<div class=\"columnThumbnail\"><img class=\"demoThumbnail\" src=\"$\" onclick=\"currentSlide(6);\" data-caption=\"$\"></div>",
+          "<div class=\"columnThumbnail\"><img class=\"demoThumbnail\" src=\"$\" onclick=\"currentSlide(7);\" data-caption=\"$\"></div>",
+          "<div class=\"columnThumbnail\"><img class=\"demoThumbnail\" src=\"$\" onclick=\"currentSlide(8);\" data-caption=\"$\"></div>",
+          "</div>",
+          "</div>",
+          "</div>"
+                  ],
+        "layout-for-human-read": ["ModalID", "ModalID", "text-serial1 to display", "image1 src", "image1class", "text-serial2 to display", "image2 src", "imag2class", "... ...", "ModalID", "image1 Thumbnail src", "image 1 text", "image2 Thumbnail src", "image 2 text", "... ..."],
+        "content_zh-Hans":["Modal_TTU_diploma_images", "Modal_TTU_diploma_images", "1 / 8", "../images/personal_experience/ttu-cyber-security-master-diploma-front.jpg", "Modal_images_silde_ratio_1dot414_AKA_A4", "2 / 8", "../images/personal_experience/ttu-cyber-security-master-diploma-translate-3.jpg", "Modal_images_silde_ratio_1dot414_AKA_A4", "3 / 8", "../images/personal_experience/ttu-cyber-security-master-diploma-translate-4.jpg", "Modal_images_silde_ratio_1dot414_AKA_A4", "4 / 8", "../images/personal_experience/ttu-cyber-security-master-academic-transcript-1.jpg", "Modal_images_silde_ratio_1dot414_AKA_A4", "5 / 8", "../images/personal_experience/ttu-cyber-security-master-academic-transcript-2.jpg", "Modal_images_silde_ratio_1dot414_AKA_A4", "6 / 8", "../images/personal_experience/ttu-cyber-security-master-academic-transcript-3.jpg", "Modal_images_silde_ratio_1dot414_AKA_A4", "7 / 8", "../images/personal_experience/ttu-cyber-security-master-academic-transcript-4.jpg", "Modal_images_silde_ratio_1dot414_AKA_A4", "8 / 8", "../images/personal_experience/ttu-cyber-security-master-academic-transcript-5.jpg", "Modal_images_silde_ratio_1dot414_AKA_A4", "Modal_TTU_diploma_images", "../images/personal_experience/ttu-cyber-security-master-diploma-front.jpg", "毕业证原件", "../images/personal_experience/ttu-cyber-security-master-diploma-translate-3.jpg", "毕业证英文翻译件", "../images/personal_experience/ttu-cyber-security-master-diploma-translate-4.jpg", "英文翻译机构声明", "../images/personal_experience/ttu-cyber-security-master-academic-transcript-1.jpg", "成绩单第1页", "../images/personal_experience/ttu-cyber-security-master-academic-transcript-2.jpg", "成绩单第2页", "../images/personal_experience/ttu-cyber-security-master-academic-transcript-3.jpg", "成绩单第3页", "../images/personal_experience/ttu-cyber-security-master-academic-transcript-4.jpg", "成绩单第4页（教学结构说明）", "../images/personal_experience/ttu-cyber-security-master-academic-transcript-5.jpg", "成绩单第5页（教学结构说明）"],
+        "content_zh-Hant":["null", "null"],
+        "content_en":["Modal_TTU_diploma_images", "Modal_TTU_diploma_images", "1 / 8", "../images/personal_experience/ttu-cyber-security-master-diploma-front.jpg", "Modal_images_silde_ratio_1dot414_AKA_A4", "2 / 8", "../images/personal_experience/ttu-cyber-security-master-diploma-translate-3.jpg", "Modal_images_silde_ratio_1dot414_AKA_A4", "3 / 8", "../images/personal_experience/ttu-cyber-security-master-diploma-translate-4.jpg", "Modal_images_silde_ratio_1dot414_AKA_A4", "4 / 8", "../images/personal_experience/ttu-cyber-security-master-academic-transcript-1.jpg", "Modal_images_silde_ratio_1dot414_AKA_A4", "5 / 8", "../images/personal_experience/ttu-cyber-security-master-academic-transcript-2.jpg", "Modal_images_silde_ratio_1dot414_AKA_A4", "6 / 8", "../images/personal_experience/ttu-cyber-security-master-academic-transcript-3.jpg", "Modal_images_silde_ratio_1dot414_AKA_A4", "7 / 8", "../images/personal_experience/ttu-cyber-security-master-academic-transcript-4.jpg", "Modal_images_silde_ratio_1dot414_AKA_A4", "8 / 8", "../images/personal_experience/ttu-cyber-security-master-academic-transcript-5.jpg", "Modal_images_silde_ratio_1dot414_AKA_A4", "Modal_TTU_diploma_images", "../images/personal_experience/ttu-cyber-security-master-diploma-front.jpg", "Diploma Original", "../images/personal_experience/ttu-cyber-security-master-diploma-translate-3.jpg", "Diploma Translated to English", "../images/personal_experience/ttu-cyber-security-master-diploma-translate-4.jpg", "Declaration from Sworn Translator", "../images/personal_experience/ttu-cyber-security-master-academic-transcript-1.jpg", "Academic Transcript Page 1", "../images/personal_experience/ttu-cyber-security-master-academic-transcript-2.jpg", "Academic Transcript Page 2", "../images/personal_experience/ttu-cyber-security-master-academic-transcript-3.jpg", "Academic Transcript Page 3", "../images/personal_experience/ttu-cyber-security-master-academic-transcript-4.jpg", "Academic Transcript Page 4 (Education System Description)", "../images/personal_experience/ttu-cyber-security-master-academic-transcript-5.jpg", "Academic Transcript Page 5 (Education System Description)"]
+    },
+    {
+        "field":"table_content",
+        "format": [
+          "<div id=\"$\" class=\"modal\">",
+          "<span class=\"close cursor\" onclick=\"closeModal('$')\">&times;</span>",
+          "<div class=\"modal-content\">",
+          "<div class=\"modalSlides\"><div class=\"numbertext\">$</div><img src=\"$\" class=\"$\"></div>",
+          "<div class=\"modalSlides\"><div class=\"numbertext\">$</div><img src=\"$\" class=\"$\"></div>",
+          "<div class=\"modalSlides\"><div class=\"numbertext\">$</div><img src=\"$\" class=\"$\"></div>",
+          "<div class=\"modalSlides\"><div class=\"numbertext\">$</div><img src=\"$\" class=\"$\"></div>",
+          "<div class=\"modalSlides\"><div class=\"numbertext\">$</div><img src=\"$\" class=\"$\"></div>",
+          "<a class=\"prevSlide\" onclick=\"plusSlides(-1);return false;\">&#10094;</a>",
+          "<a class=\"nextSlide\" onclick=\"plusSlides(1);return false;\">&#10095;</a>",
+          "<div class=\"caption-containerModal\"><p id=\"captionModal$\"></p></div>",
+          "<div class=\"thumbnailContainerModal\">",
+          "<div class=\"columnThumbnail\"><img class=\"demoThumbnail\" src=\"$\" onclick=\"currentSlide(1);\" data-caption=\"$\"></div>",
+          "<div class=\"columnThumbnail\"><img class=\"demoThumbnail\" src=\"$\" onclick=\"currentSlide(2);\" data-caption=\"$\"></div>",
+          "<div class=\"columnThumbnail\"><img class=\"demoThumbnail\" src=\"$\" onclick=\"currentSlide(3);\" data-caption=\"$\"></div>",
+          "<div class=\"columnThumbnail\"><img class=\"demoThumbnail\" src=\"$\" onclick=\"currentSlide(4);\" data-caption=\"$\"></div>",
+          "<div class=\"columnThumbnail\"><img class=\"demoThumbnail\" src=\"$\" onclick=\"currentSlide(5);\" data-caption=\"$\"></div>",
+          "</div>",
+          "</div>",
+          "</div>"
+                  ],
+        "layout-for-human-read": ["ModalID", "ModalID", "text-serial1 to display", "image1 src", "image1class", "text-serial2 to display", "image2 src", "imag2class", "... ...", "ModalID", "image1 Thumbnail src", "image 1 text", "image2 Thumbnail src", "image 2 text", "... ..."],
+        "content_zh-Hans":["Modal_TTU_album_images", "Modal_TTU_album_images", "1 / 4", "../images/personal_experience/ttu-ict-building-in-summer.jpg", "Modal_images_silde_ratio_0dot75", "2 / 4", "../images/personal_experience/ttu-ict-building-in-summer-far.jpg", "Modal_images_silde_ratio_1dot33", "3 / 4", "../images/personal_experience/ttu-ict-building-from-the-other-side-of-road.jpg", "Modal_images_silde_ratio_0dot75", "4 / 4", "../images/personal_experience/ttu-ict-building-a-friday-night.jpg", "Modal_images_silde_ratio_0dot75", "5 / 4", "../images/personal_experience/ttu-ict-building-in-winter.jpg", "Modal_images_silde_ratio_0dot75", "Modal_TTU_album_images", "../images/personal_experience/ttu-ict-building-in-summer.jpg", "ICT楼（摄影 <a target='_blank' href='https://goo.gl/maps/Dj6Ko9Jymc8BHFDg7'>Krista Roolaid</a>）", "../images/personal_experience/ttu-ict-building-in-summer-far.jpg", "ICT楼（摄影 <a target='_blank' href='https://goo.gl/maps/1ex5iSrY8ds2fkLv6'>Krista Roolaid</a>）", "../images/personal_experience/ttu-ict-building-from-the-other-side-of-road.jpg", "春天的Mustamäe区（摄影 <a target='_blank' href='https://goo.gl/maps/jpxpPKtWHRqMjjw1A'>E Ee</a>）", "../images/personal_experience/ttu-ict-building-a-friday-night.jpg", "一个星期五晚上（摄影 <a target='_blank' href='https://goo.gl/maps/U1jVtC4ME11nwGKN9'>E Ee</a>）", "../images/personal_experience/ttu-ict-building-in-winter.jpg", "ICT楼（摄影 <a target='_blank' href='https://goo.gl/maps/fYtzXm12tmZhzVRQ8'>E Ee</a>）"],
+        "content_zh-Hant":["null", "null"],
+        "content_en":["Modal_TTU_album_images", "Modal_TTU_album_images", "1 / 4", "../images/personal_experience/ttu-ict-building-in-summer.jpg", "Modal_images_silde_ratio_0dot75", "2 / 4", "../images/personal_experience/ttu-ict-building-in-summer-far.jpg", "Modal_images_silde_ratio_1dot33", "3 / 4", "../images/personal_experience/ttu-ict-building-from-the-other-side-of-road.jpg", "Modal_images_silde_ratio_0dot75", "4 / 4", "../images/personal_experience/ttu-ict-building-a-friday-night.jpg", "Modal_images_silde_ratio_0dot75", "5 / 4", "../images/personal_experience/ttu-ict-building-in-winter.jpg", "Modal_images_silde_ratio_0dot75", "Modal_TTU_album_images", "../images/personal_experience/ttu-ict-building-in-summer.jpg", "The ICT Building (Photograph by <a target='_blank' href='https://goo.gl/maps/Dj6Ko9Jymc8BHFDg7'>Krista Roolaid</a>)", "../images/personal_experience/ttu-ict-building-in-summer-far.jpg", "The ICT Building (Photograph by <a target='_blank' href='https://goo.gl/maps/1ex5iSrY8ds2fkLv6'>Krista Roolaid</a>)", "../images/personal_experience/ttu-ict-building-from-the-other-side-of-road.jpg", "Spring in Mustamäe (Photograph by <a target='_blank' href='https://goo.gl/maps/jpxpPKtWHRqMjjw1A'>E Ee</a>)", "../images/personal_experience/ttu-ict-building-a-friday-night.jpg", "A Friday Night (Photograph by <a target='_blank' href='https://goo.gl/maps/U1jVtC4ME11nwGKN9'>E Ee</a>)", "../images/personal_experience/ttu-ict-building-in-winter.jpg", "The ICT Building (Photograph by  <a target='_blank' href='https://goo.gl/maps/fYtzXm12tmZhzVRQ8'>E Ee</a>)"]
+    },
+    {
+        "field":"table_content",
+        "format": [
+          "<tr>",
+          "<td class=\"tabContentTable_lineTitle\">$</td><td><a href=\"$\" class=\"button\" target=\"_blank\">$</a><a href=\"#\" onclick=\"openModal('Modal_TTU_diploma_images');return false;\" class=\"button\">$</a><a href=\"#\" onclick=\"openModal('Modal_TTU_album_images');return false;\" class=\"button\">$</a></td>",
+          "</tr>"
+                  ],
+        "layout-for-human-read": ["void", "Education experience continued"],
+        "content_zh-Hans":["", "https://www.ttu.ee/?id=175198", "<small>教学内容链接</small>", "<small>学位证书和成绩单</small>", "<small>相册</small>"],
+        "content_zh-Hant":["", "null"],
+        "content_en":["", "https://www.ttu.ee/?id=175198", "<small>Programme Link</small>", "<small>Diploma and Academic Transcript</small>", "<small>Album</small>"]
+    },
+    {
+        "field":"table_content",
+        "format": [
+          "<tr>",
+          "<td class=\"tabContentTable_lineTitle\">$</td><td>$</td>",
+          "</tr>"
+                  ],
+        "comments":"网站 https://www.qust.edu.cn/ 照片 https://www.qust.edu.cn/info/1447/2630.htm",
+        "layout-for-human-read": ["time line", "Education experience"],
+        "content_zh-Hans":["2008年9月 - 2012年6月", "<b>电气工程学士，青岛科技大学</b>"],
+        "content_zh-Hant":["null", "null"],
+        "content_en":["Sep 2008 - Jun 2012", "<b>Undergraduate student of Electrical Engineering, Qingdao University of Science and Technology, China</b>"]
+    },
+    {
+        "field":"table_content",
+        "format": [
+          "<tr>",
+          "<td class=\"tabContentTable_lineTitle\">$</td><td>$</td>",
+          "</tr>"
+                  ],
+        "layout-for-human-read": ["void", "Education experience continued"],
+        "content_zh-Hans":["", "<small>在“C++程序设计”课程中获得90分，满分100。</small>"],
+        "content_zh-Hant":["", "null"],
+        "content_en":["", "<small>90/100 in C++ Language Programming.</small>"]
+    },
+    {
+        "field":"table_content",
+        "format": [
+          "<tr>",
+          "<td class=\"tabContentTable_lineTitleBigger\" colspan=\"2\">$</td>",
+          "</tr>"
+                  ],
+        "layout-for-human-read": ["Work Section"],
+        "content_zh-Hans":["<br>工作实习培训经历"],
+        "content_zh-Hant":["null"],
+        "content_en":["<br>Work, Internship and Training"]
+    },
+    {
+        "field":"table_content",
+        "format": [
+          "<tr>",
+          "<td class=\"tabContentTable_lineTitle\">$</td><td>$</td>",
+          "</tr>"
+                  ],
+        "layout-for-human-read": ["time line", "Education experience"],
+        "content_zh-Hans":["2016年8月 - 2018年2月", "<b>武汉科锐逆向实训，培训生</b>"],
+        "content_zh-Hant":["null", "null"],
+        "content_en":["Aug 2016 - Feb 2018", "<b>Wuhan Kerui Paid Training, Trainee</b>"]
+    },
+    {
+        "field":"table_content",
+        "format": [
+          "<tr>",
+          "<td class=\"tabContentTable_lineTitle\">$</td><td>$</td>",
+          "</tr>"
+                  ],
+        "layout-for-human-read": ["void", "Education experience continued"],
+        "content_zh-Hans":["", "<small>在C++语言底层原理，软件逆向，Windows操作系统内核安全三方面积累了55万余字技术笔记（含1,857张截图/示意图），4万余行代码。</small>"],
+        "content_zh-Hant":["", "null"],
+        "content_en":["", "<small>Accumulated 556,000+ words (with 1,857 snapshots/drawings) of notes, and 40,000+ lines of coding on three major topics: C++ low level principles, software reverse engineering, and Windows OS kernal security.</small>"]
+    },
+    {
+        "field":"table_content",
+        "format": [
+          "<div id=\"$\" class=\"modal\">",
+          "<span class=\"close cursor\" onclick=\"closeModal('$')\">&times;</span>",
+          "<div class=\"modal-content\">",
+          "<div class=\"modalSlides\"><div class=\"numbertext\">$</div><img src=\"$\" class=\"$\"></div>",
+          "<div class=\"modalSlides\"><div class=\"numbertext\">$</div><img src=\"$\" class=\"$\"></div>",
+          "<div class=\"modalSlides\"><div class=\"numbertext\">$</div><img src=\"$\" class=\"$\"></div>",
+          "<div class=\"modalSlides\"><div class=\"numbertext\">$</div><img src=\"$\" class=\"$\"></div>",
+          "<div class=\"modalSlides\"><div class=\"numbertext\">$</div><img src=\"$\" class=\"$\"></div>",
+          "<div class=\"modalSlides\"><div class=\"numbertext\">$</div><img src=\"$\" class=\"$\"></div>",
+          "<div class=\"modalSlides\"><div class=\"numbertext\">$</div><img src=\"$\" class=\"$\"></div>",
+          "<div class=\"modalSlides\"><div class=\"numbertext\">$</div><img src=\"$\" class=\"$\"></div>",
+          "<div class=\"modalSlides\"><div class=\"numbertext\">$</div><img src=\"$\" class=\"$\"></div>",
+          "<div class=\"modalSlides\"><div class=\"numbertext\">$</div><img src=\"$\" class=\"$\"></div>",
+          "<div class=\"modalSlides\"><div class=\"numbertext\">$</div><img src=\"$\" class=\"$\"></div>",
+          "<div class=\"modalSlides\"><div class=\"numbertext\">$</div><img src=\"$\" class=\"$\"></div>",
+          "<a class=\"prevSlide\" onclick=\"plusSlides(-1);return false;\">&#10094;</a>",
+          "<a class=\"nextSlide\" onclick=\"plusSlides(1);return false;\">&#10095;</a>",
+          "<div class=\"caption-containerModal\"><p id=\"captionModal$\"></p></div>",
+          "<div class=\"thumbnailContainerModal\">",
+          "<div class=\"columnThumbnail\"><img class=\"demoThumbnail\" src=\"$\" onclick=\"currentSlide(1);\" data-caption=\"$\"></div>",
+          "<div class=\"columnThumbnail\"><img class=\"demoThumbnail\" src=\"$\" onclick=\"currentSlide(2);\" data-caption=\"$\"></div>",
+          "<div class=\"columnThumbnail\"><img class=\"demoThumbnail\" src=\"$\" onclick=\"currentSlide(3);\" data-caption=\"$\"></div>",
+          "<div class=\"columnThumbnail\"><img class=\"demoThumbnail\" src=\"$\" onclick=\"currentSlide(4);\" data-caption=\"$\"></div>",
+          "<div class=\"columnThumbnail\"><img class=\"demoThumbnail\" src=\"$\" onclick=\"currentSlide(5);\" data-caption=\"$\"></div>",
+          "<div class=\"columnThumbnail\"><img class=\"demoThumbnail\" src=\"$\" onclick=\"currentSlide(6);\" data-caption=\"$\"></div>",
+          "<div class=\"columnThumbnail\"><img class=\"demoThumbnail\" src=\"$\" onclick=\"currentSlide(7);\" data-caption=\"$\"></div>",
+          "<div class=\"columnThumbnail\"><img class=\"demoThumbnail\" src=\"$\" onclick=\"currentSlide(8);\" data-caption=\"$\"></div>",
+          "<div class=\"columnThumbnail\"><img class=\"demoThumbnail\" src=\"$\" onclick=\"currentSlide(9);\" data-caption=\"$\"></div>",
+          "<div class=\"columnThumbnail\"><img class=\"demoThumbnail\" src=\"$\" onclick=\"currentSlide(10);\" data-caption=\"$\"></div>",
+          "<div class=\"columnThumbnail\"><img class=\"demoThumbnail\" src=\"$\" onclick=\"currentSlide(11);\" data-caption=\"$\"></div>",
+          "<div class=\"columnThumbnail\"><img class=\"demoThumbnail\" src=\"$\" onclick=\"currentSlide(12);\" data-caption=\"$\"></div>",
+          "</div>",
+          "</div>",
+          "</div>"
+                  ],
+        "layout-for-human-read": ["ModalID", "ModalID", "text-serial1 to display", "image1 src", "image1class", "text-serial2 to display", "image2 src", "imag2class", "... ...", "ModalID", "image1 Thumbnail src", "image 1 text", "image2 Thumbnail src", "image 2 text", "... ..."],
+        "content_zh-Hans":["Modal_CR_notes", "Modal_CR_notes", "1 / 12", "../images/personal_experience/cr-618.jpg", "Modal_images_silde_ratio_1dot414_AKA_A4", "2 / 12", "../images/personal_experience/cr-672.jpg", "Modal_images_silde_ratio_1dot414_AKA_A4", "3 / 12", "../images/personal_experience/cr-688.jpg", "Modal_images_silde_ratio_1dot414_AKA_A4", "4 / 12", "../images/personal_experience/cr-696.jpg", "Modal_images_silde_ratio_1dot414_AKA_A4", "5 / 12", "../images/personal_experience/cr-758.jpg", "Modal_images_silde_ratio_1dot414_AKA_A4",  "6 / 12", "../images/personal_experience/cr-861.jpg", "Modal_images_silde_ratio_1dot414_AKA_A4", "7 / 12", "../images/personal_experience/cr-888.jpg", "Modal_images_silde_ratio_1dot414_AKA_A4", "8 / 12", "../images/personal_experience/cr-902.jpg", "Modal_images_silde_ratio_1dot414_AKA_A4", "9 / 12", "../images/personal_experience/cr-919.jpg", "Modal_images_silde_ratio_1dot414_AKA_A4", "10 / 12", "../images/personal_experience/cr-940.jpg", "Modal_images_silde_ratio_1dot414_AKA_A4", "11 / 12", "../images/personal_experience/cr-1002.jpg", "Modal_images_silde_ratio_1dot414_AKA_A4", "12 / 12", "../images/personal_experience/cr-1022.jpg", "Modal_images_silde_ratio_1dot414_AKA_A4", "Modal_CR_notes", "../images/personal_experience/cr-618.jpg", "Page 618", "../images/personal_experience/cr-672.jpg", "Page 672", "../images/personal_experience/cr-688.jpg", "Page 688", "../images/personal_experience/cr-696.jpg", "Page 696", "../images/personal_experience/cr-758.jpg", "Page 758", "../images/personal_experience/cr-861.jpg", "Page 861", "../images/personal_experience/cr-888.jpg", "Page 888", "../images/personal_experience/cr-902.jpg", "Page 902", "../images/personal_experience/cr-919.jpg", "Page 919", "../images/personal_experience/cr-940.jpg", "Page 940", "../images/personal_experience/cr-1002.jpg", "Page 1002", "../images/personal_experience/cr-1022.jpg", "Page 1022"],
+        "content_zh-Hant":["null", "null"],
+        "content_en":["Modal_CR_notes", "Modal_CR_notes", "1 / 12", "../images/personal_experience/cr-618.jpg", "Modal_images_silde_ratio_1dot414_AKA_A4", "2 / 12", "../images/personal_experience/cr-672.jpg", "Modal_images_silde_ratio_1dot414_AKA_A4", "3 / 12", "../images/personal_experience/cr-688.jpg", "Modal_images_silde_ratio_1dot414_AKA_A4", "4 / 12", "../images/personal_experience/cr-696.jpg", "Modal_images_silde_ratio_1dot414_AKA_A4", "5 / 12", "../images/personal_experience/cr-758.jpg", "Modal_images_silde_ratio_1dot414_AKA_A4",  "6 / 12", "../images/personal_experience/cr-861.jpg", "Modal_images_silde_ratio_1dot414_AKA_A4", "7 / 12", "../images/personal_experience/cr-888.jpg", "Modal_images_silde_ratio_1dot414_AKA_A4", "8 / 12", "../images/personal_experience/cr-902.jpg", "Modal_images_silde_ratio_1dot414_AKA_A4", "9 / 12", "../images/personal_experience/cr-919.jpg", "Modal_images_silde_ratio_1dot414_AKA_A4", "10 / 12", "../images/personal_experience/cr-940.jpg", "Modal_images_silde_ratio_1dot414_AKA_A4", "11 / 12", "../images/personal_experience/cr-1002.jpg", "Modal_images_silde_ratio_1dot414_AKA_A4", "12 / 12", "../images/personal_experience/cr-1022.jpg", "Modal_images_silde_ratio_1dot414_AKA_A4", "Modal_CR_notes", "../images/personal_experience/cr-618.jpg", "Page 618", "../images/personal_experience/cr-672.jpg", "Page 672", "../images/personal_experience/cr-688.jpg", "Page 688", "../images/personal_experience/cr-696.jpg", "Page 696", "../images/personal_experience/cr-758.jpg", "Page 758", "../images/personal_experience/cr-861.jpg", "Page 861", "../images/personal_experience/cr-888.jpg", "Page 888", "../images/personal_experience/cr-902.jpg", "Page 902", "../images/personal_experience/cr-919.jpg", "Page 919", "../images/personal_experience/cr-940.jpg", "Page 940", "../images/personal_experience/cr-1002.jpg", "Page 1002", "../images/personal_experience/cr-1022.jpg", "Page 1022"]
+    },
+    {
+        "field":"table_content",
+        "format": [
+          "<tr>",
+          "<td class=\"tabContentTable_lineTitle\">$</td><td><a href=\"$\" class=\"button\" target=\"_blank\">$</a><a href=\"#\" onclick=\"openModal('Modal_CR_notes');return false;\" class=\"button\">$</a></td>",
+          "</tr>"
+                  ],
+        "layout-for-human-read": ["void", "Education experience continued"],
+        "content_zh-Hans":["", "http://www.51asm.net/", "<small>官网链接</small>", "<small>笔记概览</small>"],
+        "content_zh-Hant":["", "null"],
+        "content_en":["", "http://www.51asm.net/", "<small>Official Website (Chinese)</small>", "<small>My Notes at a Glance (Chinese)</small>"]
+    },
+    {
+        "field":"table_content",
+        "format": [
+          "<tr>",
+          "<td class=\"tabContentTable_lineTitle\">$</td><td>$</td>",
+          "</tr>"
+                  ],
+        "layout-for-human-read": ["time line", "Education experience"],
+        "content_zh-Hans":["2012年8月 - 2013年6月", "<b>山东临沂广播电视台，技术支持</b>"],
+        "content_zh-Hant":["null", "null"],
+        "content_en":["Aug 2012 - Jun 2013", "<b>Radio and Television Station of Linyi, Technical Support</b>"]
+    },
+    {
+        "field":"table_content",
+        "format": [
+          "<tr>",
+          "<td class=\"tabContentTable_lineTitle\">$</td><td>$</td>",
+          "</tr>"
+                  ],
+        "layout-for-human-read": ["void", "Education experience continued"],
+        "content_zh-Hans":["", "<small>对120余个办公室、工作室、演播厅提供8/5小时的电话呼叫协助。</small>"],
+        "content_zh-Hant":["", "null"],
+        "content_en":["", "<small>8/5 on call user support for 120+ offices, working stations and studios.</small>"]
+    },
+    {
+        "field":"table_content",
+        "format": [
+          "<tr>",
+          "<td class=\"tabContentTable_lineTitle\">$</td><td>$</td>",
+          "</tr>"
+                  ],
+        "layout-for-human-read": ["void", "Education experience continued"],
+        "content_zh-Hans":["", "<small>维护21层大楼内的两个互相独立的网络：日常上网所用网络和节目生产网络。</small>"],
+        "content_zh-Hant":["", "null"],
+        "content_en":["", "<small>Maintenance of two isolated network distributed in the 21-story building: the general purpose network, and the content production network.</small>"]
+    },
+    {
+        "field":"table_content",
+        "format": [
+          "<tr>",
+          "<td class=\"tabContentTable_lineTitle\">$</td><td>$</td>",
+          "</tr>"
+                  ],
+        "layout-for-human-read": ["void", "Education experience continued"],
+        "content_zh-Hans":["", "<small>对6个频道，4个演播厅，2个直播车的节目制作设备（例如摄像机）的调度和故障排除。</small>"],
+        "content_zh-Hant":["", "null"],
+        "content_en":["", "<small>Coordinating and troubleshooting with the content production equipments (e.g. video cameras) for six channels, four studios, and two outside broadcast trucks.</small>"]
+    },
+    {
+        "field":"table_content",
+        "format": [
+          "<tr>",
+          "<td class=\"tabContentTable_lineTitle\">$</td><td><a href=\"$\" class=\"button\" target=\"_blank\">$</a><a href=\"$\" class=\"button\" target=\"_blank\">$</a></td>",
+          "</tr>"
+                  ],
+        "layout-for-human-read": ["void", "Education experience continued"],
+        "content_zh-Hans":["", "http://www.ilinyi.net/", "<small>官网链接</small>", "http://www.ilinyi.net/live/", "<small>节目直播</small>"],
+        "content_zh-Hant":["", "null"],
+        "content_en":["", "http://www.ilinyi.net/", "<small>Official Website (Chinese)</small>", "http://www.ilinyi.net/live/", "<small>Live Streaming (Chinese)</small>"]
+    }
+]

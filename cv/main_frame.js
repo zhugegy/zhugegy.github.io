@@ -46,7 +46,14 @@ function info_table_loaded_inner_callback(strMenuItemName, response)
 	// Fill in the table
 	if (cons_isDebug)
 	{
-		__fetch_data_and_render('https://api.myjson.com/bins/12tz0v', action_with_table_content_data);
+		if (strMenuItemName == "basic_information")
+		{
+				__fetch_data_and_render('https://api.myjson.com/bins/9klq7', action_with_table_content_data);
+		}
+		else if (strMenuItemName == "personal_experience")
+		{
+				__fetch_data_and_render('https://api.myjson.com/bins/xcu49', action_with_table_content_data);
+		}
 	}
 	else
 	{

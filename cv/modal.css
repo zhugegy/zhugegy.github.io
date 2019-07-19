@@ -1,0 +1,136 @@
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 2vh;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  margin: auto;
+  padding: 0;
+  width: 75%;
+  max-width: 100vw;
+  text-align:center;
+}
+
+/* Hide the slides by default */
+/* .modalSlides {
+  display: none;
+} */
+
+/* The Close Button (of Modal)*/
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Number text (of Modal; 1/3 etc)  */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 1.8vw;
+  padding: 1vw 1.5vh;
+  position: absolute;
+  top: 0;
+}
+
+/* Next & previous buttons (of Modal) */
+.prevSlide,
+.nextSlide {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.nextSlide {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prevSlide {
+  left: 0;
+  border-radius: 0 3px 3px 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prevSlide:hover,
+.nextSlide:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text (of Modal)*/
+.caption-containerModal {
+  text-align: center;
+  font-size: 1.1vw;
+  background-color: black;
+  padding: 1px 8px;
+  color: white;
+}
+
+.thumbnailContainerModal{
+  /* position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30vw; */
+  display: inline-block;
+}
+
+/* Create four equal columns that floats next to eachother (of Modal)*/
+.columnThumbnail {
+  float: left;
+  padding: 0.2vw;
+}
+
+img.demoThumbnail {
+  opacity: 0.6;
+  height: 8vh;
+}
+
+img.active {
+  opacity: 1;
+}
+
+.demoThumbnail:hover {
+  opacity: 1;
+}
+
+img.Modal_images_silde_ratio_1dot414_AKA_A4, img.Modal_images_silde_ratio_0dot75, img.Modal_images_silde_ratio_1dot33 {
+  height: 83vh;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+}

@@ -1,7 +1,8 @@
 [
     {
         "notes":"",
-        "todo":"自我评价？；改字体"
+        "todo1":"DONE自我评价；DONE改字体;LinkedIn account details;Personal website/portfolio web address; DONE护照号码打码",
+        "todo2":"婚姻状态，孩子数量，照片，现在的工资，信仰，驾驶执照信息，健康状态"
     },
     {
         "field":"table_heading",
@@ -59,7 +60,7 @@
           "</tr>"
                   ],
         "layout-for-human-read": ["summary:", "self-introduction"],
-        "content_zh-Hans":["个人简介", "自2014年开始学习Windows操作系统内核安全，积累了丰富的技术笔记和实战经验。<br>善于使用C++进行开发，但更乐于使用Python。<br>对全栈网页应用开发有一定的理解和实践（MEAN框架和Spring框架；HTML, CSS, javascript, MongoDB, Java, MySQL）。"],
+        "content_zh-Hans":["个人简介", "自2014年开始学习Windows操作系统内核安全，积累了丰富的技术笔记和实战经验。<br>善于使用C++进行开发，但更乐于使用Python。<br>对全栈网页应用开发有一定的理解和实践（MEAN框架和Spring框架；HTML, CSS, JavaScript, MongoDB, Java, MySQL）。"],
         "content_zh-Hant":["null", "null"],
         "content_en":["Summary", "Have been studying Windows OS kernel security since 2014, and accumulated reasonable amount of technical notes and practical experience. <br>Reasonably good at developing with C++, yet Python is the choice whenever possible.<br>Have certain understanding and experience on full stack Web development (MEAN framework and Spring framework; HTML, CSS, JavaScript, MongoDB, Java and MySQL)."]
     },
@@ -75,6 +76,18 @@
         "content_zh-Hans":["现居地", "澳大利亚，悉尼"],
         "content_zh-Hant":["null", "null"],
         "content_en":["Current Residence", "Sydney, Australia"]
+    },
+    {
+        "field":"table_content",
+        "format": [
+          "<tr>",
+          "<td class=\"tabContentTable_lineTitle\">$</td><td>$</td>",
+          "</tr>"
+                  ],
+        "layout-for-human-read": ["Education Level:", "Education you got"],
+        "content_zh-Hans":["教育程度", "硕士，澳大利亚悉尼大学，IT和IT管理，预计2019年12月毕业"],
+        "content_zh-Hant":["null", "null"],
+        "content_en":["Academic Degree", "MSc in IT and IT Management, University of Sydney, Australia, diploma expected in Dec 2019"]
     },
     {
         "field":"table_content",
@@ -97,21 +110,9 @@
                   ],
         "layout-for-human-read": ["Lanuage Skills:", "language skills"],
         "comment": "able to speak the language with sufficient structural accuracy and vocabulary to participate effectively in most conversations on practical, social, and professional topics",
-        "content_zh-Hans":["语言能力", "<b>中文（普通话）</b>：母语<br><b>英语</b>：流利，", "../images/basic_information/IELTS-result.png", "雅思成绩7.5", "../images/basic_information/IELTS-result.png", "（总分9.0；2016年4月；<a target=\"_blank\" href=\"https://www.ieltsessentials.com/global/results/ielts9bandscale\">评分标准英文版</a> <a target=\"_blank\" href=\"http://blog.sina.com.cn/s/blog_4b45cdd5010008pr.html\">评分标准中文版</a>）"],
+        "content_zh-Hans":["语言能力", "<b>中文</b>：母语<br><b>英语</b>：流利，", "../images/basic_information/IELTS-result.jpg", "雅思成绩7.5", "../images/basic_information/IELTS-result.jpg", "（总分9.0；2016年4月；<a target=\"_blank\" href=\"https://www.ieltsessentials.com/global/results/ielts9bandscale\">评分标准英文版</a> <a target=\"_blank\" href=\"http://blog.sina.com.cn/s/blog_4b45cdd5010008pr.html\">评分标准中文版</a>）"],
         "content_zh-Hant":["null", "null"],
-        "content_en":["Language Skill", "<b>Chinese (Mandarin)</b>: Native<br><b>English</b>: good/very-good user, ", "../images/basic_information/IELTS-result.png", "IELTS band score 7.5", "../images/basic_information/IELTS-result.png", " (out of 9.0; April 2016; <a target=\"_blank\" href=\"https://www.ieltsessentials.com/global/results/ielts9bandscale\">band scale reference</a>)"]
-    },
-    {
-        "field":"table_content",
-        "format": [
-          "<tr>",
-          "<td class=\"tabContentTable_lineTitle\">$</td><td>$</td>",
-          "</tr>"
-                  ],
-        "layout-for-human-read": ["Education Level:", "Education you got"],
-        "content_zh-Hans":["教育程度", "硕士，澳大利亚悉尼大学，IT和IT管理，预计2019年12月毕业"],
-        "content_zh-Hant":["null", "null"],
-        "content_en":["Academic Degree", "MSc in IT and IT Management, University of Sydney, Australia, diploma expected in December 2019"]
+        "content_en":["Language Skill", "<b>Chinese</b>: native user<br><b>English</b>: good/very-good user, ", "../images/basic_information/IELTS-result.jpg", "IELTS band score 7.5", "../images/basic_information/IELTS-result.jpg", " (out of 9.0; April 2016; <a target=\"_blank\" href=\"https://www.ieltsessentials.com/global/results/ielts9bandscale\">band scale</a>)"]
     },
     {
         "field":"table_content",
@@ -121,9 +122,9 @@
           "</tr>"
                   ],
         "layout-for-human-read": ["Gender:", "gender"],
-        "content_zh-Hans":["性别", "<small><i>可点击查看</i></small>", "男"],
+        "content_zh-Hans":["性别", "<small><i>内容已被隐藏。如有需要，可点击查看。</i></small>", "男"],
         "content_zh-Hant":["null", "null", "null"],
-        "content_en":["Gender", "<small><i>You may click to see.</i></small>", "Male"]
+        "content_en":["Gender", "<small><i>Content is hidden. If necessary, you may click to see.</i></small>", "Male"]
     },
     {
         "field":"table_content",
@@ -133,9 +134,9 @@
           "</tr>"
                   ],
         "layout-for-human-read": ["Birthday:", "birthday"],
-        "content_zh-Hans":["出生年", "<small><i>可点击查看</i></small>", "1991年"],
+        "content_zh-Hans":["出生年", "<small><i>内容已被隐藏。如有需要，可点击查看。</i></small>", "1991年"],
         "content_zh-Hant":["null", "null", "null"],
-        "content_en":["Year of Birth", "<small><i>You may click to see.</i></small>", "1991"]
+        "content_en":["Year of Birth", "<small><i>Content is hidden. If necessary, you may click to see.</i></small>", "1991"]
     },
     {
         "field":"table_content",
@@ -145,9 +146,9 @@
           "</tr>"
                   ],
         "layout-for-human-read": ["Place of Birth:", "place of birth"],
-        "content_zh-Hans":["籍贯", "<small><i>可点击查看</i></small>", "山东省临沂市"],
+        "content_zh-Hans":["籍贯", "<small><i>内容已被隐藏。如有需要，可点击查看。</i></small>", "山东省临沂市"],
         "content_zh-Hant":["null", "null", "null"],
-        "content_en":["Place of Birth", "<small><i>You may click to see.</i></small>", "Linyi, Shandong, China"]
+        "content_en":["Place of Birth", "<small><i>Content is hidden. If necessary, you may click to see.</i></small>", "Linyi, Shandong, China"]
     },
     {
         "field":"table_content",
@@ -157,9 +158,9 @@
           "</tr>"
                   ],
         "layout-for-human-read": ["Citizenship:", "citizenship"],
-        "content_zh-Hans":["国籍", "<small><i>可点击查看</i></small>", "中国"],
+        "content_zh-Hans":["国籍", "<small><i>内容已被隐藏。如有需要，可点击查看。</i></small>", "中国"],
         "content_zh-Hant":["null", "null", "null"],
-        "content_en":["Citizenship", "<small><i>You may click to see.</i></small>", "Chinese"]
+        "content_en":["Citizenship", "<small><i>Content is hidden. If necessary, you may click to see.</i></small>", "Chinese"]
     },
     {
         "field":"table_content",
@@ -177,7 +178,7 @@
       "field":"table_content",
       "format": [
         "<tr>",
-        "<td class=\"tabContentTable_lineTitle\">$</td><td><a href=\"$\">$</a></td>",
+        "<td class=\"tabContentTable_lineTitle\">$</td><td><a target=\"_blank\" href=\"$\">$</a></td>",
         "</tr>"
                 ],
       "layout-for-human-read": ["GitHub:", "GitHub Link"],
@@ -189,7 +190,7 @@
       "field":"table_content",
       "format": [
         "<tr>",
-        "<td class=\"tabContentTable_lineTitle\">$</td><td><a href=\"$\">$</a></td>",
+        "<td class=\"tabContentTable_lineTitle\">$</td><td><a target=\"_blank\" href=\"$\">$</a></td>",
         "</tr>"
                 ],
       "layout-for-human-read": ["Stack Overflow:", "Stack Overflow link"],
@@ -201,7 +202,7 @@
       "field":"table_content",
       "format": [
         "<tr>",
-        "<td class=\"tabContentTable_lineTitle\">$</td><td><a href=\"$\">$</a></td>",
+        "<td class=\"tabContentTable_lineTitle\">$</td><td><a target=\"_blank\" href=\"$\">$</a></td>",
         "</tr>"
                 ],
       "layout-for-human-read": ["Blog:", "Blog Link"],
