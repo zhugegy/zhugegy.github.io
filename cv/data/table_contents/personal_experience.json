@@ -54,7 +54,7 @@
         "field":"table_content",
         "format": [
           "<tr>",
-          "<td class=\"tabContentTable_lineTitle\">$</td><td><a href=\"$\" class=\"button\" target=\"_blank\">$</a></td>",
+          "<td class=\"tabContentTable_lineTitle\">$</td><td><a href=\"$\" target=\"_blank\">$</a></td>",
           "</tr>"
                   ],
         "layout-for-human-read": ["void", "Education experience continued"],
@@ -178,7 +178,7 @@
         "field":"table_content",
         "format": [
           "<tr>",
-          "<td class=\"tabContentTable_lineTitle\">$</td><td><a href=\"$\" class=\"button\" target=\"_blank\">$</a><a href=\"#\" onclick=\"openModal('Modal_TTU_diploma_images');return false;\" class=\"button\">$</a><a href=\"#\" onclick=\"openModal('Modal_TTU_album_images');return false;\" class=\"button\">$</a></td>",
+          "<td class=\"tabContentTable_lineTitle\">$</td><td><a href=\"$\"  target=\"_blank\">$</a><a href=\"#\" onclick=\"openModal('Modal_TTU_diploma_images');return false;\" >$</a> <a href=\"#\" onclick=\"openModal('Modal_TTU_album_images');return false;\" >$</a></td>",
           "</tr>"
                   ],
         "layout-for-human-read": ["void", "Education experience continued"],
@@ -294,7 +294,7 @@
         "field":"table_content",
         "format": [
           "<tr>",
-          "<td class=\"tabContentTable_lineTitle\">$</td><td><a href=\"$\" class=\"button\" target=\"_blank\">$</a><a href=\"#\" onclick=\"openModal('Modal_CR_notes');return false;\" class=\"button\">$</a></td>",
+          "<td class=\"tabContentTable_lineTitle\">$</td><td><a href=\"$\"  target=\"_blank\">$</a> <a href=\"#\" onclick=\"openModal('Modal_CR_notes');return false;\" >$</a></td>",
           "</tr>"
                   ],
         "layout-for-human-read": ["void", "Education experience continued"],
@@ -354,7 +354,7 @@
         "field":"table_content",
         "format": [
           "<tr>",
-          "<td class=\"tabContentTable_lineTitle\">$</td><td><a href=\"$\" class=\"button\" target=\"_blank\">$</a><a href=\"$\" class=\"button\" target=\"_blank\">$</a></td>",
+          "<td class=\"tabContentTable_lineTitle\">$</td><td><a href=\"$\"  target=\"_blank\">$</a> <a href=\"$\"  target=\"_blank\">$</a></td>",
           "</tr>"
                   ],
         "layout-for-human-read": ["void", "Education experience continued"],
