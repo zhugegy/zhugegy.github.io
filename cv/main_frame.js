@@ -1,8 +1,8 @@
 var cons_strURLBase = "https://zhugegy.github.io/";
 var cons_strURLCur = "cv/";
 
-var cons_isDebug = false;
-//var cons_isDebug = true;
+//var cons_isDebug = false;
+var cons_isDebug = true;
 
 // Due to diffculty in reading local jason files, the jason content is read via URL data transfer.
 // source: https://stackoverflow.com/questions/19440589/parsing-json-data-from-a-url
@@ -204,33 +204,50 @@ function load_body_backbone_structure()
 
 }
 
-function test_read(data)
-{
-	alert(data);
-}
-
 function read_json_sync(strPath, funAction)
 {
-	// $.ajaxSetup({
-  //       async: false
-  //   });
+	if (cons_isDebug)
+	{
+		__fetch_data_and_render(strPath, funAction);
+	}
+	else
+	{
+		$.ajaxSetup({
+					async: false
+			});
 
-	$.getJSON(strPath, function(data) {funAction(data);} );
-	alert("after call!");
+		$.getJSON(strPath, function(data) {funAction(data);} );
 
-	// $.ajaxSetup({
-	//         async: true
-	//     });
+		$.ajaxSetup({
+					async: true
+		});
+	}
+
 }
+
+function test_global(data)
+{
+	var obj = data;
+	alert(obj["5-star"]["group"]);
+}
+
+// skill_list的表
+// object全局：a. group b. score
+// Map 全局1： 当前用户所选lables
+// Map 全局2:  所有label的计数器，每次打开网页仅计数一次。
 
 // entry point
 window.onload = function()
 {
-	//test
-	read_json_sync('../data/test.json', test_read);
+	//initilize the global variables
+	//release
+	//read_json_sync('../data/test.json', test_global);
+	//debug
+	read_json_sync('https://api.myjson.com/bins/ead5l', test_global);
 
-	load_body_backbone_structure();
 
-	// only for debug propose, when body backbone is embeded statically in HTML file rather than loaded dynamically.
-	//load_body_content();
+	//release
+	//load_body_backbone_structure();
+	//debug : only for debug propose, when body backbone is embeded statically in HTML file rather than loaded dynamically.
+	load_body_content();
 }

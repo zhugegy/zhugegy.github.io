@@ -1,14 +1,18 @@
-[
-    {
-        "id":"menu_item_basic_information",
-        "name_zh-Hans":"基本信息",
-        "name":"basic_information",
-        "image_format":"png"
-    },
-    {
-        "id":"menu_item_personal_experience",
-        "name_zh-Hans":"个人经历",
-        "name":"personal_experience",
-        "image_format":"png"
-    }
-]
+{
+  "C++": {
+    "group": "programming-language",
+    "score": 3
+  },
+  "MFC": {
+    "group": "software-framework",
+    "score": 1
+  },
+  "Windows": {
+    "group": "operating-system",
+    "score": 1
+  },
+  "5-star": {
+    "group": "diffculty-rank",
+    "score": 5
+  }
+}
