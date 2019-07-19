@@ -322,9 +322,9 @@
           "</tr>"
                   ],
         "layout-for-human-read": ["void", "Education experience continued"],
-        "content_zh-Hans":["", "<small>对120余个办公室、工作室、演播厅提供8/5小时的电话呼叫协助。</small>"],
+        "content_zh-Hans":["", "<small>对120余个办公室、工作室、演播厅提供电话呼叫协助。</small>"],
         "content_zh-Hant":["", "null"],
-        "content_en":["", "<small>8/5 on call user support for 120+ offices, working stations and studios.</small>"]
+        "content_en":["", "<small>On call user support for 120+ offices, working stations and studios.</small>"]
     },
     {
         "field":"table_content",

@@ -28,10 +28,8 @@ div#infoTableBox {
    border-top: 1.8pt solid #a7a7a6;
 
    background-image: url("images/content_background.jpg");
-   background-size: 100% 100%;
-   background-repeat: repeat-y;
-   background-position: center center;
-
+   background-size: auto 100% 100%;
+   background-repeat: repeat;
    width: 85%;
 }
 
@@ -159,8 +157,13 @@ tr.hiddentr {
     display: none;
   }
 
-.hiddenspan {
+.hiddenspan{
   display: none;
+}
+
+.hiddentbody{
+  display: none;
+  font-size: 18vw;
 }
 
 tr td img {
@@ -222,25 +225,6 @@ td.intensiveInfo {
 .tooltip:hover .tooltiptext {
     visibility: visible;
     opacity: 1;
-}
-
-a.obsoletebutton {
-    -webkit-appearance: button;
-    -moz-appearance: button;
-    appearance: button;
-
-    text-decoration: none;
-    color: initial;
-    padding-left: 0.3vw;
-    padding-right: 0.3vw;
-    margin-right: 0.4vw;
-}
-
-a.obsoletebutton:lang(zh-Hant) 	{padding:0.2vw;}
-a.obsoletebutton:lang(zh-Hans) 	{padding:0.2vw;}
-
-a.obsoletebutton:hover {
-    opacity: 0.65;
 }
 
 @media only screen and (max-width: 768px) {

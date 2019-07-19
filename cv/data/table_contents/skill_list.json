@@ -1,0 +1,221 @@
+[
+    {
+        "notes":"",
+        "todo1":"DONE自我评价；DONE改字体;LinkedIn account details;Personal website/portfolio web address; DONE护照号码打码",
+        "todo2":"婚姻状态，孩子数量，照片，现在的工资，信仰，驾驶执照信息，健康状态"
+    },
+    {
+        "field":"table_heading",
+        "format": [
+          "$",
+          "<br>",
+          "<span class=\"tableHeadingNotes\">$</span>"
+                  ],
+        "layout-for-human-read": ["Basic Information", "notes"],
+        "content_zh-Hans":["基本信息", "注意：一些内容默认被隐藏，但您依然可以点击对应位置来查看。您在本网站的行为<b>不会</b>被记录。"],
+        "content_zh-Hant":["基本信息", "null"],
+        "content_en":["Basic Information", "<small>NOTE: You may click on some rows to reveal the hidden content. Your activities in this site are <b>not</b> traced.</small>"]
+    },
+    {
+        "field":"table_content",
+        "format": [
+          "<tr>",
+          "<td class=\"tabContentTable_lineTitle\">$</td><td>$</td>",
+          "</tr>"
+                  ],
+        "layout-for-human-read": ["Name:", "name"],
+        "content_zh-Hans":["姓名", "诸葛琛"],
+        "content_zh-Hant":["姓名", "諸葛琛"],
+        "content_en":["Name", "Chen (Lex) Zhuge"]
+    },
+    {
+        "field":"table_content",
+        "format": [
+          "<tr>",
+          "<td class=\"tabContentTable_lineTitle\">$</td><td><a href=\"$\">$</a></td>",
+          "</tr>"
+                  ],
+        "layout-for-human-read": ["Email:", "mailto:email", "email"],
+        "content_zh-Hans":["Email", "mailto:zhugechenw@gmail.com", "zhugechenw@gmail.com"],
+        "content_zh-Hant":["Email", "mailto:zhugechenw@gmail.com", "zhugechenw@gmail.com"],
+        "content_en":["Email", "mailto:zhugechenw@gmail.com", "zhugechenw@gmail.com"]
+    },
+    {
+        "field":"table_content",
+        "format": [
+          "<tr>",
+          "<td class=\"tabContentTable_lineTitle\">$</td><td><a href=\"$\">$</a></td>",
+          "</tr>"
+                  ],
+        "layout-for-human-read": ["Phone:", "tel:phone", "phone"],
+        "content_zh-Hans":["电话", "tel:+61 0466378608", "+61 0466378608"],
+        "content_zh-Hant":["null", "tel:+61 0466378608", "+61 0466378608"],
+        "content_en":["Phone", "tel:+61 0466378608", "+61 0466378608"]
+    },
+    {
+        "field":"table_content",
+        "format": [
+          "<tr>",
+          "<td class=\"tabContentTable_lineTitle\">$</td><td class=\"intensiveInfo\">$</td>",
+          "</tr>"
+                  ],
+        "layout-for-human-read": ["summary:", "self-introduction"],
+        "content_zh-Hans":["个人简介", "自2014年开始学习Windows操作系统内核安全，积累了丰富的技术笔记和实战经验。<br>善于使用C++进行开发，但更乐于使用Python。<br>对全栈网页应用开发有一定的理解和实践（MEAN框架和Spring框架；HTML, CSS, JavaScript, MongoDB, Java, MySQL）。"],
+        "content_zh-Hant":["null", "null"],
+        "content_en":["Summary", "Have been studying Windows OS kernel security since 2014, and accumulated reasonable amount of technical notes and practical experience. <br>Reasonably good at developing with C++, yet Python is the choice whenever possible.<br>Have certain understanding and experience on full stack Web development (MEAN framework and Spring framework; HTML, CSS, JavaScript, MongoDB, Java and MySQL)."]
+    },
+    {
+        "field":"table_content",
+        "format": [
+          "<tr>",
+          "<td class=\"tabContentTable_lineTitle\">$</td><td>$</td>",
+          "</tr>"
+                  ],
+        "layout-for-human-read": ["Current Residence:", "a place on the earth"],
+        "comments":["<i>（可随工作更换居所）</i>", "<i>(open to relocate)</i>"],
+        "content_zh-Hans":["现居地", "澳大利亚，悉尼"],
+        "content_zh-Hant":["null", "null"],
+        "content_en":["Current Residence", "Sydney, Australia"]
+    },
+    {
+        "field":"table_content",
+        "format": [
+          "<tr>",
+          "<td class=\"tabContentTable_lineTitle\">$</td><td>$</td>",
+          "</tr>"
+                  ],
+        "layout-for-human-read": ["Education Level:", "Education you got"],
+        "content_zh-Hans":["教育程度", "硕士，澳大利亚悉尼大学，IT和IT管理，预计2019年12月毕业"],
+        "content_zh-Hant":["null", "null"],
+        "content_en":["Academic Degree", "MSc in IT and IT Management, University of Sydney, Australia, diploma expected in Dec 2019"]
+    },
+    {
+        "field":"table_content",
+        "format": [
+          "<tr>",
+          "<td class=\"tabContentTable_lineTitle\">$</td><td class=\"intensiveInfo\">$</td>",
+          "</tr>"
+                  ],
+        "layout-for-human-read": ["Work Permission (Visa):", "visa"],
+        "content_zh-Hans":["工作签证", "<b>澳大利亚</b><br><b>500(Student)签证</b>: 现在 - 2020年3月21日，每两周合法工作40小时。<br><b>485(Post-Study Work)签证</b>(即将拿到): 2020年3月21日 - 2022年3月21日，无工作时间限制。<br><b>永久居留许可</b>（努力中）"],
+        "content_zh-Hant":["null", "null"],
+        "content_en":["Work Permission", "<b>Australia</b><br><b>Subclass 500 Student Visa</b>: now - March 21, 2020, eligible to work 40 hours per fortnight.<br><b>Subclass 485 PSW Visa</b> (as planned): March 21, 2020 - March 21, 2022, no work hour limitation.<br><b>Permanent Resident</b> (working on it)"]
+    },
+    {
+        "field":"table_content",
+        "format": [
+          "<tr>",
+          "<td class=\"tabContentTable_lineTitle\">$</td><td class=\"intensiveInfo\">$<a class=\"tooltip\" target=\"_blank\" href=\"$\">$<span class=\"tooltiptext\"><img class=\"tooltipimg\" src=\"$\"></span></a>$</td>",
+          "</tr>"
+                  ],
+        "layout-for-human-read": ["Lanuage Skills:", "language skills"],
+        "comment": "able to speak the language with sufficient structural accuracy and vocabulary to participate effectively in most conversations on practical, social, and professional topics",
+        "content_zh-Hans":["语言能力", "<b>中文</b>：母语<br><b>英语</b>：流利，", "../images/basic_information/IELTS-result.jpg", "雅思成绩7.5", "../images/basic_information/IELTS-result.jpg", "（总分9.0；2016年4月；<a target=\"_blank\" href=\"https://www.ieltsessentials.com/global/results/ielts9bandscale\">评分标准英文版</a> <a target=\"_blank\" href=\"http://blog.sina.com.cn/s/blog_4b45cdd5010008pr.html\">评分标准中文版</a>）"],
+        "content_zh-Hant":["null", "null"],
+        "content_en":["Language Skill", "<b>Chinese</b>: native user<br><b>English</b>: good/very-good user, ", "../images/basic_information/IELTS-result.jpg", "IELTS band score 7.5", "../images/basic_information/IELTS-result.jpg", " (out of 9.0; April 2016; <a target=\"_blank\" href=\"https://www.ieltsessentials.com/global/results/ielts9bandscale\">band scale</a>)"]
+    },
+    {
+        "field":"table_content",
+        "format": [
+          "<tr class=\"clickabletr\" id=\"basic_information_Gender\">",
+          "<td class=\"tabContentTable_lineTitle\"><span id=\"basic_information_GenderShown\"><img src=\"https://media.giphy.com/media/cJjQGaB5cbIO3EnqZA/giphy.gif\"></span>$</td><td><span>$</span></td>",
+          "</tr>",
+          "<tbody class=\"hiddentbody\" id=\"basic_information_GenderHidden\">",
+          "<tr>",
+          "<td colspan=\"2\">hello</td>",
+          "</tr>",
+          "<tr>",
+          "<td colspan=\"2\">world</td>",
+          "</tr>",
+          "</tbody>"
+                  ],
+        "layout-for-human-read": ["Gender:", "gender"],
+        "content_zh-Hans":["性别", "<small>这是题目</small>"],
+        "content_zh-Hant":["null", "null", "null"],
+        "content_en":["Gender", "<small><i>Content is hidden. If necessary, you may click to see.</i></small>", "Male"]
+    },
+    {
+        "field":"table_content",
+        "format": [
+          "<tr class=\"clickabletr\" id=\"basic_information_Year_of_Birth\">",
+          "<td class=\"tabContentTable_lineTitle\">$</td><td><span id=\"basic_information_Year_of_BirthShown\">$</span><span class=\"hiddenspan\" id=\"basic_information_Year_of_BirthHidden\">$</span></td>",
+          "</tr>"
+                  ],
+        "layout-for-human-read": ["Birthday:", "birthday"],
+        "content_zh-Hans":["出生年", "<small><i>内容已被隐藏。如有需要，可点击查看。</i></small>", "1991年"],
+        "content_zh-Hant":["null", "null", "null"],
+        "content_en":["Year of Birth", "<small><i>Content is hidden. If necessary, you may click to see.</i></small>", "1991"]
+    },
+    {
+        "field":"table_content",
+        "format": [
+          "<tr class=\"clickabletr\" id=\"basic_information_Place_of_Birth\">",
+          "<td class=\"tabContentTable_lineTitle\">$</td><td><span id=\"basic_information_Place_of_BirthShown\">$</span><span class=\"hiddenspan\" id=\"basic_information_Place_of_BirthHidden\">$</span></td>",
+          "</tr>"
+                  ],
+        "layout-for-human-read": ["Place of Birth:", "place of birth"],
+        "content_zh-Hans":["籍贯", "<small><i>内容已被隐藏。如有需要，可点击查看。</i></small>", "山东省临沂市"],
+        "content_zh-Hant":["null", "null", "null"],
+        "content_en":["Place of Birth", "<small><i>Content is hidden. If necessary, you may click to see.</i></small>", "Linyi, Shandong, China"]
+    },
+    {
+        "field":"table_content",
+        "format": [
+          "<tr class=\"clickabletr\" id=\"basic_information_Citizenship\">",
+          "<td class=\"tabContentTable_lineTitle\">$</td><td><span id=\"basic_information_CitizenshipShown\">$</span><span class=\"hiddenspan\" id=\"basic_information_CitizenshipHidden\">$</span></td>",
+          "</tr>"
+                  ],
+        "layout-for-human-read": ["Citizenship:", "citizenship"],
+        "content_zh-Hans":["国籍", "<small><i>内容已被隐藏。如有需要，可点击查看。</i></small>", "中国"],
+        "content_zh-Hant":["null", "null", "null"],
+        "content_en":["Citizenship", "<small><i>Content is hidden. If necessary, you may click to see.</i></small>", "Chinese"]
+    },
+    {
+        "field":"table_content",
+        "format": [
+          "<tr>",
+          "<td class=\"tabContentTable_lineTitle\">$</td><td><a class=\"tooltip\" target=\"_blank\" href=\"$\">$<span class=\"tooltiptext\"><img class=\"tooltipimg\" src=\"$\"></span></a></td>",
+          "</tr>"
+                  ],
+        "layout-for-human-read": ["WeChat:", "WeChatQRImageLink"],
+        "content_zh-Hans":["微信", "../images/basic_information/WeChat-QR.png", "二维码", "../images/basic_information/WeChat-QR.png"],
+        "content_zh-Hant":["null", "null"],
+        "content_en":["WeChat", "../images/basic_information/WeChat-QR.png", "QR Code", "../images/basic_information/WeChat-QR.png"]
+    },
+    {
+      "field":"table_content",
+      "format": [
+        "<tr>",
+        "<td class=\"tabContentTable_lineTitle\">$</td><td><a target=\"_blank\" href=\"$\">$</a></td>",
+        "</tr>"
+                ],
+      "layout-for-human-read": ["GitHub:", "GitHub Link"],
+      "content_zh-Hans":["GitHub", "https://github.com/zhugegy", "https://github.com/zhugegy"],
+      "content_zh-Hant":["GitHub", "https://github.com/zhugegy", "https://github.com/zhugegy"],
+      "content_en":["GitHub", "https://github.com/zhugegy", "https://github.com/zhugegy"]
+    },
+    {
+      "field":"table_content",
+      "format": [
+        "<tr>",
+        "<td class=\"tabContentTable_lineTitle\">$</td><td><a target=\"_blank\" href=\"$\">$</a></td>",
+        "</tr>"
+                ],
+      "layout-for-human-read": ["Stack Overflow:", "Stack Overflow link"],
+      "content_zh-Hans":["Stack Overflow", "https://stackoverflow.com/users/8031896", "https://stackoverflow.com/users/8031896"],
+      "content_zh-Hant":["Stack Overflow", "https://stackoverflow.com/users/8031896", "https://stackoverflow.com/users/8031896"],
+      "content_en":["Stack Overflow", "https://stackoverflow.com/users/8031896", "https://stackoverflow.com/users/8031896"]
+    },
+    {
+      "field":"table_content",
+      "format": [
+        "<tr>",
+        "<td class=\"tabContentTable_lineTitle\">$</td><td><a target=\"_blank\" href=\"$\">$</a></td>",
+        "</tr>"
+                ],
+      "layout-for-human-read": ["Blog:", "Blog Link"],
+      "content_zh-Hans":["博客", "https://cnblogs.com/zhugehq", "https://cnblogs.com/zhugehq"],
+      "content_zh-Hant":["null", "https://cnblogs.com/zhugehq", "https://cnblogs.com/zhugehq"],
+      "content_en":["Blog", "https://cnblogs.com/zhugehq", "https://cnblogs.com/zhugehq (Chinese)"]
+    }
+]

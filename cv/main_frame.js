@@ -54,6 +54,10 @@ function info_table_loaded_inner_callback(strMenuItemName, response)
 		{
 				__fetch_data_and_render('https://api.myjson.com/bins/8vx5l', action_with_table_content_data);
 		}
+		else if (strMenuItemName == "skill_list")
+		{
+				__fetch_data_and_render('https://api.myjson.com/bins/fx2kx', action_with_table_content_data);
+		}
 	}
 	else
 	{
@@ -141,8 +145,8 @@ function action_with_table_content_data(jsonData)
 			var strShownID = "#" + this.id + "Shown";
 			if ($(strHiddenID).is(":hidden"))
 			{
-		    //$(strHiddenID).slideDown("slow");
-				$(strHiddenID).show();
+		    $(strHiddenID).slideDown("slow");
+				//$(strHiddenID).show();
 				$(strShownID).hide();
   		}
 			else
@@ -177,7 +181,7 @@ function load_body_content()
 	}
 
 	// add ripples effect
-    $('#menuBox').ripples({esolution: 512, dropRadius: 20, perturbance: 0.04});
+  $('#menuBox').ripples({esolution: 512, dropRadius: 20, perturbance: 0.04});
 
 }
 
@@ -200,11 +204,33 @@ function load_body_backbone_structure()
 
 }
 
+function test_read(data)
+{
+	alert(data);
+}
+
+function read_json_sync(strPath, funAction)
+{
+	$.ajaxSetup({
+        async: false
+    });
+
+	$.getJSON(strPath, function(data) {funAction(data);} );
+	alert("after call!");
+
+	$.ajaxSetup({
+	        async: true
+	    });
+}
+
 // entry point
 window.onload = function()
 {
+	//test
+	read_json_sync('../data/test.json', test_read);
+
 	load_body_backbone_structure();
 
 	// only for debug propose, when body backbone is embeded statically in HTML file rather than loaded dynamically.
-	//load_body_content()
+	//load_body_content();
 }
