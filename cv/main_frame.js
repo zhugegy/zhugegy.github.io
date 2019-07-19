@@ -211,16 +211,16 @@ function test_read(data)
 
 function read_json_sync(strPath, funAction)
 {
-	$.ajaxSetup({
-        async: false
-    });
+	// $.ajaxSetup({
+  //       async: false
+  //   });
 
 	$.getJSON(strPath, function(data) {funAction(data);} );
 	alert("after call!");
 
-	$.ajaxSetup({
-	        async: true
-	    });
+	// $.ajaxSetup({
+	//         async: true
+	//     });
 }
 
 // entry point
