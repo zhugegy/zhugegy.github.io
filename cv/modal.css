@@ -133,6 +133,27 @@ img.Modal_images_silde_ratio_1dot414_AKA_A4, img.Modal_images_silde_ratio_0dot75
 
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
+    .modal-content {
+      width: 100%;
+      max-width: 85vw;
+    }
+
+    .close {
+      top: 4px;
+      right: 10px;
+      font-size: 15px;
+    }
+
+    .prevSlide,
+    .nextSlide {
+      padding: 4px;
+      margin-top: -50px;
+      font-size: 20px;
+      transition: 0.6s ease;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+
     img.Modal_images_silde_ratio_1dot414_AKA_A4, img.Modal_images_silde_ratio_0dot75, img.Modal_images_silde_ratio_1dot33 {
       height: 63vh;
       max-width:85vw;
