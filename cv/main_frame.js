@@ -52,7 +52,7 @@ function info_table_loaded_inner_callback(strMenuItemName, response)
 		}
 		else if (strMenuItemName == "personal_experience")
 		{
-				__fetch_data_and_render('https://api.myjson.com/bins/xcu49', action_with_table_content_data);
+				__fetch_data_and_render('https://api.myjson.com/bins/8vx5l', action_with_table_content_data);
 		}
 	}
 	else

@@ -224,7 +224,7 @@ td.intensiveInfo {
     opacity: 1;
 }
 
-a.button {
+a.obsoletebutton {
     -webkit-appearance: button;
     -moz-appearance: button;
     appearance: button;
@@ -236,10 +236,10 @@ a.button {
     margin-right: 0.4vw;
 }
 
-a.button:lang(zh-Hant) 	{padding:0.2vw;}
-a.button:lang(zh-Hans) 	{padding:0.2vw;}
+a.obsoletebutton:lang(zh-Hant) 	{padding:0.2vw;}
+a.obsoletebutton:lang(zh-Hans) 	{padding:0.2vw;}
 
-a.button:hover {
+a.obsoletebutton:hover {
     opacity: 0.65;
 }
 
