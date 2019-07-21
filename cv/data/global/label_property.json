@@ -1,0 +1,18 @@
+{
+  "C": {
+    "group": "programming-language",
+    "score": 3
+  },
+  "Java": {
+    "group": "programming-language",
+    "score": 3
+  },
+  "Python": {
+    "group": "programming-language",
+    "score": 3
+  },
+  "JavaScript": {
+    "group": "programming-language",
+    "score": 3
+  }
+}

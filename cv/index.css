@@ -23,7 +23,7 @@ div#menuBox {
    width: 85%;
 }
 
-div#infoTableBox {
+div#infoTableBox, div#controlPanelBox{
    margin: 0em auto;
    border-top: 1.8pt solid #a7a7a6;
 
@@ -124,7 +124,6 @@ li.menuItem a img{
   margin-left: 18vw;
 }
 
-
 table.tabContentTable, th, td{
   margin-left: 18vw;
 
@@ -153,6 +152,10 @@ td.tabContentTable_lineTitleBigger{
   font-size: 1.8vw;
 }
 
+tr.clickabletr {
+    cursor: pointer;
+}
+
 tr.hiddentr {
     display: none;
   }
@@ -163,7 +166,6 @@ tr.hiddentr {
 
 .hiddentbody{
   display: none;
-  font-size: 18vw;
 }
 
 tr td img {

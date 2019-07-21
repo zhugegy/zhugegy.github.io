@@ -1,0 +1,15 @@
+{
+  "basic_information": {
+    "info_table": "info_table.html",
+    "footer": "footer.html"
+  },
+  "personal_experience": {
+    "info_table": "info_table.html",
+    "footer": "footer.html"
+  },
+  "skill_list": {
+    "control_panel": "control_panel_for_skill_list.html",
+    "info_table": "info_table.html",
+    "footer": "footer.html"
+  }
+}

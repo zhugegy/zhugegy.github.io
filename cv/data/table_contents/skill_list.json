@@ -32,79 +32,6 @@
         "field":"table_content",
         "format": [
           "<tr>",
-          "<td class=\"tabContentTable_lineTitle\">$</td><td><a href=\"$\">$</a></td>",
-          "</tr>"
-                  ],
-        "layout-for-human-read": ["Email:", "mailto:email", "email"],
-        "content_zh-Hans":["Email", "mailto:zhugechenw@gmail.com", "zhugechenw@gmail.com"],
-        "content_zh-Hant":["Email", "mailto:zhugechenw@gmail.com", "zhugechenw@gmail.com"],
-        "content_en":["Email", "mailto:zhugechenw@gmail.com", "zhugechenw@gmail.com"]
-    },
-    {
-        "field":"table_content",
-        "format": [
-          "<tr>",
-          "<td class=\"tabContentTable_lineTitle\">$</td><td><a href=\"$\">$</a></td>",
-          "</tr>"
-                  ],
-        "layout-for-human-read": ["Phone:", "tel:phone", "phone"],
-        "content_zh-Hans":["电话", "tel:+61 0466378608", "+61 0466378608"],
-        "content_zh-Hant":["null", "tel:+61 0466378608", "+61 0466378608"],
-        "content_en":["Phone", "tel:+61 0466378608", "+61 0466378608"]
-    },
-    {
-        "field":"table_content",
-        "format": [
-          "<tr>",
-          "<td class=\"tabContentTable_lineTitle\">$</td><td class=\"intensiveInfo\">$</td>",
-          "</tr>"
-                  ],
-        "layout-for-human-read": ["summary:", "self-introduction"],
-        "content_zh-Hans":["个人简介", "自2014年开始学习Windows操作系统内核安全，积累了丰富的技术笔记和实战经验。<br>善于使用C++进行开发，但更乐于使用Python。<br>对全栈网页应用开发有一定的理解和实践（MEAN框架和Spring框架；HTML, CSS, JavaScript, MongoDB, Java, MySQL）。"],
-        "content_zh-Hant":["null", "null"],
-        "content_en":["Summary", "Have been studying Windows OS kernel security since 2014, and accumulated reasonable amount of technical notes and practical experience. <br>Reasonably good at developing with C++, yet Python is the choice whenever possible.<br>Have certain understanding and experience on full stack Web development (MEAN framework and Spring framework; HTML, CSS, JavaScript, MongoDB, Java and MySQL)."]
-    },
-    {
-        "field":"table_content",
-        "format": [
-          "<tr>",
-          "<td class=\"tabContentTable_lineTitle\">$</td><td>$</td>",
-          "</tr>"
-                  ],
-        "layout-for-human-read": ["Current Residence:", "a place on the earth"],
-        "comments":["<i>（可随工作更换居所）</i>", "<i>(open to relocate)</i>"],
-        "content_zh-Hans":["现居地", "澳大利亚，悉尼"],
-        "content_zh-Hant":["null", "null"],
-        "content_en":["Current Residence", "Sydney, Australia"]
-    },
-    {
-        "field":"table_content",
-        "format": [
-          "<tr>",
-          "<td class=\"tabContentTable_lineTitle\">$</td><td>$</td>",
-          "</tr>"
-                  ],
-        "layout-for-human-read": ["Education Level:", "Education you got"],
-        "content_zh-Hans":["教育程度", "硕士，澳大利亚悉尼大学，IT和IT管理，预计2019年12月毕业"],
-        "content_zh-Hant":["null", "null"],
-        "content_en":["Academic Degree", "MSc in IT and IT Management, University of Sydney, Australia, diploma expected in Dec 2019"]
-    },
-    {
-        "field":"table_content",
-        "format": [
-          "<tr>",
-          "<td class=\"tabContentTable_lineTitle\">$</td><td class=\"intensiveInfo\">$</td>",
-          "</tr>"
-                  ],
-        "layout-for-human-read": ["Work Permission (Visa):", "visa"],
-        "content_zh-Hans":["工作签证", "<b>澳大利亚</b><br><b>500(Student)签证</b>: 现在 - 2020年3月21日，每两周合法工作40小时。<br><b>485(Post-Study Work)签证</b>(即将拿到): 2020年3月21日 - 2022年3月21日，无工作时间限制。<br><b>永久居留许可</b>（努力中）"],
-        "content_zh-Hant":["null", "null"],
-        "content_en":["Work Permission", "<b>Australia</b><br><b>Subclass 500 Student Visa</b>: now - March 21, 2020, eligible to work 40 hours per fortnight.<br><b>Subclass 485 PSW Visa</b> (as planned): March 21, 2020 - March 21, 2022, no work hour limitation.<br><b>Permanent Resident</b> (working on it)"]
-    },
-    {
-        "field":"table_content",
-        "format": [
-          "<tr>",
           "<td class=\"tabContentTable_lineTitle\">$</td><td class=\"intensiveInfo\">$<a class=\"tooltip\" target=\"_blank\" href=\"$\">$<span class=\"tooltiptext\"><img class=\"tooltipimg\" src=\"$\"></span></a>$</td>",
           "</tr>"
                   ],
@@ -125,7 +52,7 @@
           "<td colspan=\"2\">hello</td>",
           "</tr>",
           "<tr>",
-          "<td colspan=\"2\">world</td>",
+          "<td colspan=\"2\">world hi!</td>",
           "</tr>",
           "</tbody>"
                   ],
@@ -169,53 +96,5 @@
         "content_zh-Hans":["国籍", "<small><i>内容已被隐藏。如有需要，可点击查看。</i></small>", "中国"],
         "content_zh-Hant":["null", "null", "null"],
         "content_en":["Citizenship", "<small><i>Content is hidden. If necessary, you may click to see.</i></small>", "Chinese"]
-    },
-    {
-        "field":"table_content",
-        "format": [
-          "<tr>",
-          "<td class=\"tabContentTable_lineTitle\">$</td><td><a class=\"tooltip\" target=\"_blank\" href=\"$\">$<span class=\"tooltiptext\"><img class=\"tooltipimg\" src=\"$\"></span></a></td>",
-          "</tr>"
-                  ],
-        "layout-for-human-read": ["WeChat:", "WeChatQRImageLink"],
-        "content_zh-Hans":["微信", "../images/basic_information/WeChat-QR.png", "二维码", "../images/basic_information/WeChat-QR.png"],
-        "content_zh-Hant":["null", "null"],
-        "content_en":["WeChat", "../images/basic_information/WeChat-QR.png", "QR Code", "../images/basic_information/WeChat-QR.png"]
-    },
-    {
-      "field":"table_content",
-      "format": [
-        "<tr>",
-        "<td class=\"tabContentTable_lineTitle\">$</td><td><a target=\"_blank\" href=\"$\">$</a></td>",
-        "</tr>"
-                ],
-      "layout-for-human-read": ["GitHub:", "GitHub Link"],
-      "content_zh-Hans":["GitHub", "https://github.com/zhugegy", "https://github.com/zhugegy"],
-      "content_zh-Hant":["GitHub", "https://github.com/zhugegy", "https://github.com/zhugegy"],
-      "content_en":["GitHub", "https://github.com/zhugegy", "https://github.com/zhugegy"]
-    },
-    {
-      "field":"table_content",
-      "format": [
-        "<tr>",
-        "<td class=\"tabContentTable_lineTitle\">$</td><td><a target=\"_blank\" href=\"$\">$</a></td>",
-        "</tr>"
-                ],
-      "layout-for-human-read": ["Stack Overflow:", "Stack Overflow link"],
-      "content_zh-Hans":["Stack Overflow", "https://stackoverflow.com/users/8031896", "https://stackoverflow.com/users/8031896"],
-      "content_zh-Hant":["Stack Overflow", "https://stackoverflow.com/users/8031896", "https://stackoverflow.com/users/8031896"],
-      "content_en":["Stack Overflow", "https://stackoverflow.com/users/8031896", "https://stackoverflow.com/users/8031896"]
-    },
-    {
-      "field":"table_content",
-      "format": [
-        "<tr>",
-        "<td class=\"tabContentTable_lineTitle\">$</td><td><a target=\"_blank\" href=\"$\">$</a></td>",
-        "</tr>"
-                ],
-      "layout-for-human-read": ["Blog:", "Blog Link"],
-      "content_zh-Hans":["博客", "https://cnblogs.com/zhugehq", "https://cnblogs.com/zhugehq"],
-      "content_zh-Hant":["null", "https://cnblogs.com/zhugehq", "https://cnblogs.com/zhugehq"],
-      "content_en":["Blog", "https://cnblogs.com/zhugehq", "https://cnblogs.com/zhugehq (Chinese)"]
     }
 ]

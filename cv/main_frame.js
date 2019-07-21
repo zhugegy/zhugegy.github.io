@@ -4,6 +4,23 @@ var cons_strURLCur = "cv/";
 //var cons_isDebug = false;
 var cons_isDebug = true;
 
+g_mapCurrentChoosenLabels = {};
+g_mapLabelsCount = {};
+
+var g_objTabProperty;
+
+function init_global_objTabProperty(data)
+{
+	g_objTabProperty = data;
+}
+
+var g_objLabelProperty;
+
+function init_global_objLabelProperty(data)
+{
+	g_objLabelProperty = data;
+}
+
 // Due to diffculty in reading local jason files, the jason content is read via URL data transfer.
 // source: https://stackoverflow.com/questions/19440589/parsing-json-data-from-a-url
 function getJSON(url)
@@ -56,7 +73,7 @@ function info_table_loaded_inner_callback(strMenuItemName, response)
 		}
 		else if (strMenuItemName == "skill_list")
 		{
-				__fetch_data_and_render('https://api.myjson.com/bins/fx2kx', action_with_table_content_data);
+				__fetch_data_and_render('https://api.myjson.com/bins/m4wj1', action_with_table_content_data);
 		}
 	}
 	else
@@ -70,13 +87,43 @@ function menuItems_listener()
 	strId = this.id;
 	strTmpItemName = strId.slice("menu_item_".length);
 
+	// Load the content of the controlPanelBox section.
+	$("#controlPanelBox").empty();
+	var strControlPanelName = g_objTabProperty[strTmpItemName]["control_panel"];
+	if (strControlPanelName != null)
+	{
+		$("#controlPanelBox").load(cons_strURLBase + cons_strURLCur + "sub_sections/" + strControlPanelName,
+								function (response)
+								{
+									//inner call back
+								} );
+	}
+
 	// Load the content of the infoTableBox section.
 	// Content is initially empty, which will be filled in the callback function with the proper data according to strTmpItemName.
-	$("#infoTableBox").load(cons_strURLBase + cons_strURLCur + "sub_sections/info_table.html",
-							function (response)
-							{
-								info_table_loaded_inner_callback(strTmpItemName, response);
-							} );
+	$("#infoTableBox").empty();
+	var strInfoTableName = g_objTabProperty[strTmpItemName]["info_table"];
+	if (strInfoTableName != null)
+	{
+		$("#infoTableBox").load(cons_strURLBase + cons_strURLCur + "sub_sections/" + strInfoTableName,
+								function (response)
+								{
+									info_table_loaded_inner_callback(strTmpItemName, response);
+								} );
+	}
+
+	// Load the content of the footerBox section.
+	$("#footerBox").empty();
+	var strFooterName = g_objTabProperty[strTmpItemName]["footer"];
+	if (strFooterName != null)
+	{
+		$("#footerBox").load(cons_strURLBase + cons_strURLCur + "sub_sections/" + strFooterName,
+								function (response)
+								{
+									//inner call back
+								} );
+	}
+
 }
 
 function action_with_menu_data(jsonData)
@@ -145,8 +192,9 @@ function action_with_table_content_data(jsonData)
 			var strShownID = "#" + this.id + "Shown";
 			if ($(strHiddenID).is(":hidden"))
 			{
-		    $(strHiddenID).slideDown("slow");
-				//$(strHiddenID).show();
+		    //$(strHiddenID).slideDown("slow");
+				$(strHiddenID).show();
+				//$(strHiddenID).slideToggle();
 				$(strShownID).hide();
   		}
 			else
@@ -225,26 +273,36 @@ function read_json_sync(strPath, funAction)
 
 }
 
-function test_global(data)
-{
-	var obj = data;
-	alert(obj["5-star"]["group"]);
-}
+// skill_list相关的全局表
+// 1. object全局 g_objLabelProperty：a. group b. score
+// 2. Map 全局 g_1 (g_mapCurrentChoosenLabels)： 当前用户所选lables
+// 3. Map 全局 g_2 (g_mapLabelsCount):  所有label的计数器，每次打开网页仅计数一次。
 
-// skill_list的表
-// object全局：a. group b. score
-// Map 全局1： 当前用户所选lables
-// Map 全局2:  所有label的计数器，每次打开网页仅计数一次。
+/*
+	1. 点击skill tab
+	2. load 3 sections
+	3. tables inner call
+		3.1 显示control panel内容
+			3.1.1 if g_2 is {empty}, 统计data里面的所有lable个数
+			3.1.2 render control panel， class="clickable_lable", id="lable-raw_name", checked与否检查g_1状态, 位置查询g_objLabelProperty
+			3.1.3 $(.clickable_lable).onclick = 修改 g_1状态; toggle checkedclass
+		3.2 分批次显示tables 内容： 1. matched label个数  2. 同样个数，根据score分显示顺序
+*/
+
 
 // entry point
 window.onload = function()
 {
 	//initilize the global variables
 	//release
-	//read_json_sync('../data/test.json', test_global);
+	//read_json_sync('../data/global/tab_property.json', init_global_objTabProperty);
 	//debug
-	read_json_sync('https://api.myjson.com/bins/ead5l', test_global);
+	read_json_sync('https://api.myjson.com/bins/b504x', init_global_objTabProperty);
 
+	//release
+	//read_json_sync('../data/global/label_property.json', init_global_objLabelProperty);
+	//debug
+	read_json_sync('https://api.myjson.com/bins/ntr1d', init_global_objLabelProperty);
 
 	//release
 	//load_body_backbone_structure();
