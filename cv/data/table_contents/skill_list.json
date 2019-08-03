@@ -1,100 +1,101 @@
 [
     {
-        "notes":"",
-        "todo1":"DONE自我评价；DONE改字体;LinkedIn account details;Personal website/portfolio web address; DONE护照号码打码",
-        "todo2":"婚姻状态，孩子数量，照片，现在的工资，信仰，驾驶执照信息，健康状态"
-    },
-    {
         "field":"table_heading",
         "format": [
           "$",
           "<br>",
           "<span class=\"tableHeadingNotes\">$</span>"
                   ],
-        "layout-for-human-read": ["Basic Information", "notes"],
-        "content_zh-Hans":["基本信息", "注意：一些内容默认被隐藏，但您依然可以点击对应位置来查看。您在本网站的行为<b>不会</b>被记录。"],
-        "content_zh-Hant":["基本信息", "null"],
-        "content_en":["Basic Information", "<small>NOTE: You may click on some rows to reveal the hidden content. Your activities in this site are <b>not</b> traced.</small>"]
-    },
-    {
-        "field":"table_content",
-        "format": [
-          "<tr>",
-          "<td class=\"tabContentTable_lineTitle\">$</td><td>$</td>",
-          "</tr>"
-                  ],
-        "layout-for-human-read": ["Name:", "name"],
-        "content_zh-Hans":["姓名", "诸葛琛"],
-        "content_zh-Hant":["姓名", "諸葛琛"],
-        "content_en":["Name", "Chen (Lex) Zhuge"]
-    },
-    {
-        "field":"table_content",
-        "format": [
-          "<tr>",
-          "<td class=\"tabContentTable_lineTitle\">$</td><td class=\"intensiveInfo\">$<a class=\"tooltip\" target=\"_blank\" href=\"$\">$<span class=\"tooltiptext\"><img class=\"tooltipimg\" src=\"$\"></span></a>$</td>",
-          "</tr>"
-                  ],
-        "layout-for-human-read": ["Lanuage Skills:", "language skills"],
-        "comment": "able to speak the language with sufficient structural accuracy and vocabulary to participate effectively in most conversations on practical, social, and professional topics",
-        "content_zh-Hans":["语言能力", "<b>中文</b>：母语<br><b>英语</b>：流利，", "../images/basic_information/IELTS-result.jpg", "雅思成绩7.5", "../images/basic_information/IELTS-result.jpg", "（总分9.0；2016年4月；<a target=\"_blank\" href=\"https://www.ieltsessentials.com/global/results/ielts9bandscale\">评分标准英文版</a> <a target=\"_blank\" href=\"http://blog.sina.com.cn/s/blog_4b45cdd5010008pr.html\">评分标准中文版</a>）"],
+        "layout-for-human-read": ["Skill List", "notes"],
+        "content_zh-Hans":["技能列表", "可以通过调整上方的标签，来优先显示您感兴趣的信息。"],
         "content_zh-Hant":["null", "null"],
-        "content_en":["Language Skill", "<b>Chinese</b>: native user<br><b>English</b>: good/very-good user, ", "../images/basic_information/IELTS-result.jpg", "IELTS band score 7.5", "../images/basic_information/IELTS-result.jpg", " (out of 9.0; April 2016; <a target=\"_blank\" href=\"https://www.ieltsessentials.com/global/results/ielts9bandscale\">band scale</a>)"]
+        "content_en":["Skill List", "<small>You may tune the labels above to control the content displaied.</small>"]
     },
     {
         "field":"table_content",
+        "labels":["C++"],
+        "entry-id": "skill_list_template",
+        "timestamp": 200010,
         "format": [
-          "<tr class=\"clickabletr\" id=\"basic_information_Gender\">",
-          "<td class=\"tabContentTable_lineTitle\"><span id=\"basic_information_GenderShown\"><img src=\"https://media.giphy.com/media/cJjQGaB5cbIO3EnqZA/giphy.gif\"></span>$</td><td><span>$</span></td>",
+          "<tr class=\"clickabletr darktr\" id=\"±\">",
+          "<td class=\"tabContentTable_lineTitle\" colspan=\"2\"><span id=\"±Shown\"><img src=\"../images/skill_list/click_to_expand_indicator.png\">&nbsp&nbsp&nbsp</span><span class=\"hiddenspan\" id=\"±Replacement\"><img src=\"../images/skill_list/click_to_collapse_indicator.png\">&nbsp&nbsp&nbsp</span>$</td>",
           "</tr>",
-          "<tbody class=\"hiddentbody\" id=\"basic_information_GenderHidden\">",
+          "<tr>",
+          "<td class=\"tabContentTable_lineTitle timestamp_width\">$</td><td id=\"±-label\"></td>",
+          "</tr>",
+          "<tbody class=\"hiddentbody\" id=\"±Hidden\">",
           "<tr>",
           "<td colspan=\"2\">hello</td>",
           "</tr>",
           "<tr>",
           "<td colspan=\"2\">world hi!</td>",
           "</tr>",
-          "</tbody>"
+          "</tbody>",
+          "<tr>",
+          "<td colspan=\"2\">&nbsp</td>",
+          "</tr>"
                   ],
-        "layout-for-human-read": ["Gender:", "gender"],
-        "content_zh-Hans":["性别", "<small>这是题目</small>"],
-        "content_zh-Hant":["null", "null", "null"],
-        "content_en":["Gender", "<small><i>Content is hidden. If necessary, you may click to see.</i></small>", "Male"]
+        "layout-for-human-read": ["Title", "timestamp", "hidden-content..."],
+        "content_zh-Hans":["模版", "2000-10"],
+        "content_zh-Hant":["null", "2000-10"],
+        "content_en":["Template", "2000-10"]
     },
     {
         "field":"table_content",
+        "labels":["JavaScript"],
+        "entry-id": "skill_list_ArticleInsight",
+        "timestamp": 201904,
         "format": [
-          "<tr class=\"clickabletr\" id=\"basic_information_Year_of_Birth\">",
-          "<td class=\"tabContentTable_lineTitle\">$</td><td><span id=\"basic_information_Year_of_BirthShown\">$</span><span class=\"hiddenspan\" id=\"basic_information_Year_of_BirthHidden\">$</span></td>",
+          "<tr class=\"clickabletr darktr\" id=\"±\">",
+          "<td class=\"tabContentTable_lineTitle\" colspan=\"2\"><span id=\"±Shown\"><img src=\"../images/skill_list/click_to_expand_indicator.png\">&nbsp&nbsp&nbsp</span><span class=\"hiddenspan\" id=\"±Replacement\"><img src=\"../images/skill_list/click_to_collapse_indicator.png\">&nbsp&nbsp&nbsp</span>$</td>",
+          "</tr>",
+          "<tr>",
+          "<td class=\"tabContentTable_lineTitle timestamp_width\">$</td><td id=\"±-label\"></td>",
+          "</tr>",
+          "<tbody class=\"hiddentbody\" id=\"±Hidden\">",
+          "<tr>",
+          "<td colspan=\"2\">hello</td>",
+          "</tr>",
+          "<tr>",
+          "<td colspan=\"2\">world hi!</td>",
+          "</tr>",
+          "<div id=\"$\" class=\"modal\">",
+          "<span class=\"close cursor\" onclick=\"closeModal('$')\">&times;</span>",
+          "<div class=\"modal-content\">",
+          "<div class=\"modalSlides\"><div class=\"numbertext\">$</div><img src=\"$\" class=\"$\"></div>",
+          "<div class=\"modalSlides\"><div class=\"numbertext\">$</div><img src=\"$\" class=\"$\"></div>",
+          "<div class=\"modalSlides\"><div class=\"numbertext\">$</div><img src=\"$\" class=\"$\"></div>",
+          "<div class=\"modalSlides\"><div class=\"numbertext\">$</div><img src=\"$\" class=\"$\"></div>",
+          "<div class=\"modalSlides\"><div class=\"numbertext\">$</div><img src=\"$\" class=\"$\"></div>",
+          "<div class=\"modalSlides\"><div class=\"numbertext\">$</div><img src=\"$\" class=\"$\"></div>",
+          "<div class=\"modalSlides\"><div class=\"numbertext\">$</div><img src=\"$\" class=\"$\"></div>",
+          "<div class=\"modalSlides\"><div class=\"numbertext\">$</div><img src=\"$\" class=\"$\"></div>",
+          "<a class=\"prevSlide\" onclick=\"plusSlides(-1);return false;\">&#10094;</a>",
+          "<a class=\"nextSlide\" onclick=\"plusSlides(1);return false;\">&#10095;</a>",
+          "<div class=\"caption-containerModal\"><p id=\"captionModal$\"></p></div>",
+          "<div class=\"thumbnailContainerModal\">",
+          "<div class=\"columnThumbnail\"><img class=\"demoThumbnail\" src=\"$\" onclick=\"currentSlide(1);\" data-caption=\"$\"></div>",
+          "<div class=\"columnThumbnail\"><img class=\"demoThumbnail\" src=\"$\" onclick=\"currentSlide(2);\" data-caption=\"$\"></div>",
+          "<div class=\"columnThumbnail\"><img class=\"demoThumbnail\" src=\"$\" onclick=\"currentSlide(3);\" data-caption=\"$\"></div>",
+          "<div class=\"columnThumbnail\"><img class=\"demoThumbnail\" src=\"$\" onclick=\"currentSlide(4);\" data-caption=\"$\"></div>",
+          "<div class=\"columnThumbnail\"><img class=\"demoThumbnail\" src=\"$\" onclick=\"currentSlide(5);\" data-caption=\"$\"></div>",
+          "<div class=\"columnThumbnail\"><img class=\"demoThumbnail\" src=\"$\" onclick=\"currentSlide(6);\" data-caption=\"$\"></div>",
+          "<div class=\"columnThumbnail\"><img class=\"demoThumbnail\" src=\"$\" onclick=\"currentSlide(7);\" data-caption=\"$\"></div>",
+          "<div class=\"columnThumbnail\"><img class=\"demoThumbnail\" src=\"$\" onclick=\"currentSlide(8);\" data-caption=\"$\"></div>",
+          "</div>",
+          "</div>",
+          "</div>",
+          "<tr>",
+          "<td colspan=\"2\"><a href=\"#\" class=\"button pill\" onclick=\"openModal('Modal_TTU_diploma_images');return false;\" >$</a></td>",
+          "</tr>",
+          "</tbody>",
+          "<tr>",
+          "<td colspan=\"2\">&nbsp</td>",
           "</tr>"
                   ],
-        "layout-for-human-read": ["Birthday:", "birthday"],
-        "content_zh-Hans":["出生年", "<small><i>内容已被隐藏。如有需要，可点击查看。</i></small>", "1991年"],
+        "layout-for-human-read": ["Title", "timestamp", "hidden-content..."],
+        "content_zh-Hans":["Web程序：维基印象", "2019-04", "Modal_TTU_diploma_images", "Modal_TTU_diploma_images", "1 / 8", "../images/personal_experience/ttu-cyber-security-master-diploma-front.jpg", "Modal_images_silde_ratio_1dot414_AKA_A4", "2 / 8", "../images/personal_experience/ttu-cyber-security-master-diploma-translate-3.jpg", "Modal_images_silde_ratio_1dot414_AKA_A4", "3 / 8", "../images/personal_experience/ttu-cyber-security-master-diploma-translate-4.jpg", "Modal_images_silde_ratio_1dot414_AKA_A4", "4 / 8", "../images/personal_experience/ttu-cyber-security-master-academic-transcript-1.jpg", "Modal_images_silde_ratio_1dot414_AKA_A4", "5 / 8", "../images/personal_experience/ttu-cyber-security-master-academic-transcript-2.jpg", "Modal_images_silde_ratio_1dot414_AKA_A4", "6 / 8", "../images/personal_experience/ttu-cyber-security-master-academic-transcript-3.jpg", "Modal_images_silde_ratio_1dot414_AKA_A4", "7 / 8", "../images/personal_experience/ttu-cyber-security-master-academic-transcript-4.jpg", "Modal_images_silde_ratio_1dot414_AKA_A4", "8 / 8", "../images/personal_experience/ttu-cyber-security-master-academic-transcript-5.jpg", "Modal_images_silde_ratio_1dot414_AKA_A4", "Modal_TTU_diploma_images", "../images/personal_experience/ttu-cyber-security-master-diploma-front.jpg", "Diploma Original", "../images/personal_experience/ttu-cyber-security-master-diploma-translate-3.jpg", "Diploma Translated to English", "../images/personal_experience/ttu-cyber-security-master-diploma-translate-4.jpg", "Declaration from Sworn Translator", "../images/personal_experience/ttu-cyber-security-master-academic-transcript-1.jpg", "Academic Transcript Page 1", "../images/personal_experience/ttu-cyber-security-master-academic-transcript-2.jpg", "Academic Transcript Page 2", "../images/personal_experience/ttu-cyber-security-master-academic-transcript-3.jpg", "Academic Transcript Page 3", "../images/personal_experience/ttu-cyber-security-master-academic-transcript-4.jpg", "Academic Transcript Page 4 (Education System Description)", "../images/personal_experience/ttu-cyber-security-master-academic-transcript-5.jpg", "Academic Transcript Page 5 (Education System Description)", "<small>学位证书和成绩单</small>"],
         "content_zh-Hant":["null", "null", "null"],
-        "content_en":["Year of Birth", "<small><i>Content is hidden. If necessary, you may click to see.</i></small>", "1991"]
-    },
-    {
-        "field":"table_content",
-        "format": [
-          "<tr class=\"clickabletr\" id=\"basic_information_Place_of_Birth\">",
-          "<td class=\"tabContentTable_lineTitle\">$</td><td><span id=\"basic_information_Place_of_BirthShown\">$</span><span class=\"hiddenspan\" id=\"basic_information_Place_of_BirthHidden\">$</span></td>",
-          "</tr>"
-                  ],
-        "layout-for-human-read": ["Place of Birth:", "place of birth"],
-        "content_zh-Hans":["籍贯", "<small><i>内容已被隐藏。如有需要，可点击查看。</i></small>", "山东省临沂市"],
-        "content_zh-Hant":["null", "null", "null"],
-        "content_en":["Place of Birth", "<small><i>Content is hidden. If necessary, you may click to see.</i></small>", "Linyi, Shandong, China"]
-    },
-    {
-        "field":"table_content",
-        "format": [
-          "<tr class=\"clickabletr\" id=\"basic_information_Citizenship\">",
-          "<td class=\"tabContentTable_lineTitle\">$</td><td><span id=\"basic_information_CitizenshipShown\">$</span><span class=\"hiddenspan\" id=\"basic_information_CitizenshipHidden\">$</span></td>",
-          "</tr>"
-                  ],
-        "layout-for-human-read": ["Citizenship:", "citizenship"],
-        "content_zh-Hans":["国籍", "<small><i>内容已被隐藏。如有需要，可点击查看。</i></small>", "中国"],
-        "content_zh-Hant":["null", "null", "null"],
-        "content_en":["Citizenship", "<small><i>Content is hidden. If necessary, you may click to see.</i></small>", "Chinese"]
+        "content_en":["Web Application: Article Insights", "2019-04", "Modal_TTU_diploma_images", "Modal_TTU_diploma_images", "1 / 8", "../images/personal_experience/ttu-cyber-security-master-diploma-front.jpg", "Modal_images_silde_ratio_1dot414_AKA_A4", "2 / 8", "../images/personal_experience/ttu-cyber-security-master-diploma-translate-3.jpg", "Modal_images_silde_ratio_1dot414_AKA_A4", "3 / 8", "../images/personal_experience/ttu-cyber-security-master-diploma-translate-4.jpg", "Modal_images_silde_ratio_1dot414_AKA_A4", "4 / 8", "../images/personal_experience/ttu-cyber-security-master-academic-transcript-1.jpg", "Modal_images_silde_ratio_1dot414_AKA_A4", "5 / 8", "../images/personal_experience/ttu-cyber-security-master-academic-transcript-2.jpg", "Modal_images_silde_ratio_1dot414_AKA_A4", "6 / 8", "../images/personal_experience/ttu-cyber-security-master-academic-transcript-3.jpg", "Modal_images_silde_ratio_1dot414_AKA_A4", "7 / 8", "../images/personal_experience/ttu-cyber-security-master-academic-transcript-4.jpg", "Modal_images_silde_ratio_1dot414_AKA_A4", "8 / 8", "../images/personal_experience/ttu-cyber-security-master-academic-transcript-5.jpg", "Modal_images_silde_ratio_1dot414_AKA_A4", "Modal_TTU_diploma_images", "../images/personal_experience/ttu-cyber-security-master-diploma-front.jpg", "Diploma Original", "../images/personal_experience/ttu-cyber-security-master-diploma-translate-3.jpg", "Diploma Translated to English", "../images/personal_experience/ttu-cyber-security-master-diploma-translate-4.jpg", "Declaration from Sworn Translator", "../images/personal_experience/ttu-cyber-security-master-academic-transcript-1.jpg", "Academic Transcript Page 1", "../images/personal_experience/ttu-cyber-security-master-academic-transcript-2.jpg", "Academic Transcript Page 2", "../images/personal_experience/ttu-cyber-security-master-academic-transcript-3.jpg", "Academic Transcript Page 3", "../images/personal_experience/ttu-cyber-security-master-academic-transcript-4.jpg", "Academic Transcript Page 4 (Education System Description)", "../images/personal_experience/ttu-cyber-security-master-academic-transcript-5.jpg", "Academic Transcript Page 5 (Education System Description)", "<small>学位证书和成绩单</small>"]
     }
 ]

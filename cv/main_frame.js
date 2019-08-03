@@ -69,11 +69,11 @@ function info_table_loaded_inner_callback(strMenuItemName, response)
 		}
 		else if (strMenuItemName == "personal_experience")
 		{
-				__fetch_data_and_render('https://api.myjson.com/bins/8vx5l', action_with_table_content_data);
+				__fetch_data_and_render('https://api.myjson.com/bins/r3awl', action_with_table_content_data);
 		}
 		else if (strMenuItemName == "skill_list")
 		{
-				__fetch_data_and_render('https://api.myjson.com/bins/m4wj1', action_with_table_content_data);
+				__fetch_data_and_render('https://api.myjson.com/bins/11g8tx', action_with_table_content_data);
 		}
 	}
 	else
@@ -161,6 +161,32 @@ function action_with_language_switch_data(jsonData)
 	}
 }
 
+function clickable_tr_post_amendation()
+{
+	$(".clickabletr").click(function ()
+		{
+			$(this).toggleClass("light_darktr");
+
+			var strHiddenID = "#" + this.id + "Hidden";
+			var strShownID = "#" + this.id + "Shown";
+			var strReplacementID = "#" + this.id + "Replacement";
+			if ($(strHiddenID).is(":hidden"))
+			{
+		    //$(strHiddenID).slideDown("slow");
+				//$(strHiddenID).slideToggle();
+				$(strHiddenID).show();
+				$(strShownID).hide();
+				$(strReplacementID).show();
+  		}
+			else
+			{
+				$(strReplacementID).hide();
+				$(strShownID).show();
+		    $(strHiddenID).hide();
+  		}
+		});
+}
+
 function action_with_table_content_data(jsonData)
 {
 	var lDataEntries = jsonData;
@@ -181,28 +207,17 @@ function action_with_table_content_data(jsonData)
 			  j++;
 			}
 
+			while (strContentTmp.indexOf('±') > -1)
+			{
+			  strContentTmp = strContentTmp.replace('±', lDataEntries[i]['entry-id']);
+			}
+
 			var strTargetDivName = lDataEntries[i]["field"] + "_tobefilled";
 			document.getElementById(strTargetDivName).innerHTML += strContentTmp;
 		}
 	}
 
-	$(".clickabletr").click(function ()
-		{
-			var strHiddenID = "#" + this.id + "Hidden";
-			var strShownID = "#" + this.id + "Shown";
-			if ($(strHiddenID).is(":hidden"))
-			{
-		    //$(strHiddenID).slideDown("slow");
-				$(strHiddenID).show();
-				//$(strHiddenID).slideToggle();
-				$(strShownID).hide();
-  		}
-			else
-			{
-				$(strShownID).show();
-		    $(strHiddenID).hide();
-  		}
-		});
+	clickable_tr_post_amendation();
 }
 
 function load_body_content()
@@ -289,6 +304,12 @@ function read_json_sync(strPath, funAction)
 		3.2 分批次显示tables 内容： 1. matched label个数  2. 同样个数，根据score分显示顺序
 */
 
+// 测试样本：
+// 1. ArticleInsight: JavaScript, MEAN, MongoDB, HTML, CSS, AWS Cloud, Programming
+// 2. Simple Forum: Java, Spring, MySQL, HTML, CSS, Programming
+// 3. PacMan: Time Traveller: C++, Programming
+// 4. Das-Boot: C++, MFC, Programming
+// 5.
 
 // entry point
 window.onload = function()

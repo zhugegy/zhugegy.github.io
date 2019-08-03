@@ -1,18 +1,45 @@
 {
+  "notes": "<span class=\"label label-programming-language\">JavaScript</span>",
   "C": {
-    "group": "programming-language",
-    "score": 3
+    "group": "label-programming-language",
+    "score": 3,
+    "en": "C",
+    "zh-Hans": "C",
+    "zh-Hant": "C"
+  },
+  "C++": {
+    "group": "label-programming-language",
+    "score": 3,
+    "en": "C++",
+    "zh-Hans": "C++",
+    "zh-Hant": "C++"
   },
   "Java": {
-    "group": "programming-language",
-    "score": 3
+    "group": "label-programming-language",
+    "score": 3,
+    "en": "Java",
+    "zh-Hans": "Java",
+    "zh-Hant": "Java"
   },
   "Python": {
-    "group": "programming-language",
-    "score": 3
+    "group": "label-programming-language",
+    "score": 3,
+    "en": "Python",
+    "zh-Hans": "Python",
+    "zh-Hant": "Python"
   },
   "JavaScript": {
-    "group": "programming-language",
-    "score": 3
+    "group": "label-programming-language",
+    "score": 3,
+    "en": "JavaScript",
+    "zh-Hans": "JavaScript",
+    "zh-Hant": "JavaScript"
+  },
+  "Visual Basic": {
+    "group": "label-programming-language",
+    "score": 3,
+    "en": "Visual Basic",
+    "zh-Hans": "Visual Basic",
+    "zh-Hant": "Visual Basic"
   }
 }

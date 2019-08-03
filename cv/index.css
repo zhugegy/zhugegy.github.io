@@ -146,14 +146,24 @@ td.tabContentTable_lineTitle{
   font-weight: bold;
 }
 
-td.tabContentTable_lineTitleBigger{
-  width: 15vw;
-  font-weight: bold;
+td.font_bigger{
   font-size: 1.8vw;
+}
+
+td.timestamp_width{
+  width: 5vw;
 }
 
 tr.clickabletr {
     cursor: pointer;
+}
+
+tr.darktr {
+  background-color: #999999;
+}
+
+tr.light_darktr {
+  background-color: #CCCCCC;
 }
 
 tr.hiddentr {
@@ -228,6 +238,22 @@ td.intensiveInfo {
     visibility: visible;
     opacity: 1;
 }
+
+.starchecked {
+  color: orange;
+}
+
+.starunchecked {
+  color: grey;
+}
+
+.label {
+  color: white;
+  padding: 0.1vw;
+  font-family: Arial;
+}
+
+.label-programming-language {background-color: #4CAF50;} /* Green */
 
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
