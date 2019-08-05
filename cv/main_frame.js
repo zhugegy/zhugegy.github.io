@@ -1,8 +1,8 @@
 var cons_strURLBase = "https://zhugegy.github.io/";
 var cons_strURLCur = "cv/";
 
-//var cons_isDebug = false;
-var cons_isDebug = true;
+var cons_isDebug = false;
+//var cons_isDebug = true;
 
 g_mapCurrentChoosenLabels = {};
 g_mapLabelsCount = {};
@@ -73,7 +73,7 @@ function info_table_loaded_inner_callback(strMenuItemName, response)
 		}
 		else if (strMenuItemName == "skill_list")
 		{
-				__fetch_data_and_render('https://api.myjson.com/bins/11g8tx', action_with_table_content_data);
+				__fetch_data_and_render('https://api.myjson.com/bins/8kc3p', action_with_table_content_data);
 		}
 	}
 	else
@@ -316,17 +316,17 @@ window.onload = function()
 {
 	//initilize the global variables
 	//release
-	//read_json_sync('../data/global/tab_property.json', init_global_objTabProperty);
+	read_json_sync('../data/global/tab_property.json', init_global_objTabProperty);
 	//debug
-	read_json_sync('https://api.myjson.com/bins/b504x', init_global_objTabProperty);
+	//read_json_sync('https://api.myjson.com/bins/b504x', init_global_objTabProperty);
 
 	//release
-	//read_json_sync('../data/global/label_property.json', init_global_objLabelProperty);
+	read_json_sync('../data/global/label_property.json', init_global_objLabelProperty);
 	//debug
-	read_json_sync('https://api.myjson.com/bins/ntr1d', init_global_objLabelProperty);
+	//read_json_sync('https://api.myjson.com/bins/ntr1d', init_global_objLabelProperty);
 
 	//release
-	//load_body_backbone_structure();
+	load_body_backbone_structure();
 	//debug : only for debug propose, when body backbone is embeded statically in HTML file rather than loaded dynamically.
-	load_body_content();
+	//load_body_content();
 }

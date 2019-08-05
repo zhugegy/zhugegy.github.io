@@ -1,45 +1,80 @@
 {
   "notes": "<span class=\"label label-programming-language\">JavaScript</span>",
+  "Course Taken": {
+    "group": "label-entry-type",
+    "same-level-adjustment-weight": 3,
+    "en": "Course Taken",
+    "zh-Hans": "学过的课程",
+    "zh-Hant": "Course Taken"
+  },
+  "With Code Snippet": {
+    "group": "label-feature",
+    "same-level-adjustment-weight": 3,
+    "en": "With Code Snippet",
+    "zh-Hans": "含展示用代码块",
+    "zh-Hant": "With Code Snippet"
+  },
+  "With Screenshot": {
+    "group": "label-feature",
+    "same-level-adjustment-weight": 3,
+    "en": "With Screenshot",
+    "zh-Hans": "含截图",
+    "zh-Hant": "With Screenshot"
+  },
   "C": {
     "group": "label-programming-language",
-    "score": 3,
+    "same-level-adjustment-weight": 3,
     "en": "C",
     "zh-Hans": "C",
     "zh-Hant": "C"
   },
   "C++": {
     "group": "label-programming-language",
-    "score": 3,
+    "same-level-adjustment-weight": 3,
     "en": "C++",
     "zh-Hans": "C++",
     "zh-Hant": "C++"
   },
   "Java": {
     "group": "label-programming-language",
-    "score": 3,
+    "same-level-adjustment-weight": 3,
     "en": "Java",
     "zh-Hans": "Java",
     "zh-Hant": "Java"
   },
   "Python": {
     "group": "label-programming-language",
-    "score": 3,
+    "same-level-adjustment-weight": 3,
     "en": "Python",
     "zh-Hans": "Python",
     "zh-Hant": "Python"
   },
   "JavaScript": {
     "group": "label-programming-language",
-    "score": 3,
+    "same-level-adjustment-weight": 3,
     "en": "JavaScript",
     "zh-Hans": "JavaScript",
     "zh-Hant": "JavaScript"
   },
   "Visual Basic": {
     "group": "label-programming-language",
-    "score": 3,
+    "same-level-adjustment-weight": 3,
     "en": "Visual Basic",
     "zh-Hans": "Visual Basic",
     "zh-Hant": "Visual Basic"
+  },
+  "Scratch": {
+    "group": "label-technology",
+    "same-level-adjustment-weight": 3,
+    "en": "Scratch",
+    "zh-Hans": "Scratch",
+    "zh-Hant": "Scratch"
+  },
+  "Visual Studio": {
+    "group": "label-technology",
+    "same-level-adjustment-weight": 3,
+    "en": "Visual Studio",
+    "zh-Hans": "Visual Studio",
+    "zh-Hant": "Visual Studio"
   }
 }

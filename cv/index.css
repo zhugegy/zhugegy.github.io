@@ -159,11 +159,11 @@ tr.clickabletr {
 }
 
 tr.darktr {
-  background-color: #999999;
+  background-color: #BBBBBB;
 }
 
 tr.light_darktr {
-  background-color: #CCCCCC;
+  background-color: #DDDDDD;
 }
 
 tr.hiddentr {

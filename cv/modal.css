@@ -102,6 +102,11 @@
   margin-right: auto;
   width: 30vw; */
   display: inline-block;
+
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, 0);
+  bottom: 0;
 }
 
 /* Create four equal columns that floats next to eachother (of Modal)*/
@@ -123,11 +128,15 @@ img.active {
   opacity: 1;
 }
 
-img.Modal_images_silde_ratio_1dot414_AKA_A4, img.Modal_images_silde_ratio_0dot75, img.Modal_images_silde_ratio_1dot33 {
+img.Modal_images_silde_ratio_1dot414_AKA_A4, img.Modal_images_silde_ratio_0dot75, img.Modal_images_silde_ratio_1dot33, img.Modal_images_silde_ratio_code_snippet_long {
   height: 83vh;
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+img.Modal_images_silde_short_65vh {
+  height: 65vh;
 }
 
 
