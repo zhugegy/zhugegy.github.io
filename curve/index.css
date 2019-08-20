@@ -1,0 +1,49 @@
+/* general text formatting */
+
+body {
+   font-family: Calibri, Avenir, Constantia, sans-serif, "Trebuchet MS", Helvetica, Arial, STFangsong;
+   font-size: 1vw;
+}
+
+img.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 32vh;
+}
+
+.idented_area {
+    margin: 1.2vw;
+}
+
+#content_table {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 360px;
+}
+
+#content_table td, #content_table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#content_table tr:nth-child(even){background-color: #f2f2f2;}
+
+#content_table tr:hover {background-color: #ddd;}
+
+#content_table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #80bfff;
+  color: white;
+}
+
+div#today_date {
+  font-size: 0.8vw;
+  color: #80bfff;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+}
