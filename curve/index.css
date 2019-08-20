@@ -19,7 +19,7 @@ img.displayed {
 #content_table {
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
   border-collapse: collapse;
-  width: 360px;
+  width: 30%;
 }
 
 #content_table td, #content_table th {
@@ -46,4 +46,7 @@ div#today_date {
 
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
+    #content_table {
+      width: 90%;
+    }
 }
