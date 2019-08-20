@@ -19,7 +19,7 @@ img.displayed {
 #content_table {
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
   border-collapse: collapse;
-  width: 30%;
+  width: 460px;
 }
 
 #content_table td, #content_table th {
