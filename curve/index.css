@@ -49,4 +49,8 @@ div#today_date {
     #content_table {
       width: 90%;
     }
+
+    body {
+       font-size: 12px;
+    }
 }
