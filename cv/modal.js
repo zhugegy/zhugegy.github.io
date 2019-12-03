@@ -90,18 +90,15 @@ function showSlides(n)
 // Open the pdf Modal
 function openPdfModal(strModalID)
 {
-  alert("hm");
-  var objPdfModal = document.getElementById(strModalID);
-  var objPdfModalFrame = document.getElementById(strModalID + "iframe");
-  // var strJQueryObjectPdfModal = "#" + strModalID;
-  // var strJQueryObjectPdfModalFrame = "#" + strModalID + "iframe";
+  alert("hioka");
+  var strJQueryObjectPdfModalFrameID = strModalID + "iframe";
 
-  objPdfModal.dialog({
+  $("#" + strModalID).dialog({
     height: $(window).height() * 0.75,
     width: $(window).width() * 0.75
   });
 
-  objPdfModalFrame.css('height', $(window).height() * 0.7 +'px');
-  objPdfModalFrame.css('width', $(window).width() * 0.7 +'px');
+  $("#" + strJQueryObjectPdfModalFrameID).css('height', $(window).height() * 0.7 +'px');
+  $("#" + strJQueryObjectPdfModalFrameID).css('width', $(window).width() * 0.7 +'px');
 
 }
