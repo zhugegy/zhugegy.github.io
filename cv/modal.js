@@ -86,3 +86,21 @@ function showSlides(n)
   //captionText.innerHTML = dots[slideIndex-1].data-caption;
   captionText.innerHTML = dots[slideIndex-1].getAttribute("data-caption");
 }
+
+// Open the pdf Modal
+function openPdfModal(strModalID)
+{
+  var objPdfModal = document.getElementById(strModalID);
+  var strJQueryObjectPdfModal = "#" + strModalID;
+  var strJQueryObjectPdfModalFrame = "#" + strModalID + "iframe";
+
+  $(strJQueryObjectPdfModal).dialog({
+height: $(window).height() * 0.75,
+width: $(window).width() * 0.75
+});
+
+$(strJQueryObjectPdfModalFrame).css('height', $(window).height() * 0.7 +'px');
+$(strJQueryObjectPdfModalFrame).css('width', $(window).width() * 0.7 +'px');
+});
+
+}
