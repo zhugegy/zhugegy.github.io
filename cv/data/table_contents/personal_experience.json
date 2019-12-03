@@ -101,38 +101,26 @@
     {
         "field":"table_content",
         "format": [
-          "<div id=\"$\" style=\"display:none\">",
-          "<iframe id=\"$\" src=\"test.pdf\"></iframe>",
+          "<div id=\"Pdf_Modal_TTU_Publication_LCC\" style=\"display:none\">",
+          "<iframe id=\"Pdf_Modal_TTU_Publication_LCCiframe\" src=\"../files/ids17-logclusterc-web.pdf\"></iframe>",
           "</div>"
                   ],
-        "layout-for-human-read": ["void", "Education experience continued"],
-        "content_zh-Hans":["Pdf_Modal_TTU_Publication_LCC", "Pdf_Modal_TTU_Publication_LCCiframe"],
-        "content_zh-Hant":["Pdf_Modal_TTU_Publication_LCC", "Pdf_Modal_TTU_Publication_LCCiframe"],
-        "content_en":["Pdf_Modal_TTU_Publication_LCC", "Pdf_Modal_TTU_Publication_LCCiframe"]
+        "layout-for-human-read": [],
+        "content_zh-Hans":[],
+        "content_zh-Hant":[],
+        "content_en":[]
     },
     {
         "field":"table_content",
         "format": [
           "<tr>",
-          "<td class=\"tabContentTable_lineTitle\">$</td><td>$<a href=\"$\" target=\"_blank\">$</a> <a href=\"$\" target=\"_blank\">$</a></td>",
+          "<td class=\"tabContentTable_lineTitle\">$</td><td>$<br><a href=\"$\" class=\"button pill\" target=\"_blank\">$</a> <a href=\"#\" class=\"button pill\" onclick=\"openPdfModal('Pdf_Modal_TTU_Publication_LCC');return false;\">$</a></td>",
           "</tr>"
                   ],
         "layout-for-human-read": ["void", "Education experience continued"],
-        "content_zh-Hans":["", "<small>在2017年IEEE第3次云端大数据安全会议发表论文。</small>", "https://ieeexplore.ieee.org/document/7980352", "<small>IEEE收录</small>", "http://ristov.github.io/publications/ids17-logclusterc-web.pdf", "<small>内容(pdf)</small>"],
+        "content_zh-Hans":["", "<small>在2017年IEEE第3次云端大数据安全会议发表论文。</small>", "https://ieeexplore.ieee.org/document/7980352", "<small>IEEE收录链接</small>", "<small>内容(pdf)</small>"],
         "content_zh-Hant":["", "null"],
-        "content_en":["", "<small>Published paper at the 2017 IEEE International Conference on Big Data Security on Cloud. </small>", "https://ieeexplore.ieee.org/document/7980352", "<small>IEEE Entry</small>", "http://ristov.github.io/publications/ids17-logclusterc-web.pdf", "<small>Paper Content (pdf)</small>"]
-    },
-    {
-        "field":"table_content",
-        "format": [
-          "<tr>",
-          "<td class=\"tabContentTable_lineTitle\">$</td><td><a href=\"$\" class=\"button pill\" target=\"_blank\">$</a> <a href=\"#\" class=\"button pill\" onclick=\"openPdfModal('Pdf_Modal_TTU_Publication_LCC');return false;\">$</a></td>",
-          "</tr>"
-                  ],
-        "layout-for-human-read": ["void", "Education experience continued"],
-        "content_zh-Hans":["", "https://ieeexplore.ieee.org/document/7980352", "<small>IEEE收录</small>", "<small>内容(pdf)</small>"],
-        "content_zh-Hant":["", "null"],
-        "content_en":["", "https://ieeexplore.ieee.org/document/7980352", "<small>IEEE Entry</small>", "<small>Paper Content (pdf)</small>"]
+        "content_en":["", "<small>Published paper at the 2017 IEEE International Conference on Big Data Security on Cloud. </small>", "https://ieeexplore.ieee.org/document/7980352", "<small>IEEE Entry Link</small>", "<small>Paper Content (pdf)</small>"]
     },
     {
         "field":"table_content",
@@ -328,7 +316,7 @@
         "layout-for-human-read": ["void", "Education experience continued"],
         "content_zh-Hans":["", "http://www.51asm.net/", "<small>官网链接</small>", "<small>笔记概览</small>"],
         "content_zh-Hant":["", "null"],
-        "content_en":["", "http://www.51asm.net/", "<small>Official Website (Chinese)</small>", "<small>My Notes at a Glance (Chinese)</small>"]
+        "content_en":["", "http://www.51asm.net/", "<small>Official Website Link(Chinese)</small>", "<small>My Notes at a Glance (Chinese)</small>"]
     },
     {
         "field":"table_content",
@@ -388,6 +376,6 @@
         "layout-for-human-read": ["void", "Education experience continued"],
         "content_zh-Hans":["", "http://www.ilinyi.net/", "<small>官网链接</small>", "http://www.ilinyi.net/live/", "<small>节目直播</small>"],
         "content_zh-Hant":["", "null"],
-        "content_en":["", "http://www.ilinyi.net/", "<small>Official Website (Chinese)</small>", "http://www.ilinyi.net/live/", "<small>Live Streaming (Chinese)</small>"]
+        "content_en":["", "http://www.ilinyi.net/", "<small>Official Website Link(Chinese)</small>", "http://www.ilinyi.net/live/", "<small>Live Streaming Link(Chinese)</small>"]
     }
 ]

@@ -90,7 +90,6 @@ function showSlides(n)
 // Open the pdf Modal
 function openPdfModal(strModalID)
 {
-  alert("hioka");
   var strJQueryObjectPdfModalFrameID = strModalID + "iframe";
 
   $("#" + strModalID).dialog({
