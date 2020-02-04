@@ -26,7 +26,7 @@
         "layout-for-human-read": ["Name:", "name"],
         "content_zh-Hans":["姓名", "诸葛琛"],
         "content_zh-Hant":["姓名", "諸葛琛"],
-        "content_en":["Name", "Chen (Lex) Zhuge"]
+        "content_en":["Name", "Chen Zhuge"]
     },
     {
         "field":"table_content",

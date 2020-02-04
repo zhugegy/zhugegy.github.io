@@ -157,7 +157,10 @@ function action_with_language_switch_data(jsonData)
 
 	for (var i = 0; i < lLanguageItems.length; i++)
 	{
-		divLanguageArea.innerHTML += "<a href = \"" + lLanguageItems[i]["link"] + "\">" + lLanguageItems[i]["content"] + "</a>";
+		if (lLanguageItems[i]['link'] != null)
+		{
+				divLanguageArea.innerHTML += "<a href = \"" + lLanguageItems[i]["link"] + "\">" + lLanguageItems[i]["content"] + "</a>";
+		}
 	}
 }
 
@@ -236,7 +239,7 @@ function load_body_content()
 	//display language switch
 	if (cons_isDebug)
 	{
-		__fetch_data_and_render('https://api.myjson.com/bins/18ee2j', action_with_language_switch_data);
+		__fetch_data_and_render('https://api.myjson.com/bins/19y410', action_with_language_switch_data);
 	}
 	else
 	{
@@ -267,25 +270,23 @@ function load_body_backbone_structure()
 
 }
 
+// used only in dubug
+function __read_json_sync(strPath, funAction)
+{
+	__fetch_data_and_render(strPath, funAction);
+}
+
 function read_json_sync(strPath, funAction)
 {
-	if (cons_isDebug)
-	{
-		__fetch_data_and_render(strPath, funAction);
-	}
-	else
-	{
-		$.ajaxSetup({
-					async: false
-			});
-
-		$.getJSON(strPath, function(data) {funAction(data);} );
-
-		$.ajaxSetup({
-					async: true
+	$.ajaxSetup({
+				async: false
 		});
-	}
 
+	$.getJSON(strPath, function(data) {funAction(data);} );
+
+	$.ajaxSetup({
+				async: true
+	});
 }
 
 // skill_list相关的全局表
@@ -318,8 +319,8 @@ window.onload = function()
 	if (cons_isDebug)
 	{
 		//debug
-		read_json_sync('https://api.myjson.com/bins/b504x', init_global_objTabProperty);
-		read_json_sync('https://api.myjson.com/bins/ntr1d', init_global_objLabelProperty);
+		__read_json_sync('https://api.myjson.com/bins/b504x', init_global_objTabProperty);
+		__read_json_sync('https://api.myjson.com/bins/ntr1d', init_global_objLabelProperty);
 	}
 	else
 	{
