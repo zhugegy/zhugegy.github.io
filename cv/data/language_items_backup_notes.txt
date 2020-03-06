@@ -6,8 +6,9 @@
     },
     {
         "id":"language_item_Traditional_Chinese",
-        "__link":"../Traditional-Chinese",
-        "__content":"繁體中文"
+        "__link":"#\" onClick=\"alert(\'抱歉，繁體中文介面暫未開放！IT詞匯繁簡差異較大，轉換工作緩慢進行中...\')\"",
+        "link":"../Traditional-Chinese",
+        "content":"繁體中文"
     },
     {
         "id":"language_item_English",
