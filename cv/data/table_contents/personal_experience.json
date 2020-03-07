@@ -22,21 +22,9 @@
           "</tr>"
                   ],
         "layout-for-human-read": ["time line", "Education experience"],
-        "content_zh-Hans":["2018年3月 - 现在", "<b>IT和IT管理硕士，悉尼大学，澳大利亚</b>"],
+        "content_zh-Hans":["2018年3月 - 2019年12月", "<b>IT和IT管理硕士，悉尼大学，澳大利亚</b>"],
         "content_zh-Hant":["null", "null"],
-        "content_en":["Mar 2018 - now", "<b>MSc student of IT and IT Management, University of Sydney, Australia</b>"]
-    },
-    {
-        "field":"table_content",
-        "format": [
-          "<tr>",
-          "<td class=\"tabContentTable_lineTitle\">$</td><td>$</td>",
-          "</tr>"
-                  ],
-        "layout-for-human-read": ["void", "Education experience continued"],
-        "content_zh-Hans":["", "<small>预期2019年12月毕业。</small>"],
-        "content_zh-Hant":["", "null"],
-        "content_en":["", "<small>Diploma expected in Dec 2019.</small>"]
+        "content_en":["Mar 2018 - Sep 2019", "<b>MSc student of IT and IT Management, University of Sydney, Australia</b>"]
     },
     {
         "field":"table_content",
@@ -223,7 +211,7 @@
           "</tr>"
                   ],
         "layout-for-human-read": ["void", "Education experience continued"],
-        "content_zh-Hans":["", "<small>在“C++程序设计”课程中获得90分，满分100。</small>"],
+        "content_zh-Hans":["", "<small>在“C++程序设计”课程中获得90/100分。</small>"],
         "content_zh-Hant":["", "null"],
         "content_en":["", "<small>90/100 in C++ Language Programming.</small>"]
     },

@@ -60,7 +60,7 @@
           "</tr>"
                   ],
         "layout-for-human-read": ["summary:", "self-introduction"],
-        "content_zh-Hans":["个人简介", "自2014年开始学习Windows操作系统内核安全，积累了丰富的技术笔记和实战经验。<br>善于使用C++进行开发，但更乐于使用Python。<br>对全栈网页应用开发有一定的理解和实践（MEAN框架和Spring框架；HTML, CSS, JavaScript, MongoDB, Java, MySQL）。"],
+        "content_zh-Hans":["个人简介", "自2014年开始学习Windows操作系统内核安全，积累了丰富的技术笔记和实战经验。<br>善于使用C++进行开发，目前更多使用Python。<br>对全栈网页应用开发有一定的理解和实践（MEAN框架和Spring框架；HTML, CSS, JavaScript, MongoDB, Java, MySQL）。"],
         "content_zh-Hant":["null", "null"],
         "content_en":["Summary", "Have been studying Windows OS kernel security since 2014, and accumulated reasonable amount of technical notes and practical experience. <br>Reasonably good at developing with C++, yet Python is the choice whenever possible.<br>Have certain understanding and experience on full stack Web development (MEAN framework and Spring framework; HTML, CSS, JavaScript, MongoDB, Java and MySQL)."]
     },
@@ -85,9 +85,9 @@
           "</tr>"
                   ],
         "layout-for-human-read": ["Education Level:", "Education you got"],
-        "content_zh-Hans":["教育程度", "硕士，澳大利亚悉尼大学，IT和IT管理，预计2019年12月毕业"],
+        "content_zh-Hans":["教育程度", "硕士，澳大利亚悉尼大学，IT和IT管理"],
         "content_zh-Hant":["null", "null"],
-        "content_en":["Academic Degree", "MSc in IT and IT Management, University of Sydney, Australia, diploma expected in Dec 2019"]
+        "content_en":["Academic Degree", "MSc in IT and IT Management, University of Sydney, Australia"]
     },
     {
         "field":"table_content",
@@ -97,9 +97,9 @@
           "</tr>"
                   ],
         "layout-for-human-read": ["Work Permission (Visa):", "visa"],
-        "content_zh-Hans":["工作签证", "<b>澳大利亚</b><br><b>500(Student)签证</b>: 现在 - 2020年3月21日，每两周合法工作40小时。<br><b>485(Post-Study Work)签证</b>(即将拿到): 2020年3月21日 - 2022年3月21日，无工作时间限制。<br><b>永久居留许可</b>（努力中）"],
+        "content_zh-Hans":["工作签证", "<b>澳大利亚</b><br><b>500签证</b>: 现在 - 2020年9月21日，无工作时间限制。<br><b>485签证</b>: 2020年9月21日 - 2022年9月21日，无工作时间限制。"],
         "content_zh-Hant":["null", "null"],
-        "content_en":["Work Permission", "<b>Australia</b><br><b>Subclass 500 Student Visa</b>: now - March 21, 2020, eligible to work 40 hours per fortnight.<br><b>Subclass 485 PSW Visa</b> (as planned): March 21, 2020 - March 21, 2022, no work hour limitation.<br><b>Permanent Resident</b> (working on it)"]
+        "content_en":["Work Permission", "<b>Australia</b><br><b>Subclass 500 Visa</b>: now - September 21, 2020. No work hour limitation.<br><b>Subclass 485 PSW Visa</b>: September 21, 2020 - September 21, 2022. No work hour limitation.<br>"]
     },
     {
         "field":"table_content",
@@ -158,8 +158,8 @@
           "</tr>"
                   ],
         "layout-for-human-read": ["Citizenship:", "citizenship"],
-        "content_zh-Hans":["国籍", "<small><i>内容已被隐藏。如有需要，可点击查看。</i></small>", "中国"],
-        "content_zh-Hant":["null", "null", "null"],
+        "_content_zh-Hans":["国籍", "<small><i>内容已被隐藏。如有需要，可点击查看。</i></small>", "中国"],
+        "_content_zh-Hant":["null", "null", "null"],
         "content_en":["Citizenship", "<small><i>Content is hidden. If necessary, you may click to see.</i></small>", "Chinese"]
     },
     {
