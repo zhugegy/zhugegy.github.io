@@ -247,7 +247,7 @@ function load_body_content()
 	}
 
 	// add ripples effect
-  //$('#menuBox').ripples({esolution: 512, dropRadius: 20, perturbance: 0.04});
+  $('#menuBox').ripples({esolution: 512, dropRadius: 20, perturbance: 0.04});
 
 }
 
