@@ -102,6 +102,7 @@
         "field":"table_content",
         "labels":["Course Taken", "With Code Snippet", "With Screenshot", "Visual Basic", "Scratch", "Visual Studio"],
         "entry-id": "skill_list_ttu_intro_to_programmming",
+        "uuid":"ac52533c-6390-11ea-bc55-0242ac130003",
         "timestamp": 201309,
         "format": [
           "<tr class=\"clickabletr darktr\" id=\"±\">",

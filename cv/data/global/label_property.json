@@ -64,7 +64,7 @@
     "zh-Hant": "Visual Basic"
   },
   "Scratch": {
-    "group": "label-technology",
+    "group": "label-programming-language",
     "same-level-adjustment-weight": 3,
     "en": "Scratch",
     "zh-Hans": "Scratch",

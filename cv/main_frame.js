@@ -1,8 +1,8 @@
 var cons_strURLBase = "https://zhugegy.github.io/";
 var cons_strURLCur = "cv/";
 
-var cons_isDebug = false;
-//var cons_isDebug = true;
+//var cons_isDebug = false;
+var cons_isDebug = true;
 
 g_mapCurrentChoosenLabels = {};
 g_mapLabelsCount = {};
@@ -247,7 +247,7 @@ function load_body_content()
 	}
 
 	// add ripples effect
-  $('#menuBox').ripples({esolution: 512, dropRadius: 20, perturbance: 0.04});
+  //$('#menuBox').ripples({esolution: 512, dropRadius: 20, perturbance: 0.04});
 
 }
 
