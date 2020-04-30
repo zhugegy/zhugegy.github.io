@@ -74,7 +74,7 @@ function info_table_loaded_inner_callback(strMenuItemName, response)
 		else if (strMenuItemName == "skill_list")
 		{
 				//__fetch_data_and_render('https://api.myjson.com/bins/8kc3p', action_with_table_content_data);
-				__fetch_data_and_render('https://api.jsonbin.io/b/5e6a2b8640f2f82b294b105f/15', action_with_table_content_data);
+				__fetch_data_and_render('https://api.jsonbin.io/b/5e6a2b8640f2f82b294b105f/19', action_with_table_content_data);
 		}
 	}
 	else

@@ -7,6 +7,13 @@
     "zh-Hans": "学过的课程",
     "zh-Hant": "Course Taken"
   },
+  "Book Read": {
+    "group": "label-entry-type",
+    "same-level-adjustment-weight": 3,
+    "en": "Book Read",
+    "zh-Hans": "看过的书",
+    "zh-Hant": "Book Read"
+  },
   "With Code Snippet": {
     "group": "label-feature",
     "same-level-adjustment-weight": 3,
@@ -71,10 +78,17 @@
     "zh-Hant": "Scratch"
   },
   "Visual Studio": {
-    "group": "label-technology",
+    "group": "label-technology-tool",
     "same-level-adjustment-weight": 3,
     "en": "Visual Studio",
     "zh-Hans": "Visual Studio",
     "zh-Hant": "Visual Studio"
+  },
+  ".NET": {
+    "group": "label-technology-framework",
+    "same-level-adjustment-weight": 3,
+    "en": ".NET",
+    "zh-Hans": ".NET",
+    "zh-Hant": ".NET"
   }
 }

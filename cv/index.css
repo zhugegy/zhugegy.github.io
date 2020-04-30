@@ -265,3 +265,58 @@ td.intensiveInfo {
         margin-left: 5px;
     }
 }
+
+/* for progress bar style*/
+.grey-whole-bar {
+  color:#000!important;
+  background-color:#f1f1f1!important;
+  display: flex;
+  width: 24vw;
+  font-size: 0.8vw;
+}
+
+.subbar {
+  color:#fff!important;
+  border-style: ridge;
+  text-align:center;
+}
+
+.green {
+  background-color:#3c8dde!important;
+}
+
+.grey {
+  background-color:#9e9e9e!important;
+}
+
+.greengrey-20 {
+  background:linear-gradient(90deg, #3c8dde 20%, #9e9e9e 20%);
+}
+
+.greengrey-40 {
+  background:linear-gradient(90deg, #3c8dde 40%, #9e9e9e 40%);
+}
+
+.greengrey-50 {
+  background:linear-gradient(90deg, #3c8dde 50%, #9e9e9e 50%);
+}
+
+.greengrey-60 {
+  background:linear-gradient(90deg, #3c8dde 60%, #9e9e9e 60%);
+}
+
+.greengrey-80 {
+  background:linear-gradient(90deg, #3c8dde 80%, #9e9e9e 80%);
+}
+
+.discovery {
+	width:27%
+}
+
+.understanding {
+	width:56%
+}
+
+.summary {
+	width:17%
+}

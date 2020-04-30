@@ -1,19 +1,37 @@
 /* general text formatting */
 
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 960px;
+  margin: 30px auto;
+}
+
 body {
-   font-family: Calibri, Avenir, Constantia, sans-serif, "Trebuchet MS", Helvetica, Arial, STFangsong;
-   font-size: 1vw;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 16px;
+   background-color: #f4f4f4;
 }
 
 img.displayed {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    height: 32vh;
+    height: 320px;
 }
 
 .idented_area {
-    margin: 1.2vw;
+    margin: 22px;
+}
+
+.video_box {
+  border: 1px solid #ddd;
+  background: #f4f4f4;
+  padding: 10px;
+  margin: 20px auto;
+  width:580px;
 }
 
 #content_table {
@@ -40,7 +58,7 @@ img.displayed {
 }
 
 div#today_date {
-  font-size: 0.8vw;
+  font-size: 12px;
   color: #80bfff;
 }
 
