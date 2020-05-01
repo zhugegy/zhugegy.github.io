@@ -69,7 +69,7 @@ p {
 
 .bg-light {
     background: #f4f4f4;
-    color: #333;
+color: #333;
 }
 
 .bg-primary {
@@ -82,7 +82,8 @@ p {
 }
 
 .l-heading {
-    font-size: 40px;;
+    font-size: 40px;
+    line-height: 1.2;
 }
 
 /* Padding */
@@ -101,7 +102,7 @@ p {
     color:#fff;
 } 
 
-#navbar h1 {
+#navbar .logo {
     float: left;
     padding: 20px;
 }
@@ -212,9 +213,9 @@ p {
 
 /* Testimonials */
 #testimonials {
-    height: 600px;
+    height: 100%;
     background: url('../img/test-bg.jpg') no-repeat center center/cover;
-    padding-top: 60px;
+    padding: 60px;
 }
 
 #testimonials h3{
@@ -230,7 +231,8 @@ p {
 }
 
 #testimonials .testimonial {
-    height: 120px;
+    height: 100%;
+    min-height: 120px;
     padding: 10px;
     margin: 40px 10px;
     border-radius: 5px;
@@ -238,8 +240,8 @@ p {
 }
 
 #testimonials .testimonial img {
-    width: 100px;
-    height: 100px;
+    max-width: 100px;
+    max-height: 100px;
     float: left;
     margin-right: 20px;
     border-radius: 50%;
