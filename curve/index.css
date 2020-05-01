@@ -15,6 +15,11 @@ body {
    background-color: #f4f4f4;
 }
 
+#video_area {
+  /* background: #a8a8a8; */
+  font-size: 0.75rem;
+}
+
 img.displayed {
     display: block;
     margin-left: auto;
@@ -23,7 +28,32 @@ img.displayed {
 }
 
 .idented_area {
-    margin: 22px;
+    width: 50%;
+    margin: auto;
+}
+
+#content_table {
+  margin-bottom: 15px;
+}
+
+#timepoints {
+  padding: 3px 2px;
+  margin-bottom: 50px;
+}
+
+.btn {
+  display: inline;
+  font-size: 12px;
+  color: #fff;
+  background: #80bfff;
+  padding: 4px 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #808fff;
+  color: #333;
 }
 
 .video_box {
