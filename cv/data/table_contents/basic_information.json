@@ -12,7 +12,7 @@
           "<span class=\"tableHeadingNotes\">$</span>"
                   ],
         "layout-for-human-read": ["Basic Information", "notes"],
-        "content_zh-Hans":["基本信息", "注意：一些内容默认被隐藏，但您依然可以点击对应位置来查看。您在本网站的行为<b>不会</b>被记录。"],
+        "content_zh-Hans":["基本信息", "注意：一些内容默认被隐藏，但可以点击查看。您在本网站的行为<b>不会</b>被记录。"],
         "content_zh-Hant":["基本信息", "null"],
         "content_en":["Basic Information", "<small>NOTE: You may click on some rows to reveal the hidden content. Your activities in this site are <b>not</b> traced.</small>"]
     },
@@ -122,9 +122,9 @@
           "</tr>"
                   ],
         "layout-for-human-read": ["Gender:", "gender"],
-        "content_zh-Hans":["性别", "<small><i>内容已被隐藏。如有需要，可点击查看。</i></small>", "男"],
+        "content_zh-Hans":["性别", "<small><i>点击查看</i></small>", "男"],
         "content_zh-Hant":["null", "null", "null"],
-        "content_en":["Gender", "<small><i>Content is hidden. If necessary, you may click to see.</i></small>", "Male"]
+        "content_en":["Gender", "<small><i>click to reveal</i></small>", "Male"]
     },
     {
         "field":"table_content",
@@ -134,9 +134,9 @@
           "</tr>"
                   ],
         "layout-for-human-read": ["Birthday:", "birthday"],
-        "content_zh-Hans":["出生年", "<small><i>内容已被隐藏。如有需要，可点击查看。</i></small>", "1991年"],
+        "content_zh-Hans":["出生年", "<small><i>点击查看</i></small>", "1991年"],
         "content_zh-Hant":["null", "null", "null"],
-        "content_en":["Year of Birth", "<small><i>Content is hidden. If necessary, you may click to see.</i></small>", "1991"]
+        "content_en":["Year of Birth", "<small><i>click to reveal</i></small>", "1991"]
     },
     {
         "field":"table_content",
@@ -146,9 +146,9 @@
           "</tr>"
                   ],
         "layout-for-human-read": ["Place of Birth:", "place of birth"],
-        "content_zh-Hans":["籍贯", "<small><i>内容已被隐藏。如有需要，可点击查看。</i></small>", "山东省临沂市"],
+        "content_zh-Hans":["籍贯", "<small><i>点击查看</i></small>", "山东省临沂市"],
         "content_zh-Hant":["null", "null", "null"],
-        "content_en":["Place of Birth", "<small><i>Content is hidden. If necessary, you may click to see.</i></small>", "Linyi, Shandong, China"]
+        "content_en":["Place of Birth", "<small><i>click to reveal</i></small>", "Linyi, Shandong, China"]
     },
     {
         "field":"table_content",
@@ -158,9 +158,9 @@
           "</tr>"
                   ],
         "layout-for-human-read": ["Citizenship:", "citizenship"],
-        "_content_zh-Hans":["国籍", "<small><i>内容已被隐藏。如有需要，可点击查看。</i></small>", "中国"],
+        "_content_zh-Hans":["国籍", "<small><i>点击查看</i></small>", "中国"],
         "_content_zh-Hant":["null", "null", "null"],
-        "content_en":["Citizenship", "<small><i>Content is hidden. If necessary, you may click to see.</i></small>", "Chinese"]
+        "content_en":["Citizenship", "<small><i>click to reveal</i></small>", "Chinese"]
     },
     {
         "field":"table_content",

@@ -40,8 +40,8 @@ div#infoTableBox, div#controlPanelBox{
 }
 
 #switchLanguageDropDownMenuIcon {
-    //width: 2.2vw;
-    //height: 2.2vw;
+    /* width: 2.2vw;
+    height: 2.2vw; */
 
     /*some magic to make height always equal to width.*/
     height: 0;
@@ -138,7 +138,7 @@ table.tabContentTable, th, td{
   -webkit-background-clip: padding-box; /* for Safari */
   background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
 
-  //border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 td.tabContentTable_lineTitle{
@@ -204,7 +204,7 @@ td.intensiveInfo {
 .tooltip .tooltiptext {
     visibility: hidden;
     width: 120px;
-    //background-color: #555555;
+    /* background-color: #555555; */
     color: #ffffff;
     text-align: center;
     border-radius: 6px;
@@ -278,7 +278,11 @@ td.intensiveInfo {
 .subbar {
   color:#fff!important;
   border-style: ridge;
+  border-top: none;
+  border-bottom: none;
+  border-left: none;
   text-align:center;
+  margin-top: 5px;
 }
 
 .green {

@@ -1,8 +1,8 @@
 var cons_strURLBase = "https://zhugegy.github.io/";
 var cons_strURLCur = "cv/";
 
-//var cons_isDebug = false;
-var cons_isDebug = true;
+var cons_isDebug = false;
+//var cons_isDebug = true;
 
 g_mapCurrentChoosenLabels = {};
 g_mapLabelsCount = {};
@@ -65,11 +65,11 @@ function info_table_loaded_inner_callback(strMenuItemName, response)
 	{
 		if (strMenuItemName == "basic_information")
 		{
-				__fetch_data_and_render('https://api.myjson.com/bins/9klq7', action_with_table_content_data);
+				__fetch_data_and_render('https://api.jsonbin.io/b/5eacc5f207d49135ba491be9/1', action_with_table_content_data);
 		}
 		else if (strMenuItemName == "personal_experience")
 		{
-				__fetch_data_and_render('https://api.myjson.com/bins/s1jec', action_with_table_content_data);
+				__fetch_data_and_render('https://api.jsonbin.io/b/5eacc60466e603359fe22462', action_with_table_content_data);
 		}
 		else if (strMenuItemName == "skill_list")
 		{
@@ -229,7 +229,7 @@ function load_body_content()
 	//display menu
 	if (cons_isDebug)
 	{
-		__fetch_data_and_render('https://api.myjson.com/bins/1f9ax4', action_with_menu_data);
+		__fetch_data_and_render('https://api.jsonbin.io/b/5eacc59207d49135ba491bad', action_with_menu_data);
 	}
 	else
 	{
@@ -240,7 +240,7 @@ function load_body_content()
 	//display language switch
 	if (cons_isDebug)
 	{
-		__fetch_data_and_render('https://api.myjson.com/bins/19y410', action_with_language_switch_data);
+		__fetch_data_and_render('https://api.jsonbin.io/b/5eacc5634c87c3359a65296a', action_with_language_switch_data);
 	}
 	else
 	{
@@ -248,8 +248,7 @@ function load_body_content()
 	}
 
 	// add ripples effect
-  //$('#menuBox').ripples({esolution: 512, dropRadius: 20, perturbance: 0.04});
-
+    $('#menuBox').ripples({esolution: 512, dropRadius: 20, perturbance: 0.04});
 }
 
 function load_body_backbone_structure()
@@ -320,8 +319,9 @@ window.onload = function()
 	if (cons_isDebug)
 	{
 		//debug
-		__read_json_sync('https://api.myjson.com/bins/b504x', init_global_objTabProperty);
-		__read_json_sync('https://api.myjson.com/bins/ntr1d', init_global_objLabelProperty);
+		//__read_json_sync('https://api.myjson.com/bins/b504x', init_global_objTabProperty);
+		__read_json_sync('https://api.jsonbin.io/b/5eacc45566e603359fe22385', init_global_objTabProperty);
+		__read_json_sync('https://api.jsonbin.io/b/5eacc47866e603359fe22394', init_global_objLabelProperty);
 	}
 	else
 	{
