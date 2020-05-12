@@ -1,18 +1,23 @@
 /* general text formatting */
 
 body {
-   font-family: Calibri, Avenir, Constantia, sans-serif, "Trebuchet MS", Helvetica, Arial, STFangsong;
-   font-size: 1vw;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 1rem;
 }
 
 body:lang(zh-Hant) 	{font-family:STFangsong, Calibri, Avenir, Constantia, sans-serif, "Trebuchet MS", Helvetica, Arial;}
 body:lang(zh-Hans) 	{font-family:STFangsong, Calibri, Avenir, Constantia, sans-serif, "Trebuchet MS", Helvetica, Arial;}
 
+/* .container {
+  max-width: 960px;
+  margin: auto;
+} */
+
 div#menuBox {
    margin: 0em auto;
    margin-top: 1em;
 
-   background-image: url("images/banner.jpg");
+   background-image: url("./images/banner.jpg");
    background-size: 100% 100%;
    background-repeat: no-repeat;
    background-position: center center;
@@ -27,7 +32,7 @@ div#infoTableBox, div#controlPanelBox{
    margin: 0em auto;
    border-top: 1.8pt solid #a7a7a6;
 
-   background-image: url("images/content_background.jpg");
+   background: url("images/content_background.jpg") no-repeat;
    background-size: auto 100% 100%;
    background-repeat: repeat;
    width: 85%;
@@ -324,3 +329,4 @@ td.intensiveInfo {
 .summary {
 	width:17%
 }
+
