@@ -1,12 +1,54 @@
 var cons_strURLBase = "https://zhugegy.github.io/";
 var cons_strURLCur = "cv/";
 
-g_mapCurrentChoosenLabels = {};
+// var cons_isDebug = false;
+//var cons_isDebug = true;
+
+g_mapCurrentChoosenLabels = [];
 g_mapLabelsCount = {};
 
 var g_objTabProperty;
 var g_objLabelProperty;
 
+function init_global_objTabProperty(data)
+{
+	g_objTabProperty = data;
+}
+
+function init_global_objLabelProperty(data)
+{
+	g_objLabelProperty = data;
+}
+
+// Due to diffculty in reading local jason files, the jason content is read via URL data transfer.
+// source: https://stackoverflow.com/questions/19440589/parsing-json-data-from-a-url
+// function getJSON(url)
+// {
+// 	var resp;
+// 	var xmlHttp;
+
+// 	resp  = '';
+// 	xmlHttp = new XMLHttpRequest();
+
+// 	if(xmlHttp != null)
+// 	{
+// 		xmlHttp.open( "GET", url, false );
+// 		xmlHttp.send( null );
+// 		resp = xmlHttp.responseText;
+// 	}
+
+// 	return resp ;
+// }
+
+// (temporary) local approach (only for fast debug propose). 'strDataLink' should be from 3rd party JSON storage service.
+// function __fetch_data_and_render(strDataLink, funRender)
+// {
+// 	var jsonRawData = getJSON(strDataLink) ;
+// 	var data = JSON.parse(jsonRawData);
+// 	funRender(data);
+// }
+
+// (recommended) remote approach. 'strDataLink' resides within my GitHub.io domain. Not locally debuggable.
 function fetch_data_and_render(strDataLink, funRender)
 {
 	$.getJSON(strDataLink, function(data) {funRender(data);} );
@@ -15,13 +57,47 @@ function fetch_data_and_render(strDataLink, funRender)
 // callback function
 function info_table_loaded_inner_callback(strMenuItemName, response)
 {
-	fetch_data_and_render('../data/table_contents/' + strMenuItemName + '.json', action_with_table_content_data);
+	// (optional) do something with the response (a html file with just an empty table)
+
+	// Fill in the table
+	// if (cons_isDebug)
+	// {
+	// 	if (strMenuItemName == "basic_information")
+	// 	{
+	// 			__fetch_data_and_render('https://api.jsonbin.io/b/5eacc5f207d49135ba491be9/1', action_with_table_content_data);
+	// 	}
+	// 	else if (strMenuItemName == "personal_experience")
+	// 	{
+	// 			__fetch_data_and_render('https://api.jsonbin.io/b/5eacc60466e603359fe22462', action_with_table_content_data);
+	// 	}
+	// 	else if (strMenuItemName == "skill_list")
+	// 	{
+	// 			//__fetch_data_and_render('https://api.myjson.com/bins/8kc3p', action_with_table_content_data);
+	// 			__fetch_data_and_render('https://api.jsonbin.io/b/5e6a2b8640f2f82b294b105f/19', action_with_table_content_data);
+	// 	}
+	// }
+	// else
+	// {
+		fetch_data_and_render('../data/table_contents/' + strMenuItemName + '.json', action_with_table_content_data);
+	// }
 }
 
 function menuItems_listener()
 {
 	strId = this.id;
 	strTmpItemName = strId.slice("menu_item_".length);
+
+	// Load the content of the controlPanelBox section.
+	$("#controlPanelBox").empty();
+	var strControlPanelName = g_objTabProperty[strTmpItemName]["control_panel"];
+	if (strControlPanelName != null)
+	{
+		$("#controlPanelBox").load(cons_strURLBase + cons_strURLCur + "sub_sections/" + strControlPanelName,
+								function (response)
+								{
+									//inner call back
+								} );
+	}
 
 	// Load the content of the infoTableBox section.
 	// Content is initially empty, which will be filled in the callback function with the proper data according to strTmpItemName.
@@ -34,23 +110,6 @@ function menuItems_listener()
 								{
 									info_table_loaded_inner_callback(strTmpItemName, response);
 								} );
-	}
-
-	// Load the content of the controlPanelBox section.
-	$("#controlPanelBox").empty();
-	var strControlPanelName = g_objTabProperty[strTmpItemName]["control_panel"];
-	if (strControlPanelName != null)
-	{
-		//$("#controlPanelBox").style.display = 'block';
-		$("#controlPanelBox").load(cons_strURLBase + cons_strURLCur + "sub_sections/" + strControlPanelName,
-								function (response)
-								{
-									//inner call back
-								} );
-	}
-	else
-	{
-		$("#controlPanelBox").style.display = 'none';
 	}
 
 	// Load the content of the footerBox section.
@@ -163,20 +222,17 @@ function action_with_table_content_data(jsonData, labelArray=[])
 			if (lDataEntries[i].hasOwnProperty('labels'))
 			{
 				var strLabelList = "";
-				var aryStrLabels = lDataEntries[i]['labels']
-				for (var j = 0; j < aryStrLabels.length; j++)
+				var myStringArray = lDataEntries[i]['labels']
+				for (var j = 0; j < myStringArray.length; j++)
 				{
-					//"<span class=\"label label-programming-language\">JavaScript</span>",
-					var strGroup = g_objLabelProperty[aryStrLabels[j]]['group'];
-					strTmp = "<span class=\"label " + strGroup + "\">&nbsp;" + aryStrLabels[j] + "&nbsp;</span> ";
-					strLabelList += strTmp;
+					console.log(myStringArray[j]);
+					console.log(g_objLabelProperty);
+					strLabelList += myStringArray[j];
 				}
 
 				var strTargetDivName = lDataEntries[i]['entry-id'] + "-label";
 				document.getElementById(strTargetDivName).innerHTML = strLabelList;
 			}
-
-			//g_mapLabelsCount 所有label的计数器，每次打开网页仅计数一次。
 		}
 	}
 
@@ -186,10 +242,25 @@ function action_with_table_content_data(jsonData, labelArray=[])
 function load_body_content()
 {
 	//display menu
-	fetch_data_and_render('../data/menu_items.json', action_with_menu_data);
+	// if (cons_isDebug)
+	// {
+	// 	__fetch_data_and_render('https://api.jsonbin.io/b/5eacc59207d49135ba491bad', action_with_menu_data);
+	// }
+	// else
+	// {
+		fetch_data_and_render('../data/menu_items.json', action_with_menu_data);
+	// }
+
 
 	//display language switch
-	fetch_data_and_render('../data/language_items.json', action_with_language_switch_data);
+	// if (cons_isDebug)
+	// {
+	// 	__fetch_data_and_render('https://api.jsonbin.io/b/5eacc5634c87c3359a65296a', action_with_language_switch_data);
+	// }
+	// else
+	// {
+		fetch_data_and_render('../data/language_items.json', action_with_language_switch_data);
+	// }
 
 	// add ripples effect
     $('#menuBox').ripples({esolution: 512, dropRadius: 20, perturbance: 0.04});
@@ -214,15 +285,30 @@ function load_body_backbone_structure()
 
 }
 
-function init_global_objTabProperty(data)
+// used only in dubug
+// function __read_json_sync(strPath, funAction)
+// {
+// 	__fetch_data_and_render(strPath, funAction);
+// }
+
+function read_json_sync(strPath, funAction)
 {
-	g_objTabProperty = data;
+	// $.ajaxSetup({
+	// 			async: false
+	// 	});
+
+	// $.getJSON(strPath, function(data) {funAction(data);} );
+
+	// $.ajaxSetup({
+	// 			async: true
+	// });
+	fetch_data_and_render(strPath, funAction);
 }
 
-function init_global_objLabelProperty(data)
-{
-	g_objLabelProperty = data;
-}
+// skill_list相关的全局表
+// 1. object全局 g_objLabelProperty：a. group b. score
+// 2. Map 全局 g_1 (g_mapCurrentChoosenLabels)： 当前用户所选lables
+// 3. Map 全局 g_2 (g_mapLabelsCount):  所有label的计数器，每次打开网页仅计数一次。
 
 /*
 	1. 点击skill tab
@@ -246,8 +332,28 @@ function init_global_objLabelProperty(data)
 window.onload = function()
 {
 	//initilize the global variables
-	fetch_data_and_render('../data/global/tab_property.json', init_global_objTabProperty);
-	fetch_data_and_render('../data/global/label_property.json', init_global_objLabelProperty);
+	// if (cons_isDebug)
+	// {
+	// 	//debug
+	// 	//__read_json_sync('https://api.myjson.com/bins/b504x', init_global_objTabProperty);
+	// 	__read_json_sync('https://api.jsonbin.io/b/5eacc45566e603359fe22385', init_global_objTabProperty);
+	// 	__read_json_sync('https://api.jsonbin.io/b/5eacc47866e603359fe22394', init_global_objLabelProperty);
+	// }
+	// else
+	// {
+		//release
+		read_json_sync('../data/global/tab_property.json', init_global_objTabProperty);
+		read_json_sync('../data/global/label_property.json', init_global_objLabelProperty);
+	// }
 
-	load_body_backbone_structure();
+	// if (cons_isDebug)
+	// {
+	// 	//debug : only for debug propose, when body backbone is embeded statically in HTML file rather than loaded dynamically.
+	// 	load_body_content();
+	// }
+	// else
+	// {
+		//release
+		load_body_backbone_structure();
+	// }
 }

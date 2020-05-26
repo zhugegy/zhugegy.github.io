@@ -70,3 +70,7 @@
 .button.pill {
     border-radius: 50em;
 }
+
+.refresh_button {
+    padding: 5px 20px;
+}
