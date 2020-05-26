@@ -224,7 +224,7 @@ td.intensiveInfo {
 .tooltip {
     position: relative;
     display: inline-block;
-    //border-bottom: 1px dotted black;
+    /* border-bottom: 1px dotted black; */
 }
 
 .tooltip .tooltiptext {
@@ -271,6 +271,23 @@ td.intensiveInfo {
 
 .starunchecked {
   color: grey;
+}
+
+#label-group-control-container {
+  padding: 10px 10px;
+}
+
+.label-group-control {
+  margin-bottom: 8px;
+}
+
+.label-group-control .clickable {
+  cursor: pointer;
+}
+
+.label-group-control .clickable:hover {
+  color: #E75481;
+  background-color: #f3f3f3;
 }
 
 .label {

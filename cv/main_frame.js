@@ -1,8 +1,13 @@
+var const_strSkillList = 'skill_list';
+
 var g_mapCurrentChoosenLabels = {};
 var g_mapLabelsCount = {};
+var g_bLabelsCountedSignal = false;
+var g_lLabelCountSorted = [];
 
 var g_objTabProperty = {};
 var g_objLabelProperty = {};
+
 
 function fetch_data_and_action(strDataLink, funRender, objAddition)
 {
@@ -18,43 +23,69 @@ function menuItems_listener()
 	// Load the content of the infoTableBox section.
 	// Content is initially empty, which will be filled in the callback function with the proper data according to strTmpItemName.
 	$("#infoTableBox").empty();
-	var strInfoTableName = g_objTabProperty[strTmpItemName]["info_table"];
-	if (strInfoTableName !== null)
+	if (g_objTabProperty[strTmpItemName].hasOwnProperty('info_table'))
 	{
-		$("#infoTableBox").load("../sub_sections/" + strInfoTableName,
+		$("#infoTableBox").load("../sub_sections/" + g_objTabProperty[strTmpItemName]['info_table'],
 								function (response)
 								{
-									fetch_data_and_action('../data/table_contents/' + strTmpItemName + '.json', action_with_table_content_data, {});
+									fetch_data_and_action('../data/table_contents/' + strTmpItemName + '.json', action_with_table_content_data, {'tab': strTmpItemName});
 								} );
 	}
 
 	// Load the content of the controlPanelBox section.
 	$("#controlPanelBox").empty();
-	var strControlPanelName = g_objTabProperty[strTmpItemName]["control_panel"];
-	if (strControlPanelName !== null)
+	if (g_objTabProperty[strTmpItemName].hasOwnProperty('control_panel'))
 	{
 		//$("#controlPanelBox").style.display = 'block';
-		$("#controlPanelBox").load("../sub_sections/" + strControlPanelName,
+		$("#controlPanelBox").load("../sub_sections/" + g_objTabProperty[strTmpItemName]['control_panel'],
 								function (response)
 								{
-									//inner call back
+									control_panel_manipulaton({'tab': strTmpItemName});
 								} );
 	}
-	else
-	{
-		$("#controlPanelBox").style.display = 'none';
-	}
+	// else
+	// {
+	// 	$("#controlPanelBox").style.display = 'none';
+	// }
 
 	// Load the content of the footerBox section.
 	$("#footerBox").empty();
-	var strFooterName = g_objTabProperty[strTmpItemName]["footer"];
-	if (strFooterName !== null)
+	if (g_objTabProperty[strTmpItemName].hasOwnProperty('footer'))
 	{
-		$("#footerBox").load("../sub_sections/" + strFooterName,
+		$("#footerBox").load("../sub_sections/" + g_objTabProperty[strTmpItemName]['footer'],
 								function (response)
 								{
 									//inner call back
 								} );
+	}
+
+}
+
+function generate_skill_list_control_panel_labels()
+{
+	var strLang = $('html')[0].lang;
+
+	for (var i = 0; i < g_lLabelCountSorted.length; i++)
+	{
+		var strGroup = g_objLabelProperty[g_lLabelCountSorted[i]]['group'];
+		var strDisplay = g_objLabelProperty[g_lLabelCountSorted[i]][strLang];
+		var strCount = g_mapLabelsCount[g_lLabelCountSorted[i]].toString();
+		
+		var strTmp = "<span class=\"label clickable " + strGroup + "\">&nbsp;" + strDisplay + " <small>(" + strCount + ")</small>" + "&nbsp;</span> ";
+		
+
+		//$(strDivId).innerHTML += strTmp;
+		var domA = document.getElementById(strGroup);
+		domA.innerHTML += strTmp;
+	}
+}
+
+function control_panel_manipulaton(objAddition)
+{
+	if (objAddition['tab'] === 'skill_list' && g_bLabelsCountedSignal === true)
+	{
+		alert("do it");
+		generate_skill_list_control_panel_labels();
 	}
 
 }
@@ -121,11 +152,45 @@ function action_with_language_switch_data(jsonData, objAddition)
 	}
 }
 
+// happens only once per session
+function count_label_appearance_times(lSkillListEntires)
+{
+	for (var i = 0; i < lSkillListEntires.length; i++)
+	{
+		if (lSkillListEntires[i]['labels'] !== undefined)
+		{
+			for (var j = 0; j < lSkillListEntires[i]['labels'].length; j++)
+			{
+				if (g_mapLabelsCount.hasOwnProperty(lSkillListEntires[i]['labels'][j]))
+				{
+					g_mapLabelsCount[lSkillListEntires[i]['labels'][j]] += 1;
+				}
+				else
+				{
+					g_mapLabelsCount[lSkillListEntires[i]['labels'][j]] = 1;
+				}
+			}
+		} 
+	}
+
+	//console.log(g_mapLabelsCount);
+	// sort the labels by appearance times, from more to less
+	g_lLabelCountSorted = Object.keys(g_mapLabelsCount).sort(function(a,b){return g_mapLabelsCount[b]-g_mapLabelsCount[a]});
+	g_bLabelsCountedSignal = true;
+	generate_skill_list_control_panel_labels();
+}
+
 function action_with_table_content_data(jsonData, objAddition)
 {
 	var lDataEntries = jsonData;
 	var strLang = $('html')[0].lang;
 	var strContentPropertyName = 'content_' + strLang;
+
+	if (objAddition['tab'] === const_strSkillList  && $.isEmptyObject(g_mapLabelsCount))
+	{
+		count_label_appearance_times(lDataEntries);
+	}
+
 
 	for (var i = 0; i < lDataEntries.length; i++)
 	{
@@ -158,7 +223,8 @@ function action_with_table_content_data(jsonData, objAddition)
 				{
 					//"<span class=\"label label-programming-language\">JavaScript</span>",
 					var strGroup = g_objLabelProperty[aryStrLabels[j]]['group'];
-					strTmp = "<span class=\"label " + strGroup + "\">&nbsp;" + aryStrLabels[j] + "&nbsp;</span> ";
+					var strDisplay = g_objLabelProperty[aryStrLabels[j]][strLang];
+					strTmp = "<span class=\"label " + strGroup + "\">&nbsp;" + strDisplay + "&nbsp;</span> ";
 					strLabelList += strTmp;
 				}
 
@@ -206,12 +272,11 @@ function load_body_backbone_structure()
 
 function init_global_variable(data, objAddition)
 {
-	strVariableName = objAddition['name'];
-	if (strVariableName === 'tab')
+	if (objAddition['name'] === 'tab')
 	{
 		g_objTabProperty = data;
 	}
-	else if (strVariableName === 'label')
+	else if (objAddition['name'] === 'label')
 	{
 		g_objLabelProperty = data;
 	}
