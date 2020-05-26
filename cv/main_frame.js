@@ -1,48 +1,40 @@
-var cons_strURLBase = "https://zhugegy.github.io/";
-var cons_strURLCur = "cv/";
+var g_mapCurrentChoosenLabels = {};
+var g_mapLabelsCount = {};
 
-g_mapCurrentChoosenLabels = {};
-g_mapLabelsCount = {};
+var g_objTabProperty = {};
+var g_objLabelProperty = {};
 
-var g_objTabProperty;
-var g_objLabelProperty;
-
-function fetch_data_and_render(strDataLink, funRender)
+function fetch_data_and_action(strDataLink, funRender, objAddition)
 {
-	$.getJSON(strDataLink, function(data) {funRender(data);} );
-}
-
-// callback function
-function info_table_loaded_inner_callback(strMenuItemName, response)
-{
-	fetch_data_and_render('../data/table_contents/' + strMenuItemName + '.json', action_with_table_content_data);
+	$.getJSON(strDataLink, function(data) {funRender(data, objAddition);} );
 }
 
 function menuItems_listener()
 {
 	strId = this.id;
 	strTmpItemName = strId.slice("menu_item_".length);
+	g_strCurrentTabName = strTmpItemName;
 
 	// Load the content of the infoTableBox section.
 	// Content is initially empty, which will be filled in the callback function with the proper data according to strTmpItemName.
 	$("#infoTableBox").empty();
 	var strInfoTableName = g_objTabProperty[strTmpItemName]["info_table"];
-	if (strInfoTableName != null)
+	if (strInfoTableName !== null)
 	{
-		$("#infoTableBox").load(cons_strURLBase + cons_strURLCur + "sub_sections/" + strInfoTableName,
+		$("#infoTableBox").load("../sub_sections/" + strInfoTableName,
 								function (response)
 								{
-									info_table_loaded_inner_callback(strTmpItemName, response);
+									fetch_data_and_action('../data/table_contents/' + strTmpItemName + '.json', action_with_table_content_data, {});
 								} );
 	}
 
 	// Load the content of the controlPanelBox section.
 	$("#controlPanelBox").empty();
 	var strControlPanelName = g_objTabProperty[strTmpItemName]["control_panel"];
-	if (strControlPanelName != null)
+	if (strControlPanelName !== null)
 	{
 		//$("#controlPanelBox").style.display = 'block';
-		$("#controlPanelBox").load(cons_strURLBase + cons_strURLCur + "sub_sections/" + strControlPanelName,
+		$("#controlPanelBox").load("../sub_sections/" + strControlPanelName,
 								function (response)
 								{
 									//inner call back
@@ -56,9 +48,9 @@ function menuItems_listener()
 	// Load the content of the footerBox section.
 	$("#footerBox").empty();
 	var strFooterName = g_objTabProperty[strTmpItemName]["footer"];
-	if (strFooterName != null)
+	if (strFooterName !== null)
 	{
-		$("#footerBox").load(cons_strURLBase + cons_strURLCur + "sub_sections/" + strFooterName,
+		$("#footerBox").load("../sub_sections/" + strFooterName,
 								function (response)
 								{
 									//inner call back
@@ -67,7 +59,33 @@ function menuItems_listener()
 
 }
 
-function action_with_menu_data(jsonData)
+function clickable_tr_post_amendation()
+{
+	$(".clickabletr").click(function ()
+		{
+			$(this).toggleClass("light_darktr");
+
+			var strHiddenID = "#" + this.id + "Hidden";
+			var strShownID = "#" + this.id + "Shown";
+			var strReplacementID = "#" + this.id + "Replacement";
+			if ($(strHiddenID).is(":hidden"))
+			{
+			    //$(strHiddenID).slideDown("slow");
+				//$(strHiddenID).slideToggle();
+				$(strHiddenID).show();
+				$(strShownID).hide();
+				$(strReplacementID).show();
+  			}
+			else
+			{
+				$(strReplacementID).hide();
+				$(strShownID).show();
+		   		$(strHiddenID).hide();
+  			}
+		});
+}
+
+function action_with_menu_data(jsonData, objAddition)
 {
 	var lMenuItems = jsonData;
 	var strLang = $('html')[0].lang;
@@ -75,8 +93,6 @@ function action_with_menu_data(jsonData)
 
 	for (var i = 0; i < lMenuItems.length; i++)
 	{
-		//<li class="menuItem"><a href="#home">Home</a></li>
-		//<img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;border:0;">
 		strTmpLink = "<li class=\"menuItem\" id=\"" + lMenuItems[i].id + "\"><a href=\"#" + lMenuItems[i].name + "\">" +
 		"<img src=\"../images/menu/" + lMenuItems[i].name + "_" + strLang + "." + lMenuItems[i].image_format + "\" alt=\"" + lMenuItems[i].name + "\"></a></li>";
 
@@ -91,7 +107,7 @@ function action_with_menu_data(jsonData)
 	}
 }
 
-function action_with_language_switch_data(jsonData)
+function action_with_language_switch_data(jsonData, objAddition)
 {
 	var lLanguageItems = jsonData;
 	var divLanguageArea = document.getElementsByClassName("switchLanguageDropDownContent")[0];
@@ -105,33 +121,7 @@ function action_with_language_switch_data(jsonData)
 	}
 }
 
-function clickable_tr_post_amendation()
-{
-	$(".clickabletr").click(function ()
-		{
-			$(this).toggleClass("light_darktr");
-
-			var strHiddenID = "#" + this.id + "Hidden";
-			var strShownID = "#" + this.id + "Shown";
-			var strReplacementID = "#" + this.id + "Replacement";
-			if ($(strHiddenID).is(":hidden"))
-			{
-		    //$(strHiddenID).slideDown("slow");
-				//$(strHiddenID).slideToggle();
-				$(strHiddenID).show();
-				$(strShownID).hide();
-				$(strReplacementID).show();
-  		}
-			else
-			{
-				$(strReplacementID).hide();
-				$(strShownID).show();
-		    $(strHiddenID).hide();
-  		}
-		});
-}
-
-function action_with_table_content_data(jsonData, labelArray=[])
+function action_with_table_content_data(jsonData, objAddition)
 {
 	var lDataEntries = jsonData;
 	var strLang = $('html')[0].lang;
@@ -186,10 +176,10 @@ function action_with_table_content_data(jsonData, labelArray=[])
 function load_body_content()
 {
 	//display menu
-	fetch_data_and_render('../data/menu_items.json', action_with_menu_data);
+	fetch_data_and_action('../data/menu_items.json', action_with_menu_data, {});
 
 	//display language switch
-	fetch_data_and_render('../data/language_items.json', action_with_language_switch_data);
+	fetch_data_and_action('../data/language_items.json', action_with_language_switch_data, {});
 
 	// add ripples effect
     $('#menuBox').ripples({esolution: 512, dropRadius: 20, perturbance: 0.04});
@@ -214,15 +204,19 @@ function load_body_backbone_structure()
 
 }
 
-function init_global_objTabProperty(data)
+function init_global_variable(data, objAddition)
 {
-	g_objTabProperty = data;
+	strVariableName = objAddition['name'];
+	if (strVariableName === 'tab')
+	{
+		g_objTabProperty = data;
+	}
+	else if (strVariableName === 'label')
+	{
+		g_objLabelProperty = data;
+	}
 }
 
-function init_global_objLabelProperty(data)
-{
-	g_objLabelProperty = data;
-}
 
 /*
 	1. 点击skill tab
@@ -246,8 +240,8 @@ function init_global_objLabelProperty(data)
 window.onload = function()
 {
 	//initilize the global variables
-	fetch_data_and_render('../data/global/tab_property.json', init_global_objTabProperty);
-	fetch_data_and_render('../data/global/label_property.json', init_global_objLabelProperty);
-
+	fetch_data_and_action('../data/global/tab_property.json', init_global_variable, {'name': 'tab'});
+	fetch_data_and_action('../data/global/label_property.json', init_global_variable, {'name': 'label'});
+	
 	load_body_backbone_structure();
 }
