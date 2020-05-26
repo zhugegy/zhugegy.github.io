@@ -282,7 +282,7 @@ td.intensiveInfo {
 }
 
 .label-group-control .clickable {
-  cursor: pointer;
+  cursor: copy;
 }
 
 .label-group-control .clickable:hover {
