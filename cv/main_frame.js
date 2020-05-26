@@ -1,17 +1,33 @@
 var const_strSkillList = 'skill_list';
 
-var g_mapCurrentChoosenLabels = {};
+var g_mapLabelSelected = {};
+
 var g_mapLabelsCount = {};
 var g_bLabelsCountedSignal = false;
-var g_lLabelCountSorted = [];
+
+var g_mapLabelsWeight = {};
+var g_lLabelWeightSorted = [];
 
 var g_objTabProperty = {};
 var g_objLabelProperty = {};
 
-
 function fetch_data_and_action(strDataLink, funRender, objAddition)
 {
 	$.getJSON(strDataLink, function(data) {funRender(data, objAddition);} );
+}
+
+function clickable_labels_listener()
+{
+	if (g_mapLabelSelected[this.id] === false)
+	{
+		g_mapLabelSelected[this.id] = true;
+	}
+	else
+	{
+		g_mapLabelSelected[this.id] = false;
+	}
+
+	this.classList.toggle("label-selected");
 }
 
 function menuItems_listener()
@@ -61,22 +77,41 @@ function menuItems_listener()
 
 }
 
+function skill_list_refresh()
+{
+	$("#infoTableBox").empty();
+	$("#infoTableBox").load("../sub_sections/info_table.html",
+								function (response)
+								{
+									fetch_data_and_action('../data/table_contents/skill_list.json', action_with_table_content_data, {'tab': 'skill_list'});
+								} );
+}
+
 function generate_skill_list_control_panel_labels()
 {
 	var strLang = $('html')[0].lang;
 
-	for (var i = 0; i < g_lLabelCountSorted.length; i++)
+	for (var i = 0; i < g_lLabelWeightSorted.length; i++)
 	{
-		var strGroup = g_objLabelProperty[g_lLabelCountSorted[i]]['group'];
-		var strDisplay = g_objLabelProperty[g_lLabelCountSorted[i]][strLang];
-		var strCount = g_mapLabelsCount[g_lLabelCountSorted[i]].toString();
-		
-		var strTmp = "<span class=\"label clickable " + strGroup + "\">&nbsp;" + strDisplay + " <small>(" + strCount + ")</small>" + "&nbsp;</span> ";
-		
+		var strGroup = g_objLabelProperty[g_lLabelWeightSorted[i]]['group'];
+		var strDisplay = g_objLabelProperty[g_lLabelWeightSorted[i]][strLang];
+		var strCount = g_mapLabelsCount[g_lLabelWeightSorted[i]].toString();
+		var strClassSelected = "";
+		if (g_mapLabelSelected[g_lLabelWeightSorted[i]] === true)
+		{
+			strClassSelected = "label-selected ";
+		}
 
-		//$(strDivId).innerHTML += strTmp;
-		var domA = document.getElementById(strGroup);
-		domA.innerHTML += strTmp;
+
+		var strTmp = "<span class=\"label clickable " + strClassSelected + strGroup + "\" id=\"" + g_lLabelWeightSorted[i] + "\">&nbsp;" + strDisplay + " <small>(" + strCount + ")</small>" + "&nbsp;</span> ";
+		
+		document.getElementById(strGroup).innerHTML += strTmp;
+	}
+
+	var domClickableLabels = document.getElementsByClassName("label clickable");
+	for (var i = 0; i < domClickableLabels.length; i++)
+	{
+		domClickableLabels[i].onclick = clickable_labels_listener;
 	}
 }
 
@@ -84,10 +119,8 @@ function control_panel_manipulaton(objAddition)
 {
 	if (objAddition['tab'] === 'skill_list' && g_bLabelsCountedSignal === true)
 	{
-		alert("do it");
 		generate_skill_list_control_panel_labels();
 	}
-
 }
 
 function clickable_tr_post_amendation()
@@ -153,7 +186,7 @@ function action_with_language_switch_data(jsonData, objAddition)
 }
 
 // happens only once per session
-function count_label_appearance_times(lSkillListEntires)
+function initialization_count_label_appearance_times(lSkillListEntires)
 {
 	for (var i = 0; i < lSkillListEntires.length; i++)
 	{
@@ -168,14 +201,21 @@ function count_label_appearance_times(lSkillListEntires)
 				else
 				{
 					g_mapLabelsCount[lSkillListEntires[i]['labels'][j]] = 1;
+					g_mapLabelSelected[lSkillListEntires[i]['labels'][j]] = false;
 				}
 			}
 		} 
 	}
+	 
+	var lLabelWeightUnsorted = Object.keys(g_mapLabelsCount);
+	for (var i = 0; i < lLabelWeightUnsorted.length; i++)
+	{
+		g_mapLabelsWeight[lLabelWeightUnsorted[i]] = cal_label_weight(lLabelWeightUnsorted[i]);
+	}
 
-	//console.log(g_mapLabelsCount);
-	// sort the labels by appearance times, from more to less
-	g_lLabelCountSorted = Object.keys(g_mapLabelsCount).sort(function(a,b){return g_mapLabelsCount[b]-g_mapLabelsCount[a]});
+	// sort the labels by ~appearance times~ weights, from ~more to less~ big to small
+	g_lLabelWeightSorted = Object.keys(g_mapLabelsWeight).sort(function(a,b){return g_mapLabelsWeight[b] - g_mapLabelsWeight[a]});
+	
 	g_bLabelsCountedSignal = true;
 	generate_skill_list_control_panel_labels();
 }
@@ -188,7 +228,7 @@ function action_with_table_content_data(jsonData, objAddition)
 
 	if (objAddition['tab'] === const_strSkillList  && $.isEmptyObject(g_mapLabelsCount))
 	{
-		count_label_appearance_times(lDataEntries);
+		initialization_count_label_appearance_times(lDataEntries);
 	}
 
 
@@ -218,25 +258,82 @@ function action_with_table_content_data(jsonData, objAddition)
 			if (lDataEntries[i].hasOwnProperty('labels'))
 			{
 				var strLabelList = "";
-				var aryStrLabels = lDataEntries[i]['labels']
+				var aryStrLabels = entry_label_sorting(lDataEntries[i]['labels']);
 				for (var j = 0; j < aryStrLabels.length; j++)
 				{
-					//"<span class=\"label label-programming-language\">JavaScript</span>",
 					var strGroup = g_objLabelProperty[aryStrLabels[j]]['group'];
 					var strDisplay = g_objLabelProperty[aryStrLabels[j]][strLang];
-					strTmp = "<span class=\"label " + strGroup + "\">&nbsp;" + strDisplay + "&nbsp;</span> ";
+					var strClassSelected = "";
+					if (g_mapLabelSelected[aryStrLabels[j]] === true)
+					{
+						strClassSelected = "label-selected ";
+					}
+					strTmp = "<span class=\"label " + strClassSelected + strGroup + "\">&nbsp;" + strDisplay + "&nbsp;</span> ";
 					strLabelList += strTmp;
 				}
 
 				var strTargetDivName = lDataEntries[i]['entry-id'] + "-label";
 				document.getElementById(strTargetDivName).innerHTML = strLabelList;
 			}
-
-			//g_mapLabelsCount 所有label的计数器，每次打开网页仅计数一次。
 		}
 	}
 
 	clickable_tr_post_amendation();
+}
+
+function cal_label_weight(strLabelID)
+{
+	var nPoints = 0;
+	strGroup = g_objLabelProperty[strLabelID]['group'];
+
+	switch (strGroup) {
+		case "label-entry-type":
+			nPoints += 14000000;
+			break;
+		case "label-programming-language":
+			nPoints += 12000000;
+			break;
+		case "label-technology-framework":
+			nPoints += 10000000;
+			break;
+		case "label-platform":
+			nPoints += 8000000;
+			break;
+		case "label-feature":
+			nPoints += 6000000;
+			break;
+		default:
+			break;
+	}
+
+	nPoints += g_mapLabelsCount[strLabelID] * 32;
+	nPoints += g_objLabelProperty[strLabelID]['same-level-adjustment-weight'];
+
+	return nPoints;
+}
+
+function entry_label_sorting(lLabels)
+{
+	/* To optimize the performance, the following line can be skipped, 
+	   resulting in each individual entry's minor label misorders that are merely noticeable. */
+	lLabels.sort(function(a, b){return g_mapLabelsWeight[b] - g_mapLabelsWeight[a]});
+	
+	var lLabelsSelected = [];
+	var lLabelsNotSelected = [];
+	
+	for (var i = 0; i < lLabels.length; i++)
+	{
+		if (g_mapLabelSelected[lLabels[i]] === true)
+		{
+			lLabelsSelected.push(lLabels[i]);
+		}
+		else
+		{
+			lLabelsNotSelected.push(lLabels[i]);
+		}
+	}
+
+	return lLabelsSelected.concat(lLabelsNotSelected);
 }
 
 function load_body_content()

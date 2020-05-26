@@ -1,144 +1,144 @@
 {
   "notes1-label-sample": "<span class=\"label label-programming-language\">JavaScript</span>",
   "notes2-label-order": "entry-type, programming language, (tool,) framework, platform, feature",
-  "Course Taken": {
+  "label-id-Course-Taken": {
     "group": "label-entry-type",
     "same-level-adjustment-weight": 3,
     "en": "Course Taken",
     "zh-Hans": "学过的课程",
     "zh-Hant": "Course Taken"
   },
-  "Book Read": {
+  "label-id-Book-Read": {
     "group": "label-entry-type",
     "same-level-adjustment-weight": 3,
     "en": "Book Read",
     "zh-Hans": "看过的书",
     "zh-Hant": "Book Read"
   },
-  "Coding Project": {
+  "label-id-Coding-Project": {
     "group": "label-entry-type",
     "same-level-adjustment-weight": 3,
     "en": "Coding Project",
     "zh-Hans": "编码项目",
     "zh-Hant": "Coding Project"
   },
-  "C": {
+  "label-id-C": {
     "group": "label-programming-language",
     "same-level-adjustment-weight": 3,
     "en": "C",
     "zh-Hans": "C",
     "zh-Hant": "C"
   },
-  "C++": {
+  "label-id-Cpp": {
     "group": "label-programming-language",
     "same-level-adjustment-weight": 3,
     "en": "C++",
     "zh-Hans": "C++",
     "zh-Hant": "C++"
   },
-  "HTML": {
+  "label-id-HTML": {
     "group": "label-programming-language",
     "same-level-adjustment-weight": 3,
     "en": "HTML",
     "zh-Hans": "HTML",
     "zh-Hant": "HTML"
   },
-  "CSS": {
+  "label-id-CSS": {
     "group": "label-programming-language",
     "same-level-adjustment-weight": 3,
     "en": "CSS",
     "zh-Hans": "CSS",
     "zh-Hant": "CSS"
   },
-  "Java": {
+  "label-id-Java": {
     "group": "label-programming-language",
     "same-level-adjustment-weight": 3,
     "en": "Java",
     "zh-Hans": "Java",
     "zh-Hant": "Java"
   },
-  "Python": {
+  "label-id-Python": {
     "group": "label-programming-language",
     "same-level-adjustment-weight": 3,
     "en": "Python",
     "zh-Hans": "Python",
     "zh-Hant": "Python"
   },
-  "JavaScript": {
+  "label-id-JavaScript": {
     "group": "label-programming-language",
     "same-level-adjustment-weight": 3,
     "en": "JavaScript",
     "zh-Hans": "JavaScript",
     "zh-Hant": "JavaScript"
   },
-  "Visual Basic": {
+  "label-id-Visual-Basic": {
     "group": "label-programming-language",
     "same-level-adjustment-weight": 3,
     "en": "Visual Basic",
     "zh-Hans": "Visual Basic",
     "zh-Hant": "Visual Basic"
   },
-  "Scratch": {
+  "label-id-Scratch": {
     "group": "label-programming-language",
     "same-level-adjustment-weight": 3,
     "en": "Scratch",
     "zh-Hans": "Scratch",
     "zh-Hant": "Scratch"
   },
-  "Visual Studio": {
+  "label-id-Visual-Studio": {
     "group": "label-technology-tool",
     "same-level-adjustment-weight": 3,
     "en": "Visual Studio",
     "zh-Hans": "Visual Studio",
     "zh-Hant": "Visual Studio"
   },
-  ".NET": {
+  "label-id-dot-NET": {
     "group": "label-technology-framework",
     "same-level-adjustment-weight": 3,
     "en": ".NET",
     "zh-Hans": ".NET",
     "zh-Hant": ".NET"
   },
-  "Web": {
+  "label-id-Web": {
     "group": "label-platform",
     "same-level-adjustment-weight": 3,
     "en": "Web",
     "zh-Hans": "Web",
     "zh-Hant": "Web"
   },
-  "Windows": {
+  "label-id-Windows": {
     "group": "label-platform",
     "same-level-adjustment-weight": 3,
     "en": "Windows",
     "zh-Hans": "Windows",
     "zh-Hant": "Windows"
   },
-  "Code Snippet": {
+  "label-id-Code-Snippet": {
     "group": "label-feature",
     "same-level-adjustment-weight": 3,
     "en": "Code Snippet",
-    "zh-Hans": "含展示用代码块",
+    "zh-Hans": "含代码片段",
     "zh-Hant": "Code Snippet"
   },
-  "Source Code": {
+  "label-id-Source-Code": {
     "group": "label-feature",
     "same-level-adjustment-weight": 3,
     "en": "Source Code",
     "zh-Hans": "含源码",
     "zh-Hant": "Source Code"
   },
-  "Live Deployment": {
+  "label-id-Live-Deployment": {
     "group": "label-feature",
     "same-level-adjustment-weight": 3,
     "en": "Live Deployment",
     "zh-Hans": "已部署",
     "zh-Hant": "Live Deployment"
   },
-  "Video Demo": {
+  "label-id-Video-Demo": {
     "group": "label-feature",
     "same-level-adjustment-weight": 3,
     "en": "Video Demo",
-    "zh-Hans": "已部署",
+    "zh-Hans": "视频演示",
     "zh-Hant": "Video Demo"
   }
 }

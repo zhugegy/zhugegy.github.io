@@ -282,12 +282,14 @@ td.intensiveInfo {
 }
 
 .label-group-control .clickable {
-  cursor: copy;
+  cursor: pointer;
 }
 
 .label-group-control .clickable:hover {
-  color: #E75481;
-  background-color: #f3f3f3;
+  /* color: #E75481;
+  background-color: #f3f3f3; */
+  /* box-shadow: 2px 3px rgb(178, 178, 178); */
+  box-shadow: 3px 4px #666;
 }
 
 .label {
@@ -301,7 +303,14 @@ td.intensiveInfo {
 .label-technology-framework {background-color: #115566;}
 .label-platform {background-color: #f89d0e;}
 .label-feature {background-color: #8b69d5;}
-/*E75481*/
+
+.label-selected {
+  color: #333;
+  /* font-weight: bolder; */
+  /* text-shadow: 0 0 3px #f4f4f4, 0 0 5px #0000FF; */
+  background-color: #E75481;
+  box-shadow: 2px 2px #666;
+}
 
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
