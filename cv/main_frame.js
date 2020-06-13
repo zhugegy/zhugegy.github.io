@@ -34,7 +34,6 @@ function menuItems_listener()
 {
 	strId = this.id;
 	strTmpItemName = strId.slice("menu_item_".length);
-	g_strCurrentTabName = strTmpItemName;
 
 	// Load the content of the infoTableBox section.
 	// Content is initially empty, which will be filled in the callback function with the proper data according to strTmpItemName.
@@ -220,6 +219,73 @@ function initialization_count_label_appearance_times(lSkillListEntires)
 	generate_skill_list_control_panel_labels();
 }
 
+function get_matched_label(objEntry)
+{
+	var lStrMatchedLabelID = [];
+	for (var i = 0; i < objEntry['labels'].length; i++)
+	{
+		if (g_mapLabelSelected[objEntry['labels'][i]] === true)
+		{
+			lStrMatchedLabelID.push(objEntry['labels'][i]);
+		}
+	}
+	
+	return lStrMatchedLabelID;
+}
+
+function cal_label_total_weight(lLabels)
+{
+	nWeight = 0;
+	for (var i = 0; i < lLabels.length; i++)
+	{
+		nWeight += g_mapLabelsWeight[lLabels[i]];
+	}
+
+	return nWeight;
+}
+
+function is_entry_a_above_entry_b(objEntryA, objEntryB)
+{
+	var nTrue = -1;
+	var nFalse = 1;
+
+	// check 1: the number of matched labels
+	var lStrMatchedLabelsA = get_matched_label(objEntryA);
+	var lStrMatchedLabelsB = get_matched_label(objEntryB);
+	if (lStrMatchedLabelsA.length > lStrMatchedLabelsB.length)
+	{
+		return nTrue;
+	}
+	else if (lStrMatchedLabelsA.length < lStrMatchedLabelsB.length)
+	{
+		return nFalse;
+	}
+
+	// check 2: the total weight of matched labels
+	var nTotalWeightA = cal_label_total_weight(lStrMatchedLabelsA);
+	var nTotalWeightB = cal_label_total_weight(lStrMatchedLabelsB);
+	if (nTotalWeightA > nTotalWeightB)
+	{
+		return nTrue;
+	}
+	else if (nTotalWeightA < nTotalWeightB)
+	{
+		return nFalse;
+	}
+
+	// check 3: time - latest entry will be above
+	if (objEntryA['timestamp'] > objEntryB['timestamp'])
+	{
+		return nTrue;
+	}
+	else if (objEntryA['timestamp'] < objEntryB['timestamp'])
+	{
+		return nFalse;
+	}
+
+	return nFalse;
+}
+
 function action_with_table_content_data(jsonData, objAddition)
 {
 	var lDataEntries = jsonData;
@@ -229,6 +295,13 @@ function action_with_table_content_data(jsonData, objAddition)
 	if (objAddition['tab'] === const_strSkillList  && $.isEmptyObject(g_mapLabelsCount))
 	{
 		initialization_count_label_appearance_times(lDataEntries);
+	}
+
+	if (objAddition['tab'] === const_strSkillList)
+	{
+		objFirstItem = lDataEntries.shift();
+		lDataEntries.sort(function(a, b){return is_entry_a_above_entry_b(a, b)});
+		lDataEntries.unshift(objFirstItem);
 	}
 
 
@@ -290,16 +363,16 @@ function cal_label_weight(strLabelID)
 		case "label-entry-type":
 			nPoints += 14000000;
 			break;
-		case "label-programming-language":
+		case "label-feature":
 			nPoints += 12000000;
 			break;
-		case "label-technology-framework":
+		case "label-programming-language":
 			nPoints += 10000000;
 			break;
-		case "label-platform":
+		case "label-technology-framework":
 			nPoints += 8000000;
 			break;
-		case "label-feature":
+		case "label-platform":
 			nPoints += 6000000;
 			break;
 		default:

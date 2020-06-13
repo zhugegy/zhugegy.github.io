@@ -169,3 +169,11 @@ img.Modal_images_silde_short_65vh {
       max-width:85vw;
     }
 }
+
+.modalLink:link {
+  color: #94d8ff;
+}
+
+.modalLink:visited {
+  color: #e0cfee;
+}

@@ -85,6 +85,13 @@
     "zh-Hans": "Scratch",
     "zh-Hant": "Scratch"
   },
+  "label-id-Bash": {
+    "group": "label-programming-language",
+    "same-level-adjustment-weight": 3,
+    "en": "Bash",
+    "zh-Hans": "Bash",
+    "zh-Hant": "Bash"
+  },
   "label-id-Visual-Studio": {
     "group": "label-technology-tool",
     "same-level-adjustment-weight": 3,
@@ -113,6 +120,13 @@
     "zh-Hans": "Windows",
     "zh-Hant": "Windows"
   },
+  "label-id-Unix-like": {
+    "group": "label-platform",
+    "same-level-adjustment-weight": 3,
+    "en": "UN*X",
+    "zh-Hans": "UN*X",
+    "zh-Hant": "UN*X"
+  },
   "label-id-Code-Snippet": {
     "group": "label-feature",
     "same-level-adjustment-weight": 3,
@@ -126,6 +140,13 @@
     "en": "Source Code",
     "zh-Hans": "含源码",
     "zh-Hant": "Source Code"
+  },
+  "label-id-Executable": {
+    "group": "label-feature",
+    "same-level-adjustment-weight": 3,
+    "en": "Executable",
+    "zh-Hans": "可执行文件",
+    "zh-Hant": "Executable"
   },
   "label-id-Live-Deployment": {
     "group": "label-feature",
