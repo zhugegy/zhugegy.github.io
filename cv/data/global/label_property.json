@@ -22,6 +22,13 @@
     "zh-Hans": "编码项目",
     "zh-Hant": "Coding Project"
   },
+  "label-id-Content-Output": {
+    "group": "label-entry-type",
+    "same-level-adjustment-weight": 3,
+    "en": "Content Output",
+    "zh-Hans": "内容输出",
+    "zh-Hant": "Content Output"
+  },
   "label-id-C": {
     "group": "label-programming-language",
     "same-level-adjustment-weight": 3,
@@ -35,6 +42,13 @@
     "en": "C++",
     "zh-Hans": "C++",
     "zh-Hant": "C++"
+  },
+  "label-id-Assembly": {
+    "group": "label-programming-language",
+    "same-level-adjustment-weight": 3,
+    "en": "Assembly",
+    "zh-Hans": "汇编语言",
+    "zh-Hant": "Assembly"
   },
   "label-id-HTML": {
     "group": "label-programming-language",
@@ -85,12 +99,26 @@
     "zh-Hans": "Scratch",
     "zh-Hant": "Scratch"
   },
+  "label-id-R": {
+    "group": "label-programming-language",
+    "same-level-adjustment-weight": 3,
+    "en": "R",
+    "zh-Hans": "R",
+    "zh-Hant": "R"
+  },
   "label-id-Bash": {
     "group": "label-programming-language",
     "same-level-adjustment-weight": 3,
     "en": "Bash",
     "zh-Hans": "Bash",
     "zh-Hant": "Bash"
+  },
+  "label-id-PowerShell": {
+    "group": "label-programming-language",
+    "same-level-adjustment-weight": 3,
+    "en": "PowerShell",
+    "zh-Hans": "PowerShell",
+    "zh-Hant": "PowerShell"
   },
   "label-id-Visual-Studio": {
     "group": "label-technology-tool",
@@ -99,12 +127,47 @@
     "zh-Hans": "Visual Studio",
     "zh-Hant": "Visual Studio"
   },
+  "label-id-Binary-Security": {
+    "group": "label-technology-framework",
+    "same-level-adjustment-weight": 3,
+    "en": "Binary Security",
+    "zh-Hans": "二进制安全",
+    "zh-Hant": "Binary Security"
+  },
   "label-id-dot-NET": {
     "group": "label-technology-framework",
     "same-level-adjustment-weight": 3,
     "en": ".NET",
     "zh-Hans": ".NET",
     "zh-Hant": ".NET"
+  },
+  "label-id-Cloud-Computing": {
+    "group": "label-technology-framework",
+    "same-level-adjustment-weight": 3,
+    "en": "Cloud Computing",
+    "zh-Hans": "云计算",
+    "zh-Hant": "Cloud Computing"
+  },
+  "label-id-Google-App-Engine": {
+    "group": "label-technology-framework",
+    "same-level-adjustment-weight": 3,
+    "en": "Google App Engine",
+    "zh-Hans": "Google App Engine",
+    "zh-Hant": "Google App Engine"
+  },
+  "label-id-Data-Analytics": {
+    "group": "label-technology-framework",
+    "same-level-adjustment-weight": 3,
+    "en": "Data Analytics",
+    "zh-Hans": "Data Analytics",
+    "zh-Hant": "Data Analytics"
+  },
+  "label-id-MFC": {
+    "group": "label-technology-framework",
+    "same-level-adjustment-weight": 3,
+    "en": "MFC",
+    "zh-Hans": "MFC",
+    "zh-Hant": "MFC"
   },
   "label-id-Web": {
     "group": "label-platform",

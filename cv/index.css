@@ -157,6 +157,7 @@ td.font_bigger{
 
 td.timestamp_width{
   width: 5vw;
+  vertical-align:top;
 }
 
 tr.clickabletr {
@@ -306,8 +307,13 @@ td.intensiveInfo {
 
 .label {
   color: white;
-  padding: 0.1vw;
+  padding: 0.6px 0.8px;
+  margin: 0.2px 0.2px;
   font-family: Arial;
+  white-space:nowrap;
+  line-height: 1.4em;
+  /* padding-left: 0;
+  margin-left: 0; */
 }
 
 .label-entry-type {background-color: #00aedc;} 

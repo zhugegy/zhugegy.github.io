@@ -69,6 +69,8 @@
 
 .button.pill {
     border-radius: 50em;
+    margin-top: 1.2px;
+    margin-bottom: 1.2px;
 }
 
 .refresh_button {

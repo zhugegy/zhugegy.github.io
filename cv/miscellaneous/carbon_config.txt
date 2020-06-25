@@ -1,0 +1,2 @@
+seti theme
+000 bg
