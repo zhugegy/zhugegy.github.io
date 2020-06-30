@@ -134,6 +134,13 @@
     "zh-Hans": "二进制安全",
     "zh-Hant": "Binary Security"
   },
+  "label-id-Web-Security": {
+    "group": "label-technology-framework",
+    "same-level-adjustment-weight": 3,
+    "en": "Web Security",
+    "zh-Hans": "Web安全",
+    "zh-Hant": "Web Security"
+  },
   "label-id-dot-NET": {
     "group": "label-technology-framework",
     "same-level-adjustment-weight": 3,
