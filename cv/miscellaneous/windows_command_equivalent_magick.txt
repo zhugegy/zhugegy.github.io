@@ -1,0 +1,1 @@
+magick .\pinky.bmp -trim +repage -brightness-contrast 0,0 -depth 4 -compress RLE -type palette BMP3:pinky.bmp

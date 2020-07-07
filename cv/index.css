@@ -214,7 +214,13 @@ tr td img {
 }
 
 td.intensiveInfo {
-  font-size: 0.8vw;
+  font-size: 0.95vw;
+  /* font-size: 8px; */
+  /* line-height: 1.6em; */
+}
+
+td.intensiveInfo p{
+  margin: 3px 0;
 }
 
 .tableHeadingNotes {

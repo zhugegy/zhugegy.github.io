@@ -22,9 +22,9 @@
           "</tr>"
                   ],
         "layout-for-human-read": ["time line", "Education experience"],
-        "content_zh-Hans":["2018年3月 - 2019年12月", "<b>IT和IT管理硕士，悉尼大学，澳大利亚</b>"],
+        "content_zh-Hans":["2018年3月 - 2019年12月", "<b>信息技术硕士，悉尼大学，澳大利亚</b>"],
         "content_zh-Hant":["null", "null"],
-        "content_en":["Mar 2018 - Dec 2019", "<b>MSc student of IT and IT Management, University of Sydney, Australia</b>"]
+        "content_en":["Mar 2018 - Dec 2019", "<b>MSc student of Information Technology, University of Sydney, Australia</b>"]
     },
     {
         "field":"table_content",
@@ -34,21 +34,36 @@
           "</tr>"
                   ],
         "layout-for-human-read": ["void", "Education experience continued"],
-        "content_zh-Hans":["", "<small>在“Java程序设计”和“Web程序设计”两门课程中获得优秀(High Distinction, HD)。</small>"],
+        "content_zh-Hans":["", "<small>软件工程方向。</small>"],
         "content_zh-Hant":["", "null"],
-        "content_en":["", "<small>High Distinction (HD) in Software Development in Java and Web Application Development.</small>"]
+        "content_en":["", "<small>Major in Software Engineering.</small>"]
     },
     {
         "field":"table_content",
         "format": [
           "<tr>",
-          "<td class=\"tabContentTable_lineTitle\">$</td><td><a href=\"$\" class=\"button pill\" target=\"_blank\">$</a></td>",
+          "<td class=\"tabContentTable_lineTitle\">$</td><td>$</td>",
           "</tr>"
                   ],
         "layout-for-human-read": ["void", "Education experience continued"],
-        "content_zh-Hans":["", "https://sydney.edu.au/courses/courses/pc/master-of-information-technology-and-master-of-information-technology-management.html", "<small>教学内容链接</small>"],
+        "content_zh-Hans":["", "<small>以下课程获得最高评级：<br>- Software Development in Java<br>- Web Application Development<br>- Data Analytics and Business Intelligence</small>"],
         "content_zh-Hant":["", "null"],
-        "content_en":["", "https://sydney.edu.au/courses/courses/pc/master-of-information-technology-and-master-of-information-technology-management.html", "<small>Programme Link</small>"]
+        "content_en":["", "<small>High Distinction in:<br>- Software Development in Java<br>- Web Application Development<br>- Data Analytics and Business Intelligence</small>"]
+    },
+    {
+        "field":"table_content",
+        "format": [
+          "<div id=\"Pdf_Modal_USYD_testamur\" style=\"display:none\">",
+          "<iframe id=\"Pdf_Modal_USYD_testamuriframe\" src=\"../files/personal_experience/Official-Testamur.pdf\"></iframe>",
+          "</div>",
+          "<tr>",
+          "<td class=\"tabContentTable_lineTitle\">$</td><td><a href=\"$\" class=\"button pill\" target=\"_blank\">$</a> <a href=\"#\" class=\"button pill\" onclick=\"openPdfModal('Pdf_Modal_USYD_testamur');return false;\">$</a></td>",
+          "</tr>"
+                  ],
+        "layout-for-human-read": ["void", "Education experience continued"],
+        "content_zh-Hans":["", "https://sydney.edu.au/courses/courses/pc/master-of-information-technology-and-master-of-information-technology-management.html", "<small>教学内容链接</small>", "<small>学位证书</small>"],
+        "content_zh-Hant":["", "null"],
+        "content_en":["", "https://sydney.edu.au/courses/courses/pc/master-of-information-technology-and-master-of-information-technology-management.html", "<small>Programme Link</small>", "<small>Diploma</small>"]
     },
     {
         "field":"table_content",
@@ -72,7 +87,22 @@
         "layout-for-human-read": ["void", "Education experience continued"],
         "content_zh-Hans":["", "<small>免学费，并额外收到学校的3000欧元奖学金。</small>"],
         "content_zh-Hant":["", "null"],
-        "content_en":["", "<small>Tuition fee free. Granted 3,000 Euro scholarship by university.</small>"]
+        "content_en":["", "<small>Tuition fee free. Granted 3,000 Euro scholarship by the university.</small>"]
+    },
+    {
+        "field":"table_content",
+        "format": [
+          "<div id=\"Pdf_Modal_TTU_Publication_LCC\" style=\"display:none\">",
+          "<iframe id=\"Pdf_Modal_TTU_Publication_LCCiframe\" src=\"../files/skill_list/TTU_LogClusterC/ids17-logclusterc-web.pdf\"></iframe>",
+          "</div>",
+          "<tr>",
+          "<td class=\"tabContentTable_lineTitle\">$</td><td>$</td>",
+          "</tr>"
+                  ],
+        "layout-for-human-read": ["void", "Education experience continued"],
+        "content_zh-Hans":["", "<small>在2017年IEEE第3次云端大数据安全会议发表论文。</small>"],
+        "content_zh-Hant":["", "null"],
+        "content_en":["", "<small>Published paper at the 2017 IEEE International Conference on Big Data Security on Cloud. </small>"]
     },
     {
         "field":"table_content",
@@ -82,33 +112,9 @@
           "</tr>"
                   ],
         "layout-for-human-read": ["void", "Education experience continued"],
-        "content_zh-Hans":["", "<small>荣誉毕业(绩点 4.77/5; 完成了122学分，共24门课程)。</small>"],
+        "content_zh-Hans":["", "<small>荣誉毕业(绩点 4.77/5)。</small>"],
         "content_zh-Hant":["", "null"],
-        "content_en":["", "<small>Graduated with cum laude (GPA 4.77/5; 122 credits, 24 courses completed).</small>"]
-    },
-    {
-        "field":"table_content",
-        "format": [
-          "<div id=\"Pdf_Modal_TTU_Publication_LCC\" style=\"display:none\">",
-          "<iframe id=\"Pdf_Modal_TTU_Publication_LCCiframe\" src=\"../files/skill_list/TTU_LogClusterC/ids17-logclusterc-web.pdf\"></iframe>",
-          "</div>"
-                  ],
-        "layout-for-human-read": [],
-        "content_zh-Hans":[],
-        "content_zh-Hant":[],
-        "content_en":[]
-    },
-    {
-        "field":"table_content",
-        "format": [
-          "<tr>",
-          "<td class=\"tabContentTable_lineTitle\">$</td><td>$<br><a href=\"$\" class=\"button pill\" target=\"_blank\">$</a> <a href=\"#\" class=\"button pill\" onclick=\"openPdfModal('Pdf_Modal_TTU_Publication_LCC');return false;\">$</a></td>",
-          "</tr>"
-                  ],
-        "layout-for-human-read": ["void", "Education experience continued"],
-        "content_zh-Hans":["", "<small>在2017年IEEE第3次云端大数据安全会议发表论文。</small>", "https://ieeexplore.ieee.org/document/7980352", "<small>IEEE收录链接</small>", "<small>内容(pdf)</small>"],
-        "content_zh-Hant":["", "null"],
-        "content_en":["", "<small>Published paper at the 2017 IEEE International Conference on Big Data Security on Cloud. </small>", "https://ieeexplore.ieee.org/document/7980352", "<small>IEEE Entry Link</small>", "<small>Paper Content (pdf)</small>"]
+        "content_en":["", "<small>Graduated with cum laude (GPA 4.77/5).</small>"]
     },
     {
         "field":"table_content",
@@ -156,8 +162,6 @@
           "<div class=\"modalSlides\"><div class=\"numbertext\">$</div><img src=\"$\" class=\"$\"></div>",
           "<div class=\"modalSlides\"><div class=\"numbertext\">$</div><img src=\"$\" class=\"$\"></div>",
           "<div class=\"modalSlides\"><div class=\"numbertext\">$</div><img src=\"$\" class=\"$\"></div>",
-          "<div class=\"modalSlides\"><div class=\"numbertext\">$</div><img src=\"$\" class=\"$\"></div>",
-          "<div class=\"modalSlides\"><div class=\"numbertext\">$</div><img src=\"$\" class=\"$\"></div>",
           "<a class=\"prevSlide\" onclick=\"plusSlides(-1);return false;\">&#10094;</a>",
           "<a class=\"nextSlide\" onclick=\"plusSlides(1);return false;\">&#10095;</a>",
           "<div class=\"caption-containerModal\"><p id=\"captionModal$\"></p></div>",
@@ -167,28 +171,26 @@
           "<div class=\"columnThumbnail\"><img class=\"demoThumbnail\" src=\"$\" onclick=\"currentSlide(3);\" data-caption=\"$\"></div>",
           "<div class=\"columnThumbnail\"><img class=\"demoThumbnail\" src=\"$\" onclick=\"currentSlide(4);\" data-caption=\"$\"></div>",
           "<div class=\"columnThumbnail\"><img class=\"demoThumbnail\" src=\"$\" onclick=\"currentSlide(5);\" data-caption=\"$\"></div>",
-          "<div class=\"columnThumbnail\"><img class=\"demoThumbnail\" src=\"$\" onclick=\"currentSlide(6);\" data-caption=\"$\"></div>",
-          "<div class=\"columnThumbnail\"><img class=\"demoThumbnail\" src=\"$\" onclick=\"currentSlide(7);\" data-caption=\"$\"></div>",
           "</div>",
           "</div>",
           "</div>"
                   ],
         "layout-for-human-read": ["ModalID", "ModalID", "text-serial1 to display", "image1 src", "image1class", "text-serial2 to display", "image2 src", "imag2class", "... ...", "ModalID", "image1 Thumbnail src", "image 1 text", "image2 Thumbnail src", "image 2 text", "... ..."],
-        "content_zh-Hans":["Modal_TTU_album_images", "Modal_TTU_album_images", "1 / 7", "../images/personal_experience/ttu-ict-building-in-summer.jpg", "Modal_images_silde_ratio_0dot75", "2 / 7", "../images/personal_experience/ttu-ict-building-in-summer-far.jpg", "Modal_images_silde_ratio_1dot33", "3 / 7", "../images/personal_experience/ttu-ict-building-from-the-other-side-of-road.jpg", "Modal_images_silde_ratio_0dot75", "4 / 7", "../images/personal_experience/ttu-ict-building-a-friday-night.jpg", "Modal_images_silde_ratio_0dot75", "5 / 7", "../images/personal_experience/ttu-ict-building-in-winter.jpg", "Modal_images_silde_ratio_0dot75", "6 / 7", "../images/personal_experience/ttu-ict-building-name-board-far-view.jpg", "Modal_images_silde_ratio_0dot75", "7 / 7", "../images/personal_experience/ttu-ict-building-name-board-near-view-center.png", "Modal_images_silde_ratio_0dot75", "Modal_TTU_album_images", "../images/personal_experience/ttu-ict-building-in-summer.jpg", "ICT楼（摄影 <a target='_blank' class='modalLink' href='https://goo.gl/maps/Dj6Ko9Jymc8BHFDg7'>Krista Roolaid</a>）", "../images/personal_experience/ttu-ict-building-in-summer-far.jpg", "ICT楼（摄影 <a target='_blank' class='modalLink' href='https://goo.gl/maps/1ex5iSrY8ds2fkLv6'>Krista Roolaid</a>）", "../images/personal_experience/ttu-ict-building-from-the-other-side-of-road.jpg", "春天的Mustamäe区（摄影 <a target='_blank' class='modalLink' href='https://goo.gl/maps/jpxpPKtWHRqMjjw1A'>E Ee</a>）", "../images/personal_experience/ttu-ict-building-a-friday-night.jpg", "星期五晚上（摄影 <a target='_blank' class='modalLink' href='https://goo.gl/maps/U1jVtC4ME11nwGKN9'>E Ee</a>）", "../images/personal_experience/ttu-ict-building-in-winter.jpg", "ICT楼（摄影 <a target='_blank' class='modalLink' href='https://goo.gl/maps/fYtzXm12tmZhzVRQ8'>E Ee</a>）", "../images/personal_experience/ttu-ict-building-name-board-far-view.jpg", "ICT楼荣誉墙，自1961年开始，包含ICT学院所有专业的荣誉毕业生姓名（摄影 Peter Wang）", "../images/personal_experience/ttu-ict-building-name-board-near-view-center.png", "ICT楼荣誉毕业生姓名墙局部（摄影 Peter Wang）"],
+        "content_zh-Hans":["Modal_TTU_album_images", "Modal_TTU_album_images", "1 / 5", "../images/personal_experience/ttu-ict-building-in-summer-far.jpg", "Modal_images_silde_ratio_1dot33", "2 / 5", "../images/personal_experience/ttu-ict-building-a-friday-night.jpg", "Modal_images_silde_ratio_0dot75", "3 / 5", "../images/personal_experience/ttu-ict-building-in-winter.jpg", "Modal_images_silde_ratio_0dot75", "4 / 5", "../images/personal_experience/ttu-ict-building-name-board-far-view.jpg", "Modal_images_silde_ratio_0dot75", "5 / 5", "../images/personal_experience/ttu-ict-building-name-board-near-view-center.png", "Modal_images_silde_ratio_0dot75", "Modal_TTU_album_images", "../images/personal_experience/ttu-ict-building-in-summer-far.jpg", "ICT楼（摄影 <a target='_blank' class='modalLink' href='https://goo.gl/maps/1ex5iSrY8ds2fkLv6'>Krista Roolaid</a>）", "../images/personal_experience/ttu-ict-building-a-friday-night.jpg", "星期五晚上（摄影 <a target='_blank' class='modalLink' href='https://goo.gl/maps/U1jVtC4ME11nwGKN9'>E Ee</a>）", "../images/personal_experience/ttu-ict-building-in-winter.jpg", "ICT楼（摄影 <a target='_blank' class='modalLink' href='https://goo.gl/maps/fYtzXm12tmZhzVRQ8'>E Ee</a>）", "../images/personal_experience/ttu-ict-building-name-board-far-view.jpg", "ICT楼荣誉墙，自1961年开始，包含ICT学院所有专业的荣誉毕业生姓名（摄影 Peter Wang）", "../images/personal_experience/ttu-ict-building-name-board-near-view-center.png", "ICT楼荣誉毕业生姓名墙局部（摄影 Peter Wang）"],
         "content_zh-Hant":["null", "null"],
-        "content_en":["Modal_TTU_album_images", "Modal_TTU_album_images", "1 / 7", "../images/personal_experience/ttu-ict-building-in-summer.jpg", "Modal_images_silde_ratio_0dot75", "2 / 7", "../images/personal_experience/ttu-ict-building-in-summer-far.jpg", "Modal_images_silde_ratio_1dot33", "3 / 7", "../images/personal_experience/ttu-ict-building-from-the-other-side-of-road.jpg", "Modal_images_silde_ratio_0dot75", "4 / 7", "../images/personal_experience/ttu-ict-building-a-friday-night.jpg", "Modal_images_silde_ratio_0dot75", "5 / 7", "../images/personal_experience/ttu-ict-building-in-winter.jpg", "Modal_images_silde_ratio_0dot75", "6 / 7", "../images/personal_experience/ttu-ict-building-name-board-far-view.jpg", "Modal_images_silde_ratio_0dot75", "7 / 7", "../images/personal_experience/ttu-ict-building-name-board-near-view-center.png", "Modal_images_silde_ratio_0dot75", "Modal_TTU_album_images", "../images/personal_experience/ttu-ict-building-in-summer.jpg", "The ICT Building (Photograph by <a target='_blank' class='modalLink' href='https://goo.gl/maps/Dj6Ko9Jymc8BHFDg7'>Krista Roolaid</a>)", "../images/personal_experience/ttu-ict-building-in-summer-far.jpg", "The ICT Building (Photograph by <a target='_blank' class='modalLink' href='https://goo.gl/maps/1ex5iSrY8ds2fkLv6'>Krista Roolaid</a>)", "../images/personal_experience/ttu-ict-building-from-the-other-side-of-road.jpg", "Spring in Mustamäe (Photograph by <a target='_blank' class='modalLink' href='https://goo.gl/maps/jpxpPKtWHRqMjjw1A'>E Ee</a>)", "../images/personal_experience/ttu-ict-building-a-friday-night.jpg", "A Friday Night (Photograph by <a target='_blank' class='modalLink' href='https://goo.gl/maps/U1jVtC4ME11nwGKN9'>E Ee</a>)", "../images/personal_experience/ttu-ict-building-in-winter.jpg", "The ICT Building (Photograph by  <a target='_blank' class='modalLink' href='https://goo.gl/maps/fYtzXm12tmZhzVRQ8'>E Ee</a>)", "../images/personal_experience/ttu-ict-building-name-board-far-view.jpg", "ICT Building Cum Laude Graduate Name Board, since 1961, including All Majors（Photograph by Peter Wang）", "../images/personal_experience/ttu-ict-building-name-board-near-view-center.png", "ICT Building Cum Laude Graduate Name Board (Partial)（Photograph by Peter Wang）"]
+        "content_en":["Modal_TTU_album_images", "Modal_TTU_album_images", "1 / 5", "../images/personal_experience/ttu-ict-building-in-summer-far.jpg", "Modal_images_silde_ratio_1dot33", "2 / 5", "../images/personal_experience/ttu-ict-building-a-friday-night.jpg", "Modal_images_silde_ratio_0dot75", "3 / 5", "../images/personal_experience/ttu-ict-building-in-winter.jpg", "Modal_images_silde_ratio_0dot75", "4 / 5", "../images/personal_experience/ttu-ict-building-name-board-far-view.jpg", "Modal_images_silde_ratio_0dot75", "5 / 5", "../images/personal_experience/ttu-ict-building-name-board-near-view-center.png", "Modal_images_silde_ratio_0dot75", "Modal_TTU_album_images", "../images/personal_experience/ttu-ict-building-in-summer-far.jpg", "The ICT Building (Photograph by <a target='_blank' class='modalLink' href='https://goo.gl/maps/1ex5iSrY8ds2fkLv6'>Krista Roolaid</a>)", "../images/personal_experience/ttu-ict-building-a-friday-night.jpg", "A Friday Night (Photograph by <a target='_blank' class='modalLink' href='https://goo.gl/maps/U1jVtC4ME11nwGKN9'>E Ee</a>)", "../images/personal_experience/ttu-ict-building-in-winter.jpg", "The ICT Building (Photograph by  <a target='_blank' class='modalLink' href='https://goo.gl/maps/fYtzXm12tmZhzVRQ8'>E Ee</a>)", "../images/personal_experience/ttu-ict-building-name-board-far-view.jpg", "ICT Building Cum Laude Graduate Name Board, since 1961, including All Majors（Photograph by Peter Wang）", "../images/personal_experience/ttu-ict-building-name-board-near-view-center.png", "ICT Building Cum Laude Graduate Name Board (Partial)（Photograph by Peter Wang）"]
     },
     {
         "field":"table_content",
         "format": [
           "<tr>",
-          "<td class=\"tabContentTable_lineTitle\">$</td><td><a href=\"$\" class=\"button pill\" target=\"_blank\">$</a> <a href=\"#\" class=\"button pill\" onclick=\"openModal('Modal_TTU_diploma_images');return false;\" >$</a> <a href=\"#\" class=\"button pill\" onclick=\"openModal('Modal_TTU_album_images');return false;\" >$</a></td>",
+          "<td class=\"tabContentTable_lineTitle\">$</td><td><a href=\"$\" class=\"button pill\" target=\"_blank\">$</a> <a href=\"#\" class=\"button pill\" onclick=\"openModal('Modal_TTU_diploma_images');return false;\" >$</a> <a href=\"#\" class=\"button pill\" onclick=\"openPdfModal('Pdf_Modal_TTU_Publication_LCC');return false;\">$</a> <a href=\"#\" class=\"button pill\" onclick=\"openModal('Modal_TTU_album_images');return false;\" >$</a></td>",
           "</tr>"
                   ],
         "layout-for-human-read": ["void", "Education experience continued"],
-        "content_zh-Hans":["", "https://www.ttu.ee/?id=175198", "<small>教学内容链接</small>", "<small>学位证书和成绩单</small>", "<small>相册</small>"],
+        "content_zh-Hans":["", "https://www.ttu.ee/?id=175198", "<small>教学内容链接</small>", "<small>学位证书</small>", "<small>会议论文</small>", "<small>相册</small>"],
         "content_zh-Hant":["", "null"],
-        "content_en":["", "https://www.ttu.ee/?id=175198", "<small>Programme Link</small>", "<small>Diploma and Academic Transcript</small>", "<small>Album</small>"]
+        "content_en":["", "https://www.ttu.ee/?id=175198", "<small>Programme Link</small>", "<small>Diploma</small>", "<small>Conference Paper</small>", "<small>Album</small>"]
     },
     {
         "field":"table_content",
@@ -304,7 +306,7 @@
         "layout-for-human-read": ["void", "Education experience continued"],
         "content_zh-Hans":["", "http://www.51asm.net/", "<small>官网链接</small>", "<small>笔记概览</small>"],
         "content_zh-Hant":["", "null"],
-        "content_en":["", "http://www.51asm.net/", "<small>Official Website Link(Chinese)</small>", "<small>My Notes at a Glance (Chinese)</small>"]
+        "content_en":["", "http://www.51asm.net/", "<small>Official Website Link (Chinese)</small>", "<small>Notes at a Glance (Chinese)</small>"]
     },
     {
         "field":"table_content",
@@ -364,6 +366,6 @@
         "layout-for-human-read": ["void", "Education experience continued"],
         "content_zh-Hans":["", "http://www.ilinyi.net/", "<small>官网链接</small>", "http://www.ilinyi.net/live/", "<small>节目直播</small>"],
         "content_zh-Hant":["", "null"],
-        "content_en":["", "http://www.ilinyi.net/", "<small>Official Website Link(Chinese)</small>", "http://www.ilinyi.net/live/", "<small>Live Streaming Link(Chinese)</small>"]
+        "content_en":["", "http://www.ilinyi.net/", "<small>Official Website Link (Chinese)</small>", "http://www.ilinyi.net/live/", "<small>Live Streaming Link (Chinese)</small>"]
     }
 ]

@@ -156,10 +156,13 @@ function action_with_menu_data(jsonData, objAddition)
 
 	for (var i = 0; i < lMenuItems.length; i++)
 	{
-		strTmpLink = "<li class=\"menuItem\" id=\"" + lMenuItems[i].id + "\"><a href=\"#" + lMenuItems[i].name + "\">" +
-		"<img src=\"../images/menu/" + lMenuItems[i].name + "_" + strLang + "." + lMenuItems[i].image_format + "\" alt=\"" + lMenuItems[i].name + "\"></a></li>";
+		if (lMenuItems[i].isDisplayed === true)
+		{
+			strTmpLink = "<li class=\"menuItem\" id=\"" + lMenuItems[i].id + "\"><a href=\"#" + lMenuItems[i].name + "\">" + 
+			"<img src=\"../images/menu/" + lMenuItems[i].name + "_" + strLang + "." + lMenuItems[i].image_format + "\" alt=\"" + lMenuItems[i].name + "\"></a></li>";
 
-		menuItemsList.innerHTML += strTmpLink;
+			menuItemsList.innerHTML += strTmpLink;
+		}
 	}
 
 	// register the menu items for user interactions later on
@@ -168,6 +171,8 @@ function action_with_menu_data(jsonData, objAddition)
 	{
 		menuItems[i].onclick = menuItems_listener;
 	}
+
+	document.getElementById('menu_item_basic_information').click();
 }
 
 function action_with_language_switch_data(jsonData, objAddition)

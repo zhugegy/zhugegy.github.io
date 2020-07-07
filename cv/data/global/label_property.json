@@ -57,12 +57,12 @@
     "zh-Hans": "HTML",
     "zh-Hant": "HTML"
   },
-  "label-id-CSS": {
+  "label-id-HTML-CSS": {
     "group": "label-programming-language",
     "same-level-adjustment-weight": 3,
-    "en": "CSS",
-    "zh-Hans": "CSS",
-    "zh-Hant": "CSS"
+    "en": "HTML/CSS",
+    "zh-Hans": "HTML/CSS",
+    "zh-Hant": "HTML/CSS"
   },
   "label-id-Java": {
     "group": "label-programming-language",

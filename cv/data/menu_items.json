@@ -3,42 +3,49 @@
         "id":"menu_item_basic_information",
         "name_zh-Hans":"基本信息",
         "name":"basic_information",
-        "image_format":"png"
+        "image_format":"png",
+        "isDisplayed": true
     },
     {
         "id":"menu_item_personal_experience",
         "name_zh-Hans":"个人经历",
         "name":"personal_experience",
-        "image_format":"png"
+        "image_format":"png",
+        "isDisplayed": true
     },
     {
         "id":"menu_item_skill_list",
         "name_zh-Hans":"技能列表",
         "name":"skill_list",
-        "image_format":"png"
+        "image_format":"png",
+        "isDisplayed": true
     },
     {
         "id":"menu_item_work_demonstration",
         "name_zh-Hans":"作品展示",
         "name":"work_demonstration",
-        "image_format":"png"
+        "image_format":"png",
+        "isDisplayed": false
     },
     {
         "id":"menu_item_recommendation_letter",
         "name_zh-Hans":"推荐信",
         "name":"recommendation_letter",
-        "image_format":"png"
+        "image_format":"png",
+        "isDisplayed": true
     },
     {
         "id":"menu_item_certification",
         "name_zh-Hans":"资格证书",
         "name":"certification",
-        "image_format":"png"
+        "image_format":"png",
+        "isDisplayed": false
     },
     {
         "id":"menu_item_habit",
         "name_zh-Hans":"业余爱好",
         "name":"habit",
-        "image_format":"png"
+        "image_format":"png",
+        "isDisplayed": true
     }
 ]
