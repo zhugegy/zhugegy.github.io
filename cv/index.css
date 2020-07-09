@@ -38,6 +38,10 @@ div#infoTableBox, div#controlPanelBox{
    width: 85%;
 }
 
+div.main-content-wrapper {
+  min-height: 72vh;
+}
+
 #switchLanguageDropDownMenu {
  float:right;
  margin-right:0.6vw;

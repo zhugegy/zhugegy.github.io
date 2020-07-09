@@ -423,7 +423,7 @@ function load_body_content()
 	fetch_data_and_action('../data/language_items.json', action_with_language_switch_data, {});
 
 	// add ripples effect
-    $('#menuBox').ripples({esolution: 512, dropRadius: 20, perturbance: 0.04});
+    //$('#menuBox').ripples({esolution: 512, dropRadius: 20, perturbance: 0.04});
 }
 
 function load_body_backbone_structure()

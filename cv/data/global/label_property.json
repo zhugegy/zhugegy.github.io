@@ -109,9 +109,9 @@
   "label-id-Bash": {
     "group": "label-programming-language",
     "same-level-adjustment-weight": 3,
-    "en": "Bash",
-    "zh-Hans": "Bash",
-    "zh-Hant": "Bash"
+    "en": "shell",
+    "zh-Hans": "shell",
+    "zh-Hant": "shell"
   },
   "label-id-PowerShell": {
     "group": "label-programming-language",
@@ -175,6 +175,20 @@
     "en": "MFC",
     "zh-Hans": "MFC",
     "zh-Hant": "MFC"
+  },
+  "label-id-Spring": {
+    "group": "label-technology-framework",
+    "same-level-adjustment-weight": 3,
+    "en": "Spring",
+    "zh-Hans": "Spring",
+    "zh-Hant": "Spring"
+  },
+  "label-id-MEAN": {
+    "group": "label-technology-framework",
+    "same-level-adjustment-weight": 3,
+    "en": "MEAN",
+    "zh-Hans": "MEAN",
+    "zh-Hant": "MEAN"
   },
   "label-id-Web": {
     "group": "label-platform",
