@@ -8,11 +8,16 @@
 </head>
 
 <body>
-<a href="/Simplified-Chinese/index.html">简体中文</a>
-<br>
-<a href="/English/index.html">English</a>
+<script>
+   var subSection = 'English';
 
+   if ((window.navigator.userLanguage || window.navigator.language) === 'zh-CN')
+   {
+      subSection = 'Simplified-Chinese';
+   }
 
+   window.location.replace(window.location.href + subSection);
+</script>
 </body>
 
 </html>

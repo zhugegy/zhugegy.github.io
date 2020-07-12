@@ -11,5 +11,9 @@
     "control_panel": "control_panel_for_skill_list.html",
     "info_table": "info_table.html",
     "footer": "footer.html"
+  },
+  "recommendation_letter": {
+    "info_table": "info_table.html",
+    "footer": "footer.html"
   }
 }
