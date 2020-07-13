@@ -1,4 +1,5 @@
 var const_strSkillList = 'skill_list';
+var const_data_API = 'https://api.github.com/repos/zhugegy/zhugegy.github.io/commits/master';
 
 var g_mapLabelSelected = {};
 
@@ -10,6 +11,34 @@ var g_lLabelWeightSorted = [];
 
 var g_objTabProperty = {};
 var g_objLabelProperty = {};
+
+var g_strLastCommitDate = '2020-07-08';
+
+// source: https://stackoverflow.com/questions/19440589/parsing-json-data-from-a-url
+function getJSON(url)
+{
+	var resp;
+	var xmlHttp;
+
+	resp  = '';
+	xmlHttp = new XMLHttpRequest();
+
+	if(xmlHttp != null)
+	{
+		xmlHttp.open( "GET", url, false );
+		xmlHttp.send( null );
+		resp = xmlHttp.responseText;
+	}
+
+	return resp ;
+}
+
+function fetch_data_API_and_render(strDataLink, funRender)
+{
+	var jsonRawData = getJSON(strDataLink) ;
+	var data = JSON.parse(jsonRawData);
+	funRender(data);
+}
 
 function fetch_data_and_action(strDataLink, funRender, objAddition)
 {
@@ -35,6 +64,16 @@ function menuItems_listener()
 	strId = this.id;
 	strTmpItemName = strId.slice("menu_item_".length);
 
+	if (strTmpItemName === "skill_list")
+	{
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+	}
+	else
+	{
+		window.onscroll = null;
+	}
+
 	// Load the content of the infoTableBox section.
 	// Content is initially empty, which will be filled in the callback function with the proper data according to strTmpItemName.
 	$("#infoTableBox").empty();
@@ -51,17 +90,17 @@ function menuItems_listener()
 	$("#controlPanelBox").empty();
 	if (g_objTabProperty[strTmpItemName].hasOwnProperty('control_panel'))
 	{
-		//$("#controlPanelBox").style.display = 'block';
+		$("#controlPanelBox").css("display", "block");
 		$("#controlPanelBox").load("../sub_sections/" + g_objTabProperty[strTmpItemName]['control_panel'],
 								function (response)
 								{
 									control_panel_manipulaton({'tab': strTmpItemName});
 								} );
 	}
-	// else
-	// {
-	// 	$("#controlPanelBox").style.display = 'none';
-	// }
+	else
+	{
+		$("#controlPanelBox").css("display", "none");
+	}
 
 	// Load the content of the footerBox section.
 	$("#footerBox").empty();
@@ -71,6 +110,8 @@ function menuItems_listener()
 								function (response)
 								{
 									//inner call back
+									$("#footer_last_commit_time").html(g_strLastCommitDate);
+									$("#footer_last_commit_time_year").html(g_strLastCommitDate.substring(0,4));
 								} );
 	}
 
@@ -84,6 +125,17 @@ function skill_list_refresh()
 								{
 									fetch_data_and_action('../data/table_contents/skill_list.json', action_with_table_content_data, {'tab': 'skill_list'});
 								} );
+}
+
+function skill_list_reset()
+{
+	for (let key in g_mapLabelSelected)
+	{
+		g_mapLabelSelected[key] = false;
+	}
+
+	
+	$('#controlPanelBox .label').removeClass("label-selected");
 }
 
 function generate_skill_list_control_panel_labels()
@@ -100,7 +152,6 @@ function generate_skill_list_control_panel_labels()
 		{
 			strClassSelected = "label-selected ";
 		}
-
 
 		var strTmp = "<span class=\"label clickable " + strClassSelected + strGroup + "\" id=\"" + g_lLabelWeightSorted[i] + "\">&nbsp;" + strDisplay + " <small>(" + strCount + ")</small>" + "&nbsp;</span> ";
 		
@@ -309,7 +360,6 @@ function action_with_table_content_data(jsonData, objAddition)
 		lDataEntries.unshift(objFirstItem);
 	}
 
-
 	for (var i = 0; i < lDataEntries.length; i++)
 	{
 		if(lDataEntries[i].hasOwnProperty(strContentPropertyName))
@@ -442,7 +492,20 @@ function load_body_backbone_structure()
 		};
 	};
 	request.send();
+}
 
+function scrollFunction() {
+	if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+	  document.getElementById("back_to_top_btn").style.display = "block";
+	} else {
+	  document.getElementById("back_to_top_btn").style.display = "none";
+	}
+  }
+  
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+	document.body.scrollTop = 0; // For Safari
+	document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
 function init_global_variable(data, objAddition)
@@ -454,6 +517,25 @@ function init_global_variable(data, objAddition)
 	else if (objAddition['name'] === 'label')
 	{
 		g_objLabelProperty = data;
+	}
+}
+
+function get_last_commit_time(data)
+{
+	console.log('call to GitHub API');
+	var strDate = data['commit']['author']['date'];
+
+	// Unauthorized call to GitHub API is limited to maximum 60 times per hour per IP address.
+	/* For calls exceeding 60 times in that one hour, server will return error message json:
+	    {
+		  "message": "API rate limit exceeded for xxx.xxx.xxx.xxx. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)",
+		  "documentation_url": "https://developer.github.com/v3/#rate-limiting"
+		}
+       Source: https://developer.github.com/v3/#rate-limiting
+	*/
+	if (strDate !== undefined)
+	{
+		g_strLastCommitDate = strDate.substring(0,10);
 	}
 }
 
@@ -469,17 +551,11 @@ function init_global_variable(data, objAddition)
 		3.2 分批次显示tables 内容： 1. matched label个数  2. 同样个数，根据score分显示顺序
 */
 
-// 测试样本：
-// 1. ArticleInsight: JavaScript, MEAN, MongoDB, HTML, CSS, AWS Cloud, Programming
-// 2. Simple Forum: Java, Spring, MySQL, HTML, CSS, Programming
-// 3. PacMan: Time Traveller: C++, Programming
-// 4. Das-Boot: C++, MFC, Programming
-// 5.
-
 // entry point
 window.onload = function()
 {
 	//initilize the global variables
+	fetch_data_API_and_render(const_data_API, get_last_commit_time)
 	fetch_data_and_action('../data/global/tab_property.json', init_global_variable, {'name': 'tab'});
 	fetch_data_and_action('../data/global/label_property.json', init_global_variable, {'name': 'label'});
 	

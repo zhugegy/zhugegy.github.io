@@ -12,208 +12,35 @@
         "layout-for-human-read": ["Recommendation Letters", ""],
         "content_zh-Hans":["推荐信", ""],
         "content_zh-Hant":["推荐信", ""],
-        "content_en":["Recommendation Letters", ""]
+        "content_en":["Recommendation Letter", ""]
     },
     {
         "field":"table_content",
         "format": [
+          "<div id=\"Pdf_Modal_recommendation_letter_Risto_Vaarandi_2017\" style=\"display:none\">",
+          "<iframe id=\"Pdf_Modal_recommendation_letter_Risto_Vaarandi_2017iframe\" src=\"../files/recommendation_letter/chen-zhuge-recommendation-Risto-Vaarandi-2017.pdf\"></iframe>",
+          "</div>",  
           "<tr>",
-          "<td class=\"tabContentTable_lineTitle\">$</td><td>$</td>",
+          "<td class=\"tabContentTable_lineTitle timestamp_width\">2017</td><td><a href=\"#\" onclick=\"openPdfModal('Pdf_Modal_recommendation_letter_Risto_Vaarandi_2017');return false;\">$</a></td>",
+          "</tr>",
+          "<div id=\"Pdf_Modal_recommendation_letter_Jyri_Kivimaa_2015\" style=\"display:none\">",
+          "<iframe id=\"Pdf_Modal_recommendation_letter_Jyri_Kivimaa_2015iframe\" src=\"../files/recommendation_letter/Recommendation-Letter-for-Zhuge-Chen-Jyri-Kivimaa-2015.pdf\"></iframe>",
+          "</div>",
+          "<div id=\"Pdf_Modal_recommendation_letter_Toomas_Lepik_2015\" style=\"display:none\">",
+          "<iframe id=\"Pdf_Modal_recommendation_letter_Toomas_Lepik_2015iframe\" src=\"../files/recommendation_letter/Recommendation-Letter-Toomas-Lepik-2015.pdf\"></iframe>",
+          "</div>",
+          "<tr>",
+          "<td class=\"tabContentTable_lineTitle timestamp_width\">2015</td><td><a href=\"#\" onclick=\"openPdfModal('Pdf_Modal_recommendation_letter_Jyri_Kivimaa_2015');return false;\">$</a><br><a href=\"#\" onclick=\"openPdfModal('Pdf_Modal_recommendation_letter_Toomas_Lepik_2015');return false;\">$</a></td>",
+          "</tr>",
+          "<div id=\"Pdf_Modal_recommendation_letter_Yihu_Huang_2013\" style=\"display:none\">",
+          "<iframe id=\"Pdf_Modal_recommendation_letter_Yihu_Huang_2013iframe\" src=\"../files/recommendation_letter/recommendation-Yihu-Huang-2013.pdf\"></iframe>",
+          "</div>",  
+          "<tr>",
+          "<td class=\"tabContentTable_lineTitle timestamp_width\">2013</td><td><a href=\"#\" onclick=\"openPdfModal('Pdf_Modal_recommendation_letter_Yihu_Huang_2013');return false;\">$</a></td>",
           "</tr>"
                   ],
         "layout-for-human-read": ["Name:", "name"],
-        "content_zh-Hans":["姓名", "诸葛琛"],
-        "content_zh-Hant":["姓名", "諸葛琛"],
-        "content_en":["Name", "Chen Zhuge"]
-    },
-    {
-        "field":"table_content",
-        "format": [
-          "<tr>",
-          "<td class=\"tabContentTable_lineTitle\">$</td><td><a href=\"$\">$</a></td>",
-          "</tr>"
-                  ],
-        "layout-for-human-read": ["Email:", "mailto:email", "email"],
-        "content_zh-Hans":["Email", "mailto:zhugec@yahoo.com", "zhugec@yahoo.com"],
-        "content_zh-Hant":["Email", "mailto:zhugec@yahoo.com", "zhugec@yahoo.com"],
-        "content_en":["Email", "mailto:zhugec@yahoo.com", "zhugec@yahoo.com"]
-    },
-    {
-        "field":"table_content",
-        "format": [
-          "<tr>",
-          "<td class=\"tabContentTable_lineTitle\">$</td><td><a href=\"$\">$</a></td>",
-          "</tr>"
-                  ],
-        "layout-for-human-read": ["Phone:", "tel:phone", "phone"],
-        "content_zh-Hans":["电话", "tel:+61 0466378608", "+61 0466378608"],
-        "content_zh-Hant":["null", "tel:+61 0466378608", "+61 0466378608"],
-        "content_en":["Phone", "tel:+61 0466378608", "+61 0466378608"]
-    },
-    {
-        "field":"table_content",
-        "format": [
-          "<tr>",
-          "<td class=\"tabContentTable_lineTitle\">$</td><td>$</td>",
-          "</tr>"
-                  ],
-        "layout-for-human-read": ["Education Level:", "Education you got"],
-        "content_zh-Hans":["教育程度", "信息技术硕士，悉尼大学"],
-        "content_zh-Hant":["null", "null"],
-        "content_en":["Academic Degree", "MSc in Information Technology, University of Sydney"]
-    },
-    {
-        "field":"table_content",
-        "format": [
-          "<tr>",
-          "<td class=\"tabContentTable_lineTitle\">$</td><td class=\"intensiveInfo\">$</td>",
-          "</tr>"
-                  ],
-        "layout-for-human-read": ["Work Permission (Visa):", "visa"],
-        "content_zh-Hans":["工作签证", "<b>澳大利亚</b><br><b>485签证</b>: 现在 - 2022年9月21日，无工作时间限制。"],
-        "content_zh-Hant":["null", "null"],
-        "content_en":["Work Permission", "<b>Australia</b><br><b>Subclass 485 PSW Visa</b>: now - September 21, 2022. Full work rights.<br>"]
-    },
-    {
-      "field":"table_content",
-      "format": [
-        "<tr>",
-        "<td class=\"tabContentTable_lineTitle\">$</td><td>$</td>",
-        "</tr>"
-                ],
-      "layout-for-human-read": ["Current Residence:", "a place on the earth"],
-      "comments":["<i>（可随工作更换居所）</i>", "<i>(open to relocate)</i>"],
-      "content_zh-Hans":["现居地", "澳大利亚，悉尼"],
-      "content_zh-Hant":["null", "null"],
-      "content_en":["Current Residence", "Sydney, Australia"]
-    },
-    {
-        "field":"table_content",
-        "format-obs": [
-          "<tr>",
-          "<td class=\"tabContentTable_lineTitle\">$</td><td class=\"intensiveInfo\">$<a class=\"tooltip\" target=\"_blank\" href=\"$\">$<span class=\"tooltiptext\"><img class=\"tooltipimg\" src=\"$\"></span></a>$</td>",
-          "</tr>"
-                  ],
-          "format": [
-            "<tr>",
-            "<td class=\"tabContentTable_lineTitle\">$</td><td class=\"intensiveInfo\">$<a class=\"tooltip\" target=\"_blank\" href=\"$\">$<span class=\"tooltiptext\"><img class=\"tooltipimg\" src=\"$\"></span></a></td>",
-            "</tr>"
-                    ],
-        "layout-for-human-read": ["Lanuage Skills:", "language skills"],
-        "comment": "able to speak the language with sufficient structural accuracy and vocabulary to participate effectively in most conversations on practical, social, and professional topics",
-        "content_zh-Hans-obs":["语言能力", "<b>中文</b>：母语<br><b>英语</b>：流利，", "../images/basic_information/IELTS-result.jpg", "雅思成绩7.5", "../images/basic_information/IELTS-result.jpg", "（总分9.0；2016年4月；<a target=\"_blank\" href=\"https://www.ieltsessentials.com/global/results/ielts9bandscale\">评分标准英文版</a> <a target=\"_blank\" href=\"http://blog.sina.com.cn/s/blog_4b45cdd5010008pr.html\">评分标准中文版</a>）"],
-        "content_zh-Hant-obs":["null", "null"],
-        "content_en-obs":["Language Skill", "<b>Chinese</b>: native user<br><b>English</b>: good/very-good user, ", "../images/basic_information/IELTS-result.jpg", "IELTS band score 7.5", "../images/basic_information/IELTS-result.jpg", " (out of 9.0; April 2016; <a target=\"_blank\" href=\"https://www.ieltsessentials.com/global/results/ielts9bandscale\">band scale</a>)"],
-        "content_zh-Hans":["语言能力", "<b>中文</b>：母语<br><b>英语</b>：流利 ", "../images/basic_information/IELTS-result.jpg", "雅思成绩7.5", "../images/basic_information/IELTS-result.jpg"],
-        "content_zh-Hant":["null", "null"],
-        "content_en":["Language Skill", "<b>Chinese</b>: native user<br><b>English</b>: good/very-good user ", "../images/basic_information/IELTS-result.jpg", "IELTS band score 7.5", "../images/basic_information/IELTS-result.jpg"]
-    },
-    {
-      "field":"table_content",
-      "format": [
-        "<tr>",
-        "<td class=\"tabContentTable_lineTitle\">$</td><td class=\"intensiveInfo\">$</td>",
-        "</tr>"
-                ],
-      "layout-for-human-read": ["summary:", "self-introduction"],
-      "content_zh-Hans":["个人总结", "<p>- 自2014年开始学习Windows软件安全，积累了丰富的技术笔记和实战经验。</p><p>- 最常使用C++和Python进行开发。</p><p>- 对全栈网页应用开发有一定的理解和实践（MEAN/MERN框架和Spring框架；HTML/CSS, JavaScript, MongoDB, Java, MySQL）。</p>"],
-      "content_zh-Hant":["null", "null"],
-      "content_en":["Summary", "<p>- Have been studying Windows software security since 2014, and accumulated reasonable amount of technical notes and practical experience.</p><p>- Use C++ and Python most frequently.</p><p>- Have certain understanding and experience on full stack Web development (MEAN/MERN framework and Spring framework; HTML/CSS, JavaScript, MongoDB, Java and MySQL).</p>"]
-    },
-    {
-        "field":"table_content",
-        "format": [
-          "<tr class=\"clickabletr\" id=\"basic_information_Gender\">",
-          "<td class=\"tabContentTable_lineTitle\">$</td><td><span id=\"basic_information_GenderShown\">$</span><span class=\"hiddenspan\" id=\"basic_information_GenderHidden\">$</span></td>",
-          "</tr>"
-                  ],
-        "layout-for-human-read": ["Gender:", "gender"],
-        "content_zh-Hans":["性别", "<small><i>点击查看</i></small>", "男"],
-        "content_zh-Hant":["null", "null", "null"],
-        "content_en":["Gender", "<small><i>click to reveal</i></small>", "Male"]
-    },
-    {
-        "field":"table_content",
-        "format": [
-          "<tr class=\"clickabletr\" id=\"basic_information_Year_of_Birth\">",
-          "<td class=\"tabContentTable_lineTitle\">$</td><td><span id=\"basic_information_Year_of_BirthShown\">$</span><span class=\"hiddenspan\" id=\"basic_information_Year_of_BirthHidden\">$</span></td>",
-          "</tr>"
-                  ],
-        "layout-for-human-read": ["Birthday:", "birthday"],
-        "content_zh-Hans":["出生年", "<small><i>点击查看</i></small>", "1991年"],
-        "content_zh-Hant":["null", "null", "null"],
-        "content_en":["Year of Birth", "<small><i>click to reveal</i></small>", "1991"]
-    },
-    {
-        "field":"table_content",
-        "format": [
-          "<tr class=\"clickabletr\" id=\"basic_information_Place_of_Birth\">",
-          "<td class=\"tabContentTable_lineTitle\">$</td><td><span id=\"basic_information_Place_of_BirthShown\">$</span><span class=\"hiddenspan\" id=\"basic_information_Place_of_BirthHidden\">$</span></td>",
-          "</tr>"
-                  ],
-        "layout-for-human-read": ["Place of Birth:", "place of birth"],
-        "content_zh-Hans":["籍贯", "<small><i>点击查看</i></small>", "山东省临沂市"],
-        "content_zh-Hant":["null", "null", "null"],
-        "content_en":["Place of Birth", "<small><i>click to reveal</i></small>", "Linyi, Shandong, China"]
-    },
-    {
-        "field":"table_content",
-        "format": [
-          "<tr class=\"clickabletr\" id=\"basic_information_Citizenship\">",
-          "<td class=\"tabContentTable_lineTitle\">$</td><td><span id=\"basic_information_CitizenshipShown\">$</span><span class=\"hiddenspan\" id=\"basic_information_CitizenshipHidden\">$</span></td>",
-          "</tr>"
-                  ],
-        "layout-for-human-read": ["Citizenship:", "citizenship"],
-        "_content_zh-Hans":["国籍", "<small><i>点击查看</i></small>", "中国"],
-        "_content_zh-Hant":["null", "null", "null"],
-        "content_en":["Citizenship", "<small><i>click to reveal</i></small>", "Chinese"]
-    },
-    {
-        "field":"table_content",
-        "format": [
-          "<tr>",
-          "<td class=\"tabContentTable_lineTitle\">$</td><td><a class=\"tooltip\" target=\"_blank\" href=\"$\">$<span class=\"tooltiptext\"><img class=\"tooltipimg\" src=\"$\"></span></a></td>",
-          "</tr>"
-                  ],
-        "layout-for-human-read": ["WeChat:", "WeChatQRImageLink"],
-        "content_zh-Hans":["微信", "../images/basic_information/WeChat-QR.png", "二维码", "../images/basic_information/WeChat-QR.png"],
-        "content_zh-Hant":["null", "null"],
-        "content_en":["WeChat", "../images/basic_information/WeChat-QR.png", "QR Code", "../images/basic_information/WeChat-QR.png"]
-    },
-    {
-      "field":"table_content",
-      "format": [
-        "<tr>",
-        "<td class=\"tabContentTable_lineTitle\">$</td><td><a target=\"_blank\" href=\"$\">$</a></td>",
-        "</tr>"
-                ],
-      "layout-for-human-read": ["GitHub:", "GitHub Link"],
-      "content_zh-Hans":["GitHub", "https://github.com/zhugegy", "https://github.com/zhugegy"],
-      "content_zh-Hant":["GitHub", "https://github.com/zhugegy", "https://github.com/zhugegy"],
-      "content_en":["GitHub", "https://github.com/zhugegy", "https://github.com/zhugegy"]
-    },
-    {
-      "field":"table_content",
-      "format": [
-        "<tr>",
-        "<td class=\"tabContentTable_lineTitle\">$</td><td><a target=\"_blank\" href=\"$\">$</a></td>",
-        "</tr>"
-                ],
-      "layout-for-human-read": ["Stack Overflow:", "Stack Overflow link"],
-      "content_zh-Hans":["Stack Overflow", "https://stackoverflow.com/users/8031896", "https://stackoverflow.com/users/8031896"],
-      "content_zh-Hant":["Stack Overflow", "https://stackoverflow.com/users/8031896", "https://stackoverflow.com/users/8031896"],
-      "content_en":["Stack Overflow", "https://stackoverflow.com/users/8031896", "https://stackoverflow.com/users/8031896"]
-    },
-    {
-      "field":"table_content",
-      "format": [
-        "<tr>",
-        "<td class=\"tabContentTable_lineTitle\">$</td><td><a target=\"_blank\" href=\"$\">$</a></td>",
-        "</tr>"
-                ],
-      "layout-for-human-read": ["Blog:", "Blog Link"],
-      "content_zh-Hans":["博客", "https://cnblogs.com/zhugehq", "https://cnblogs.com/zhugehq"],
-      "content_zh-Hant":["null", "https://cnblogs.com/zhugehq", "https://cnblogs.com/zhugehq"],
-      "content_en":["Blog", "https://cnblogs.com/zhugehq", "https://cnblogs.com/zhugehq (Chinese)"]
+        "content_zh-Hans":["Dr. Risto Vaarandi的推荐信", "Dr. Jüri Kivimaa的推荐信", "Mr. Toomas Lepik的推荐信", "黄翼虎博士的推荐信"],
+        "content_en":["Recommendation Letter from Dr. Risto Vaarandi", "Recommendation Letter from Dr. Jüri Kivimaa", "Recommendation Letter from Mr. Toomas Lepik", "Recommendation Letter from Dr. Yihu Huang"]
     }
 ]

@@ -9,7 +9,7 @@
         "layout-for-human-read": ["Skill List", "notes"],
         "content_zh-Hans":["技能列表", "可以通过调整上方的标签，来优先显示您感兴趣的信息。"],
         "content_zh-Hant":["null", "null"],
-        "content_en":["Skill List", "<small>You may tune the labels above to control the content displayed.</small>"]
+        "content_en":["Skill Catalogue", "<small>You may tune the labels above to control the content displayed.</small>"]
     },
     {
       "field":"table_content",

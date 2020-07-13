@@ -15,5 +15,9 @@
   "recommendation_letter": {
     "info_table": "info_table.html",
     "footer": "footer.html"
+  },
+  "habit": {
+    "info_table": "info_table.html",
+    "footer": "footer.html"
   }
 }

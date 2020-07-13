@@ -73,6 +73,59 @@
     margin-bottom: 1.2px;
 }
 
-.refresh_button {
+.refresh_button, .reset_button{
     padding: 5px 20px !important; 
+    margin-right: 10px;
 }
+
+.reset_button:hover {
+    border-color: #BE2B58;
+    border-bottom-color: #B81E45;
+    text-decoration: none;
+    text-shadow: -1px -1px 0 rgba(0,0,0,0.3);
+    color: #fff;
+    background-color: #CA4683;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#E75481), to(#BE2B58));
+    background-image: -moz-linear-gradient(#E75481, #BE2B58);
+    background-image: -o-linear-gradient(#E75481, #BE2B58);
+    background-image: linear-gradient(#E75481, #BE2B58);
+}
+
+#back_to_top_btn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 6vh; /* Place the button at the bottom of the page */
+    right: 8.5vw; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#ffffff));
+    background-image: -moz-linear-gradient(#ffffff, #ffffff);
+    background-image: -o-linear-gradient(#ffffff, #ffffff);
+    background-image: linear-gradient(#ffffff, #ffffff);
+}
+
+#back_to_top_btn:hover {
+    /* border-color: #3072b3;
+    border-bottom-color: #2a65a0;
+    text-decoration: none;
+    text-shadow: -1px -1px 0 rgba(0,0,0,0.3);
+    color: #fff;
+    background-color: #3c8dde;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#599bdc), to(#3072b3));
+    background-image: -moz-linear-gradient(#599bdc, #3072b3);
+    background-image: -o-linear-gradient(#599bdc, #3072b3);
+    background-image: linear-gradient(#599bdc, #3072b3); */
+    border-color: #c8c8c8;
+    border-bottom-color: #99928C;
+    text-decoration: none;
+    text-shadow: -1px -1px 0 rgba(0,0,0,0.3);
+    color: #fff;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#DdDdDd), to(#c8c8c8));
+    background-image: -moz-linear-gradient(#DdDdDd, #c8c8c8);
+    background-image: -o-linear-gradient(#DdDdDd, #c8c8c8);
+    background-image: linear-gradient(#DdDdDd, #c8c8c8);
+}
+

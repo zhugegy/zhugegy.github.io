@@ -1,0 +1,73 @@
+[
+    {
+        "notes":""
+    },
+    {
+        "field":"table_heading",
+        "format": [
+          "$",
+          "<br>",
+          "<span class=\"tableHeadingNotes\">$</span>"
+                  ],
+        "layout-for-human-read": ["Habit", ""],
+        "content_zh-Hans":["兴趣爱好", ""],
+        "content_zh-Hant":["兴趣爱好", ""],
+        "content_en":["Habit", ""]
+    },
+    {
+        "field":"table_content",
+        "format": [
+          "<tr>",
+          "<td colspan=\"2\">$</td>",
+          "</tr>"
+                  ],
+        "layout-for-human-read": ["content"],
+        "content_zh-Hans":[""],
+        "content_zh-Hant":[""],
+        "content_en":[""]
+    },
+    {
+        "field":"table_content",
+        "format": [
+          "<tr>",
+          "<td colspan=\"2\">$</td>",
+          "</tr>"
+                  ],
+        "layout-for-human-read": ["content"],
+        "content_zh-Hans":["<p>Since 2018, I have been attempting to enhance my <b>productivity</b> and <b>adaptability</b>. In the digital domain, there are three principles that I apply:</p><ol><li>Keep organized by using the fewest tools.</li><li>Follow scientific routine when consuming content.</li><li>Restrict smartphone use to minimum.</li></ol>"],
+        "content_en":["<p>Since 2018, I have been attempting to enhance my <b>productivity</b> and <b>adaptability</b>. In the digital domain, there are three principles that I apply:</p><ol><li>Keep organized by using the fewest tools.</li><li>Follow scientific routine when consuming content.</li><li>Restrict smartphone use to minimum.</li></ol>"]
+    },
+    {
+        "field":"table_content",
+        "format": [
+          "<tr>",
+          "<td colspan=\"2\">$</td>",
+          "</tr>"
+                  ],
+        "layout-for-human-read": ["content"],
+        "content_zh-Hans":["<p><strong>GitHub</strong> hosts all my source code.</p><p><strong>Syncthing</strong> syncs critical folders between my Windows machine and macOS machine. Another 24/7 Linux machine acts as the &quot;stand-by&quot; node in the network, and also archives backup once per week. </p><p><strong>Notion</strong> takes over the rest of my digital assets, including notes, web clips, routine documents, goals and progress tracking, and everything else, with 30 days of version hitory.</p><p><strong>Inoreader</strong> acts as my relaxation spot, where I efficiently browse news, WeChat subscriptions, YouTube, Twitter and other stuffs in RSS format. </p>"],
+        "content_en":["<p><strong>GitHub</strong> hosts all my source code.</p><p><strong>Syncthing</strong> syncs critical folders between my Windows machine and macOS machine. Another 24/7 Linux machine acts as the &quot;stand-by&quot; node in the network, and also archives backup once per week. </p><p><strong>Notion</strong> takes over the rest of my digital assets, including notes, web clips, routine documents, goals and progress tracking, and everything else, with 30 days of version hitory.</p><p><strong>Inoreader</strong> acts as my relaxation spot, where I efficiently browse news, WeChat subscriptions, YouTube, Twitter and other stuffs in RSS format. </p>"]
+    },
+    {
+        "field":"table_content",
+        "format": [
+          "<tr>",
+          "<td colspan=\"2\">$</td>",
+          "</tr>"
+                  ],
+        "layout-for-human-read": ["content"],
+        "content_zh-Hans":["<p><strong>Recall + Feynman Technique + Spaced Repetition</strong> is the routine I follow to counter the dilemma &quot;finding it difficult to remember what you read in an ebook (also applies to blog posts, videos, audios, and video games)&quot;. Detailed explanation is in this brilliant video from <a target=\"_blank\" href=\"https://youtu.be/V-UvSKe8jW4\">Will Schoder</a>."],
+        "content_en":["<p><strong>Recall + Feynman Technique + Spaced Repetition</strong> is the routine I follow to counter the dilemma &quot;finding it difficult to remember what you read in an ebook (also applies to blog posts, videos, audios, and video games)&quot;. Detailed explanation is in this brilliant video from <a target=\"_blank\" href=\"https://youtu.be/V-UvSKe8jW4\">Will Schoder</a>."]
+    },
+    {
+        "field":"table_content",
+        "format": [
+          "<tr>",
+          "<td colspan=\"2\">$</td>",
+          "</tr>"
+                  ],
+        "layout-for-human-read": ["content"],
+        "content_zh-Hans":["<p>To prevent the <b>smartphones</b> from severely disrupting my concentration mechanism, I have decided to:</p><ul><li>mute most notifications and turn it to slient mode</li><li>flip it over on the desk in most time of a day</li><li>transmit instant messaging contents to desktop devices, using Telegram bot</li></ul>"],
+        "content_en":["<p>To prevent the <b>smartphones</b> from severely disrupting my concentration mechanism, I have decided to:</p><ul><li>mute most notifications and turn it to slient mode</li><li>flip it over on the desk in most time of a day</li><li>transmit instant messaging contents to desktop devices, using Telegram bot</li></ul>"]
+    }
+]

@@ -1,12 +1,12 @@
 /* general text formatting */
 
 body {
-   font-family: Arial, Helvetica, sans-serif;
+   font-family: Helvetica, Tahoma, Arial, sans-serif;
    font-size: 1rem;
 }
 
-body:lang(zh-Hant) 	{font-family:STFangsong, Calibri, Avenir, Constantia, sans-serif, "Trebuchet MS", Helvetica, Arial;}
-body:lang(zh-Hans) 	{font-family:STFangsong, Calibri, Avenir, Constantia, sans-serif, "Trebuchet MS", Helvetica, Arial;}
+body:lang(zh-Hant) 	{font-family: Helvetica, Tahoma, Arial, STXihei, "华文细黑", "Microsoft YaHei", "微软雅黑", SimSun, "宋体", Heiti, "黑体", sans-serif;}
+body:lang(zh-Hans) 	{font-family: Helvetica, Tahoma, Arial, STXihei, "华文细黑", "Microsoft YaHei", "微软雅黑", SimSun, "宋体", Heiti, "黑体", sans-serif;}
 
 /* .container {
   max-width: 960px;
@@ -28,7 +28,7 @@ div#menuBox {
    width: 85%;
 }
 
-div#infoTableBox, div#controlPanelBox{
+div#infoTableBox, div#controlPanelBox, div#footerBox {
    margin: 0em auto;
    border-top: 1.8pt solid #a7a7a6;
 
@@ -38,8 +38,16 @@ div#infoTableBox, div#controlPanelBox{
    width: 85%;
 }
 
+div#footerBox {
+  border-bottom: 1.8pt solid #a7a7a6;
+}
+
+div.footer_content {
+  text-align: center;
+}
+
 div.main-content-wrapper {
-  min-height: 75vh;
+  min-height: 80vh;
 }
 
 #switchLanguageDropDownMenu {
@@ -92,15 +100,22 @@ div.main-content-wrapper {
   }
 
 
+#menuItemContainer {
+  /* display: flex;
+  justify-content: center; */
+}
+
 ul#menuItemsList {
+  display: inline;
   list-style-type: none;
   margin: 0;
+
   padding: 0;
   overflow: hidden;
 
   position: absolute;
   bottom: 0;
-  left: 8vw;
+  left: 17vw;
 }
 
 li.menuItem {
@@ -116,8 +131,20 @@ li.menuItem {
   */
 }
 
-li.menuItem:hover
-{background-color: #a7a7a6;}
+li.menuItem:hover {
+  border-color: #c8c8c8;
+  border-bottom-color: #99928C;
+  text-decoration: none;
+  text-shadow: -1px -1px 0 rgba(0,0,0,0.3);
+  color: #fff;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#DdDdDd), to(#c8c8c8));
+  background-image: -moz-linear-gradient(#DdDdDd, #c8c8c8);
+  background-image: -o-linear-gradient(#DdDdDd, #c8c8c8);
+  background-image: linear-gradient(#DdDdDd, #c8c8c8);
+}
+
+/* li.menuItem:hover:lang(zh-Hans)
+{background-color: #a7a7a6;} */
 
 li.menuItem a {
   display: block;
@@ -286,6 +313,7 @@ td.intensiveInfo p{
 
 #label-group-control-container {
   padding: 10px 10px;
+  margin-left: 17.3vw;
 }
 
 #label-group-control-container #user-search-input {
