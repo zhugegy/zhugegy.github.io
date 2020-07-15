@@ -99,12 +99,6 @@ div.main-content-wrapper {
   background-image: url('https://zhugegy.github.io/cv/images/switch_language_hover.png');
   }
 
-
-#menuItemContainer {
-  /* display: flex;
-  justify-content: center; */
-}
-
 ul#menuItemsList {
   display: inline;
   list-style-type: none;

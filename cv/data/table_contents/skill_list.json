@@ -968,7 +968,7 @@
         "<iframe id=\"Pdf_Modal_ttu_malware_lab2_2iframe\" src=\"../files/skill_list/TTU_Malware/Lab2-2.pdf\"></iframe>",
         "</div>",
         "<div id=\"Pdf_Modal_ttu_malware_lab2_4\" style=\"display:none\">",
-        "<iframe id=\"Pdf_Modal_ttu_malware_lab2_4iframe\" src=\"../files/skill_list/TTU_Malware/Lab2-4.pdf\"></iframe>",
+        "<iframe id=\"Pdf_Modal_ttu_malware_lab2_4iframe\" src=\"../files/skill_list/TTU_Malware/lab2-4.pdf\"></iframe>",
         "</div>",
         "<tr>",
         "<td colspan=\"2\"><a href=\"#\" class=\"button pill\" onclick=\"openPdfModal('Pdf_Modal_ttu_malware_lab1_3');return false;\">$</a><br><a href=\"#\" class=\"button pill\" onclick=\"openPdfModal('Pdf_Modal_ttu_malware_lab1_4');return false;\">$</a><br><a href=\"#\" class=\"button pill\" onclick=\"openPdfModal('Pdf_Modal_ttu_malware_lab2_2');return false;\">$</a><br><a href=\"#\" class=\"button pill\" onclick=\"openPdfModal('Pdf_Modal_ttu_malware_lab2_4');return false;\">$</a></td>",

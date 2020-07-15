@@ -2,7 +2,7 @@
 .modal {
   display: none;
   position: fixed;
-  z-index: 1;
+  z-index: 11; /* Make sure it does not overlap */
   padding-top: 2vh;
   left: 0;
   top: 0;
@@ -31,9 +31,9 @@
 .close {
   color: white;
   position: absolute;
-  top: 10px;
-  right: 25px;
-  font-size: 35px;
+  top: 2vh;
+  right: 2vh;
+  font-size: 55px;
   font-weight: bold;
 }
 
