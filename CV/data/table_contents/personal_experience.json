@@ -237,9 +237,9 @@
           "</tr>"
                   ],
         "layout-for-human-read": ["time line", "Education experience"],
-        "content_zh-Hans":["2016年8月 - 2018年2月", "<b>武汉科锐逆向实训，培训生</b>"],
+        "content_zh-Hans":["2016年8月 - 2018年2月", "<b>科锐逆向实训，培训生</b>"],
         "content_zh-Hant":["null", "null"],
-        "content_en":["Aug 2016 - Feb 2018", "<b>Wuhan Kerui Bootcamp, Trainee</b>"]
+        "content_en":["Aug 2016 - Feb 2018", "<b>Kerui Software Security Bootcamp, Trainee</b>"]
     },
     {
         "field":"table_content",
