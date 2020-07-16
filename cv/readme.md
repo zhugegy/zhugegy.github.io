@@ -1,0 +1,1 @@
+This is my online CV. Besides GitHub pages, it is also hosted in [Netlify](https://zhugechen.netlify.app/).
