@@ -287,7 +287,7 @@
     },
     {
       "field":"table_content",
-      "labels":["label-id-Coding-Project", "label-id-Source-Code", "label-id-Executable", "label-id-Video-Demo", "label-id-Assembly", "label-id-Cpp", "label-id-Windows"],
+      "labels":["label-id-Coding-Project", "label-id-Featured", "label-id-Source-Code", "label-id-Executable", "label-id-Video-Demo", "label-id-Assembly", "label-id-Cpp", "label-id-Windows"],
       "entry-id": "skill_list_51asm_game_assistance_Plants_vs_Zombies",
       "uuid":"c111f885-310f-43ba-97cc-08dee8f554c6",
       "timestamp": 201709,
@@ -314,8 +314,8 @@
         "</tr>"
                 ],
       "layout-for-human-read": ["Title", "timestamp", "hidden-content..."],
-      "content_zh-Hans":["编码项目：植物大战僵尸游戏辅助工具", "2017-09", "一个能无限制种植豌豆射手的辅助工具。", "<iframe class=\"embeddedvideo\" src=\"//player.bilibili.com/player.html?aid=883659272&bvid=BV1DK4y147Po&cid=208101927&page=1&high_quality=1&danmaku=0\" width=\"640\" height=\"360\" frameborder=\"1\" allow=\"autoplay; fullscreen\" allowfullscreen></iframe>", "<b>步骤：</b><li>使用CheatEngine，定位阳光的内存地址</li><li>由于种植植物会减少阳光，使用OllyDbg，拦截到种植植物函数</li><li>在游戏进程中申请一块堆空间，并把辅助工具dll的路径写入此空间</li><li>在游戏进程中创建远程线程，此线程会加载辅助工具dll</li><li>辅助工具dll会监听DEL键的按下事件，触发此事件会让辅助工具的窗口跳出</li><li>当用户在辅助工具的窗口点击鼠标，线程会调用之前拦截到的种植植物函数的地址，并使用特定的函数参数（自定植物的类型和坐标）</li>", "href=\"https://wws.lanzous.com/itzeee8tnnc\"", "可执行文件下载（蓝奏云）", "源代码（GitHub）"],
-      "content_en":["Coding Project: Game Assistance Plants vs Zombies", "2017-09", "A tool to plant Peashooter anywhere without cold-down.", "<iframe class=\"embeddedvideo\" src=\"https://player.vimeo.com/video/434653404\" width=\"640\" height=\"360\" frameborder=\"1\" allow=\"autoplay; fullscreen\" allowfullscreen></iframe>", "<b>Steps:</b><li>Using CheatEngine, located the memory address of Sun</li><li>Using OllyDbg, intercepted the memory address of the planting function, since it causes the decrease of Sun</li><li>Allocated heap memory in PvZ process, and wrote the assistance dll's path into the heap</li><li>Created remote thread in PvZ process, which would load the assistance dll</li><li>The assistance dll would listen to KEYDOWN event of DEL, which would trigger the assistance window's appearance</li><li>When user clicked in the assistance window, called the previously intercepted planting function's address, with arbitrary parameters (plant type and position)</li>", "href=\"https://drive.google.com/drive/folders/1kosHNwibYfFa_6pvcXbufKA8rBibAdtK?usp=sharing\"", "Executable Download (Google Drive)", "Code Repository (GitHub)"]
+      "content_zh-Hans":["编码项目：植物大战僵尸游戏辅助工具", "2017-09", "<b>仅供学习使用！</b><br>一个能无限制种植豌豆射手的辅助工具。", "<iframe class=\"embeddedvideo\" src=\"//player.bilibili.com/player.html?aid=883659272&bvid=BV1DK4y147Po&cid=208101927&page=1&high_quality=1&danmaku=0\" width=\"640\" height=\"360\" frameborder=\"1\" allow=\"autoplay; fullscreen\" allowfullscreen></iframe>", "<b>步骤：</b><li>使用CheatEngine，定位阳光的内存地址</li><li>由于种植植物会减少阳光，使用OllyDbg，拦截到种植植物函数</li><li>在游戏进程中申请一块堆空间，并把辅助工具dll的路径写入此空间</li><li>在游戏进程中创建远程线程，此线程会加载辅助工具dll</li><li>辅助工具dll会监听DEL键的按下事件，触发此事件会让辅助工具的窗口跳出</li><li>当用户在辅助工具的窗口点击鼠标，线程会调用之前拦截到的种植植物函数的地址，并使用特定的函数参数（自定植物的类型和坐标）</li>", "href=\"https://wws.lanzous.com/itzeee8tnnc\"", "可执行文件下载（蓝奏云）", "源代码（GitHub）"],
+      "content_en":["Coding Project: Game Assistance Plants vs Zombies", "2017-09", "<b>For study purpose only!</b><br>A tool to plant Peashooter anywhere without cold-down.", "<iframe class=\"embeddedvideo\" src=\"https://player.vimeo.com/video/434653404\" width=\"640\" height=\"360\" frameborder=\"1\" allow=\"autoplay; fullscreen\" allowfullscreen></iframe>", "<b>Steps:</b><li>Using CheatEngine, located the memory address of Sun</li><li>Using OllyDbg, intercepted the memory address of the planting function, since it causes the decrease of Sun</li><li>Allocated heap memory in PvZ process, and wrote the assistance dll's path into the heap</li><li>Created remote thread in PvZ process, which would load the assistance dll</li><li>The assistance dll would listen to KEYDOWN event of DEL, which would trigger the assistance window's appearance</li><li>When user clicked in the assistance window, called the previously intercepted planting function's address, with arbitrary parameters (plant type and position)</li>", "href=\"https://drive.google.com/drive/folders/1kosHNwibYfFa_6pvcXbufKA8rBibAdtK?usp=sharing\"", "Executable Download (Google Drive)", "Code Repository (GitHub)"]
     },
     {
       "field":"table_content",
@@ -351,7 +351,7 @@
     },
     {
       "field":"table_content",
-      "labels":["label-id-Coding-Project", "label-id-Source-Code", "label-id-Executable", "label-id-Video-Demo", "label-id-Cpp", "label-id-Binary-Security", "label-id-MFC", "label-id-Windows"],
+      "labels":["label-id-Coding-Project", "label-id-Featured", "label-id-Source-Code", "label-id-Executable", "label-id-Video-Demo", "label-id-Cpp", "label-id-Binary-Security", "label-id-MFC", "label-id-Windows"],
       "entry-id": "skill_list_51asm_game_assistance_TKKN_99",
       "uuid":"76d8647a-f82a-4ef1-a155-2b887a204ea3",
       "timestamp": 201707,
@@ -378,12 +378,12 @@
         "</tr>"
                 ],
       "layout-for-human-read": ["Title", "timestamp", "hidden-content..."],
-      "content_zh-Hans":["编码项目：特训99游戏辅助工具", "2017-07", "经典游戏特训99（开飞机躲炮弹，别名“是男人就坚持20秒”）的辅助工具。", "<iframe class=\"embeddedvideo\" src=\"//player.bilibili.com/player.html?aid=626258244&bvid=BV1dt4y197jo&cid=209434601&page=1&high_quality=1&danmaku=0\" width=\"640\" height=\"360\" frameborder=\"1\" allow=\"autoplay; fullscreen\" allowfullscreen></iframe>", "<b>特色：</b><li>无敌（视频0:15处）</li><li>闪现（视频0:32处）</li><li>护盾（视频0:56处）</li><li>自动驾驶（视频1:28处）</li>", "href=\"https://wws.lanzous.com/iQhMreclpvi\"", "可执行文件下载（蓝奏云）", "源代码（GitHub）"],
-      "content_en":["Coding Project: Game Assistance TKKN 99", "2017-07", "An assistance tool for the classic game TKKN 99 (piloting the aircraft to dodge shells).", "<iframe class=\"embeddedvideo\" src=\"https://player.vimeo.com/video/435638567\" width=\"640\" height=\"360\" frameborder=\"1\" allow=\"autoplay; fullscreen\" allowfullscreen></iframe>", "<b>Features:</b><li>Invincibility (0:15 in video)</li><li>Blink (0:32 in video)</li><li>Shield (0:56 in video)</li><li>Autopilot (1:28 in video)</li>", "href=\"https://drive.google.com/drive/folders/1Q2gNeyNn-2QzIQPiTY1V_8Ie2vtigmuP?usp=sharing\"", "Executable Download (Google Drive)", "Code Repository (GitHub)"]
+      "content_zh-Hans":["编码项目：特训99游戏辅助工具", "2017-07", "<b>仅供学习使用！</b><br>经典游戏特训99（开飞机躲炮弹，别名“是男人就坚持20秒”）的辅助工具。", "<iframe class=\"embeddedvideo\" src=\"//player.bilibili.com/player.html?aid=626258244&bvid=BV1dt4y197jo&cid=209434601&page=1&high_quality=1&danmaku=0\" width=\"640\" height=\"360\" frameborder=\"1\" allow=\"autoplay; fullscreen\" allowfullscreen></iframe>", "<b>特色：</b><li>无敌（视频0:15处）</li><li>闪现（视频0:32处）</li><li>护盾（视频0:56处）</li><li>自动驾驶（视频1:28处）</li>", "href=\"https://wws.lanzous.com/iQhMreclpvi\"", "可执行文件下载（蓝奏云）", "源代码（GitHub）"],
+      "content_en":["Coding Project: Game Assistance TKKN 99", "2017-07", "<b>For study purpose only!</b><br>An assistance tool for the classic game TKKN 99 (piloting the aircraft to dodge shells).", "<iframe class=\"embeddedvideo\" src=\"https://player.vimeo.com/video/435638567\" width=\"640\" height=\"360\" frameborder=\"1\" allow=\"autoplay; fullscreen\" allowfullscreen></iframe>", "<b>Features:</b><li>Invincibility (0:15 in video)</li><li>Blink (0:32 in video)</li><li>Shield (0:56 in video)</li><li>Autopilot (1:28 in video)</li>", "href=\"https://drive.google.com/drive/folders/1Q2gNeyNn-2QzIQPiTY1V_8Ie2vtigmuP?usp=sharing\"", "Executable Download (Google Drive)", "Code Repository (GitHub)"]
     },
     {
       "field":"table_content",
-      "labels":["label-id-Coding-Project", "label-id-Source-Code", "label-id-Executable", "label-id-Video-Demo", "label-id-Cpp", "label-id-Binary-Security", "label-id-MFC", "label-id-Windows"],
+      "labels":["label-id-Coding-Project", "label-id-Featured", "label-id-Source-Code", "label-id-Executable", "label-id-Video-Demo", "label-id-Cpp", "label-id-Binary-Security", "label-id-MFC", "label-id-Windows"],
       "entry-id": "skill_list_51asm_Das_Boot",
       "uuid":"41fb8bca-80cc-4447-a11a-95beed3c248c",
       "timestamp": 201707,
@@ -415,7 +415,7 @@
     },
     {
       "field":"table_content",
-      "labels":["label-id-Coding-Project", "label-id-Source-Code", "label-id-Executable", "label-id-Video-Demo", "label-id-Cpp", "label-id-MFC", "label-id-Windows"],
+      "labels":["label-id-Coding-Project", "label-id-Featured", "label-id-Source-Code", "label-id-Executable", "label-id-Video-Demo", "label-id-Cpp", "label-id-MFC", "label-id-Windows"],
       "entry-id": "skill_list_51asm_CAD_rough_imitation",
       "uuid":"4d7c4656-8975-46ab-bcf0-b3136e556852",
       "timestamp": 201706,
@@ -488,7 +488,7 @@
     },
     {
       "field":"table_content",
-      "labels":["label-id-Coding-Project", "label-id-Source-Code", "label-id-Executable", "label-id-Video-Demo", "label-id-Cpp", "label-id-Windows"],
+      "labels":["label-id-Coding-Project", "label-id-Featured", "label-id-Source-Code", "label-id-Executable", "label-id-Video-Demo", "label-id-Cpp", "label-id-Windows"],
       "entry-id": "skill_list_51asm_Pacman_imitation",
       "uuid":"ced3a75b-333e-48cd-86f5-082799367421",
       "timestamp": 201704,

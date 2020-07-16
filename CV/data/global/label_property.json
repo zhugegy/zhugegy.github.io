@@ -218,6 +218,13 @@
     "zh-Hans": "UN*X",
     "zh-Hant": "UN*X"
   },
+  "label-id-Featured": {
+    "group": "label-feature",
+    "same-level-adjustment-weight": 3,
+    "en": "Featured",
+    "zh-Hans": "特别推荐",
+    "zh-Hant": "Featured"
+  },
   "label-id-Code-Snippet": {
     "group": "label-feature",
     "same-level-adjustment-weight": 3,

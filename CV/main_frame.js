@@ -261,6 +261,9 @@ function initialization_count_label_appearance_times(lSkillListEntires)
 			}
 		} 
 	}
+
+	// select "featured" label as default in session beginning
+	g_mapLabelSelected["label-id-Featured"] = true;
 	 
 	var lLabelWeightUnsorted = Object.keys(g_mapLabelsCount);
 	for (var i = 0; i < lLabelWeightUnsorted.length; i++)
