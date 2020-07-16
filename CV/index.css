@@ -67,7 +67,7 @@ div.main-content-wrapper {
 
     border:none;
     background-color: Transparent;
-    background-image: url('https://zhugegy.github.io/cv/images/switch_language.png');
+    background-image: url('images/switch_language.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center center;
@@ -96,7 +96,7 @@ div.main-content-wrapper {
 #switchLanguageDropDownMenu:hover .switchLanguageDropDownContent {display: block;}
 
 #switchLanguageDropDownMenu:hover #switchLanguageDropDownMenuIcon {
-  background-image: url('https://zhugegy.github.io/cv/images/switch_language_hover.png');
+  background-image: url('images/switch_language_hover.png');
   }
 
 ul#menuItemsList {
