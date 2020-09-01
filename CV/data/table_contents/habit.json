@@ -62,17 +62,6 @@
     {
         "field":"table_content",
         "format": [
-        "<tr>",
-        "<td colspan=\"2\"><audio controls><source src=\"../music/MyMotherland.mp3\" type=\"audio/mpeg\"></audio></td>",
-        "</tr>"
-                ],
-        "layout-for-human-read": [],
-        "content_zh-Hans":[],
-        "content_en":[]
-    },
-    {
-        "field":"table_content",
-        "format": [
           "<tr>",
           "<td colspan=\"2\">$</td>",
           "</tr>"
