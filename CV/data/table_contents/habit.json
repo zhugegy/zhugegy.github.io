@@ -29,6 +29,17 @@
     {
         "field":"table_content",
         "format": [
+        "<tr>",
+        "<td colspan=\"2\"><audio controls><source src=\"../music/MyMotherlandInstrumental.mp3\" type=\"audio/mpeg\"></audio></td>",
+        "</tr>"
+                ],
+        "layout-for-human-read": [],
+        "content_zh-Hans":[],
+        "content_en":[]
+    },
+    {
+        "field":"table_content",
+        "format": [
           "<tr>",
           "<td colspan=\"2\">$</td>",
           "</tr>"
@@ -47,6 +58,17 @@
         "layout-for-human-read": ["content"],
         "content_zh-Hans":["<p><strong>GitHub</strong> hosts all my source code.</p><p><strong>Syncthing</strong> syncs critical folders between my Windows machine and macOS machine. Another 24/7 Linux machine acts as the &quot;stand-by&quot; node in the network, and also archives backup once per week. </p><p><strong>Notion</strong> takes over the rest of my digital assets, including notes, web clips, routine documents, goals and progress tracking, and everything else, with 30 days of version history.</p><p><strong>Inoreader</strong> acts as my relaxation spot, where I efficiently browse news, WeChat subscriptions, YouTube, Twitter and other stuffs in RSS format. </p>"],
         "content_en":["<p><strong>GitHub</strong> hosts all my source code.</p><p><strong>Syncthing</strong> syncs critical folders between my Windows machine and macOS machine. Another 24/7 Linux machine acts as the &quot;stand-by&quot; node in the network, and also archives backup once per week. </p><p><strong>Notion</strong> takes over the rest of my digital assets, including notes, web clips, routine documents, goals and progress tracking, and everything else, with 30 days of version history.</p><p><strong>Inoreader</strong> acts as my relaxation spot, where I efficiently browse news, WeChat subscriptions, YouTube, Twitter and other stuffs in RSS format. </p>"]
+    },
+    {
+        "field":"table_content",
+        "format": [
+        "<tr>",
+        "<td colspan=\"2\"><audio controls><source src=\"../music/MyMotherland.mp3\" type=\"audio/mpeg\"></audio></td>",
+        "</tr>"
+                ],
+        "layout-for-human-read": [],
+        "content_zh-Hans":[],
+        "content_en":[]
     },
     {
         "field":"table_content",
