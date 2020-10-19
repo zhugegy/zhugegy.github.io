@@ -72,9 +72,9 @@
           "</tr>"
                   ],
         "layout-for-human-read": ["Work Permission (Visa):", "visa"],
-        "content_zh-Hans":["工作签证", "<b>澳大利亚</b><br><b>485签证</b>: 现在 - 2022年9月21日，无工作时间限制。"],
+        "content_zh-Hans":["工作签证", "<b>澳大利亚</b><br><b>485签证</b>: 现在 - 2022年7月28日，无工作时间限制。"],
         "content_zh-Hant":["null", "null"],
-        "content_en":["Work Permission", "<b>Australia</b><br><b>Subclass 485 PSW Visa</b>: now - September 21, 2022. Full work rights.<br>"]
+        "content_en":["Work Permission", "<b>Australia</b><br><b>Subclass 485 PSW Visa</b>: now - July 28, 2022. Full work rights.<br>"]
     },
     {
       "field":"table_content",
