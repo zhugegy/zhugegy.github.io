@@ -48,9 +48,9 @@
           "</tr>"
                   ],
         "layout-for-human-read": ["Phone:", "tel:phone", "phone"],
-        "content_zh-Hans":["电话", "tel:+61 0466378608", "+61 0466378608"],
-        "content_zh-Hant":["null", "tel:+61 0466378608", "+61 0466378608"],
-        "content_en":["Phone", "tel:+61 0466378608", "+61 0466378608"]
+        "content_zh-Hans":["电话", "tel:+61 466378608", "+61 466378608"],
+        "content_zh-Hant":["null", "tel:+61 466378608", "+61 466378608"],
+        "content_en":["Phone", "tel:+61 466378608", "+61 466378608"]
     },
     {
         "field":"table_content",
