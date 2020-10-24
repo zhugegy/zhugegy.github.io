@@ -64,6 +64,12 @@ function menuItems_listener()
 	strId = this.id;
 	strTmpItemName = strId.slice("menu_item_".length);
 
+	if (strTmpItemName === "skill_list" && window.screen.availWidth < 750)
+	{
+		alert("Sorry! This page is not available on mobile devices yet.")
+		return;
+	}
+
 	if (strTmpItemName === "skill_list")
 	{
 		// When the user scrolls down 20px from the top of the document, show the button
