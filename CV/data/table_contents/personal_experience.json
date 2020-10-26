@@ -93,7 +93,7 @@
         "field":"table_content",
         "format": [
           "<div id=\"Pdf_Modal_TTU_Publication_LCC\" style=\"display:none\">",
-          "<iframe id=\"Pdf_Modal_TTU_Publication_LCCiframe\" src=\"../files/skill_list/TTU_LogClusterC/ids17-logclusterc-web.pdf\"></iframe>",
+          "<iframe id=\"Pdf_Modal_TTU_Publication_LCCiframe\" src=\"../files/skill_list/TTU_LogClusterC_conference_paper/ids17-logclusterc-web.pdf\"></iframe>",
           "</div>",
           "<tr>",
           "<td class=\"tabContentTable_lineTitle\">$</td><td>$</td>",
