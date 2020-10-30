@@ -81,6 +81,12 @@ function table_render(aryStrTimepints, aryObjDates)
 
 	for (var i = 0; i < aryObjDates.length; i++)
 	{
-		$('#content_table tr:last').after('<tr><td>' + aryStrTimepints[i] + '</td><td>' + aryObjDates[i].toString().substr(0, 15) + '</td></tr>');
+		var yyyy = new Intl.DateTimeFormat('en', { year: 'numeric' }).format(aryObjDates[i]);
+		var mm = new Intl.DateTimeFormat('en', { month: '2-digit' }).format(aryObjDates[i]);
+		var dd = new Intl.DateTimeFormat('en', { day: '2-digit' }).format(aryObjDates[i]);
+		// $('#content_table tr:last').after('<tr><td>' + aryStrTimepints[i] + '</td><td>' + aryObjDates[i].toString().substr(0, 15) + '</td></tr>');
+
+		// var strOutput = 'D-${yyyy}-${mm}-${dd}';
+		$('#content_table tr:last').after('<tr><td>' + aryStrTimepints[i] + '</td><td>' + 'D-'+yyyy+'-'+mm+'-'+dd + '</td></tr>');
 	}
 }
