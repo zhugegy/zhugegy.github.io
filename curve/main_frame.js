@@ -24,7 +24,7 @@ window.onload = function()
 	$('#cal_button').click();
 
 	// jump to table
-	document.getElementById('content_table').scrollIntoView();
+	// document.getElementById('content_table').scrollIntoView();
 }
 
 function calculate()
@@ -45,7 +45,7 @@ function get_user_intput()
 	for (var i = aryStrTimepints.length -1; i >= 0 ; i--)
 	{
 	    if (parseInt(aryStrTimepints[i]) > cons_nMaxReverseDays)
-			{
+		{
 	        aryStrTimepints.splice(i, 1);
 	    }
 	}
