@@ -22,6 +22,9 @@ window.onload = function()
 
 	// simulate the initial click
 	$('#cal_button').click();
+
+	// jump to table
+	document.getElementById('content_table').scrollIntoView();
 }
 
 function calculate()
