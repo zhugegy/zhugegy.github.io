@@ -185,32 +185,6 @@
     },
     {
       "field":"table_content",
-      "labels":["label-id-Coding-Project", "label-id-Python", "label-id-Windows"],
-      "entry-id": "skill_list_white_deer",
-      "uuid":"f3c7d3da-a7d0-4dbf-8ecf-0cdbf03ec717",
-      "timestamp": 201811,
-      "format": [
-        "<tr class=\"clickabletr darktr\" id=\"±\">",
-        "<td class=\"tabContentTable_lineTitle\" colspan=\"2\"><span id=\"±Shown\"><img src=\"../images/skill_list/click_to_expand_indicator.png\">&nbsp&nbsp&nbsp</span><span class=\"hiddenspan\" id=\"±Replacement\"><img src=\"../images/skill_list/click_to_collapse_indicator.png\">&nbsp&nbsp&nbsp</span>$</td>",
-        "</tr>",
-        "<tr>",
-        "<td class=\"tabContentTable_lineTitle timestamp_width\">$</td><td id=\"±-label\"></td>",
-        "</tr>",
-        "<tbody class=\"hiddentbody\" id=\"±Hidden\">",
-        "<tr>",
-        "<td colspan=\"2\">$</td>",
-        "</tr>",
-        "</tbody>",
-        "<tr>",
-        "<td colspan=\"2\">&nbsp</td>",
-        "</tr>"
-                ],
-      "layout-for-human-read": ["Title", "timestamp", "hidden-content..."],
-      "content_zh-Hans":["编码项目：小暑", "2018-11", "闭源项目，仅现场演示。"],
-      "content_en":["Coding Project: Slight Heat", "2018-11", "Closed source project. On-site demo only."]
-    },
-    {
-      "field":"table_content",
       "labels":["label-id-Course-Taken", "label-id-Source-Code", "label-id-Java", "label-id-Spring", "label-id-Web"],
       "entry-id": "skill_list_usyd_ELEC5619_Object_Oriented_Application_Frameworks",
       "uuid":"66e6c71f-0519-4b44-ac85-06c8755a9191",
